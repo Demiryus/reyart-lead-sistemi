@@ -30,8 +30,12 @@ import time
 from datetime import date, datetime
 from pathlib import Path
 
-import pythoncom
-import win32com.client
+try:
+    import pythoncom
+    import win32com.client
+except ImportError:
+    pythoncom = None
+    win32com = None
 
 BASE_DIR = Path(__file__).parent
 TEMPLATES_FILE = BASE_DIR / "mail_templates.json"
@@ -89,6 +93,8 @@ def _find_account(ns, email: str):
 def _connect_outlook(account_email: str):
     """Classic Outlook'a COM ile bağlanır, istenen hesabı bulur.
     Başarısızsa RuntimeError fırlatır (Türkçe, arayüzde doğrudan gösterilebilir)."""
+    if pythoncom is None:
+        raise RuntimeError("pywin32 (pythoncom) kurulu değil — bu fonksiyon yalnızca Windows'ta çalışır.")
     pythoncom.CoInitialize()
     try:
         outlook = win32com.client.Dispatch("Outlook.Application")
@@ -111,6 +117,8 @@ def _connect_outlook(account_email: str):
 
 def config_status() -> dict:
     cfg = load_config()
+    if pythoncom is None:
+        return {"configured": False, "email": cfg["outlook_account"], "hint": "pywin32 kurulu değil (Linux/Render)."}
     try:
         _outlook, account = _connect_outlook(cfg["outlook_account"])
         return {"configured": True, "email": account.SmtpAddress, "hint": ""}
@@ -199,6 +207,8 @@ def compose_draft(company: dict, template_id: str) -> dict:
     cfg = load_config()
     msg_data = render(templates[template_id], company)
 
+    if pythoncom is None:
+        raise RuntimeError("pywin32 (pythoncom) kurulu değil — bu fonksiyon yalnızca Windows'ta çalışır.")
     pythoncom.CoInitialize()
     try:
         outlook, account = _connect_outlook(cfg["outlook_account"])
@@ -286,7 +296,7 @@ def send_bulk(companies: list[dict], template_id: str, dry_run: bool = True,
                       "template": template_id, "error": str(e)})
                 results["errors"].append({"name": name, "error": str(e)})
     finally:
-        if not dry_run:
+        if not dry_run and pythoncom is not None:
             pythoncom.CoUninitialize()
 
     return results

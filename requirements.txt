@@ -1,5 +1,4 @@
 flask
 gunicorn
-pywin32
 openpyxl
 requests

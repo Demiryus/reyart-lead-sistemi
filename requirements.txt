@@ -2,3 +2,5 @@ flask
 gunicorn
 openpyxl
 requests
+beautifulsoup4
+lxml

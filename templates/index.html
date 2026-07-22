@@ -1,0 +1,897 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reyart Lead Manager</title>
+<style>
+  :root {
+    --bg: #f4f6fa; --card: #ffffff; --ink: #1a2233; --muted: #6b7690;
+    --line: #e3e8f0; --brand: #2f4f8f; --brand-ink: #ffffff;
+    --gold: #fff3c4; --blue: #e3eefc;
+    --ok: #1e8e3e; --warn: #b06f00; --bad: #c5221f;
+    --ok-bg: #e6f4ea; --warn-bg: #fef7e0; --bad-bg: #fce8e6;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; font: 14px/1.45 "Segoe UI", system-ui, sans-serif; background: var(--bg); color: var(--ink); }
+  header { background: var(--brand); color: var(--brand-ink); padding: 14px 22px; display: flex; align-items: center; gap: 14px; }
+  header h1 { font-size: 17px; margin: 0; font-weight: 600; }
+  header .spacer { flex: 1; }
+  .tabs { display: flex; gap: 4px; }
+  .tab { border: 0; background: transparent; color: rgba(255,255,255,.75); padding: 8px 14px;
+         border-radius: 8px; cursor: pointer; font-size: 13px; font-weight: 600; }
+  .tab:hover { background: rgba(255,255,255,.12); color: #fff; }
+  .tab.active { background: rgba(255,255,255,.22); color: #fff; }
+  .btn { border: 0; border-radius: 8px; padding: 8px 14px; cursor: pointer; font-weight: 600; font-size: 13px; }
+  .btn-light { background: rgba(255,255,255,.15); color: #fff; }
+  .btn-light:hover { background: rgba(255,255,255,.28); }
+  .btn-primary { background: var(--brand); color: #fff; }
+  .wrap { padding: 18px 22px; max-width: 1500px; margin: 0 auto; }
+
+  /* Dashboard kartları */
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 12px; margin-bottom: 16px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
+  .card .k { font-size: 12px; color: var(--muted); }
+  .card .v { font-size: 24px; font-weight: 700; margin-top: 2px; }
+  .card .sub { font-size: 11.5px; color: var(--muted); margin-top: 4px; }
+  .card.clickable { cursor: pointer; transition: box-shadow .12s; }
+  .card.clickable:hover { box-shadow: 0 2px 10px rgba(30,50,90,.12); }
+  .card.active { outline: 2px solid var(--brand); }
+
+  /* Filtre çubuğu */
+  .filters { display: flex; flex-wrap: wrap; gap: 8px; background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px; margin-bottom: 14px; align-items: center; }
+  .filters select, .filters input[type=search] {
+    border: 1px solid var(--line); border-radius: 8px; padding: 7px 10px; font-size: 13px; background: #fff; color: var(--ink);
+  }
+  .filters input[type=search] { min-width: 230px; }
+  .filters .count { margin-left: auto; color: var(--muted); font-size: 13px; }
+
+  /* Tablo */
+  .tablebox { background: var(--card); border: 1px solid var(--line); border-radius: 12px; overflow: auto; }
+  table { border-collapse: collapse; width: 100%; min-width: 1050px; }
+  th { position: sticky; top: 0; background: var(--brand); color: #fff; text-align: left; padding: 9px 10px; font-size: 12.5px; white-space: nowrap; z-index: 1; }
+  td { padding: 8px 10px; border-top: 1px solid var(--line); vertical-align: middle; font-size: 13px; }
+  tr.row { cursor: pointer; }
+  tr.row:hover td { background: #eef3fb !important; }
+  tr.p3 td { background: var(--gold); }
+  tr.p2 td { background: var(--blue); }
+  .pill { display: inline-block; border-radius: 999px; padding: 2px 9px; font-size: 12px; white-space: nowrap; }
+  .g-yuksek { background: var(--ok-bg); color: var(--ok); }
+  .g-orta { background: var(--warn-bg); color: var(--warn); }
+  .g-belirsiz { background: var(--bad-bg); color: var(--bad); }
+  .m-yabanci { background: var(--blue); color: var(--brand); }
+  .m-yerli { background: #eef1f6; color: var(--muted); }
+  .s-sicak { background: #fdeaea; color: #c5221f; font-weight: 600; }
+  .s-yaklasiyor { background: var(--warn-bg); color: var(--warn); }
+  .s-soguk { background: #eef1f6; color: var(--muted); }
+  td a { color: var(--brand); text-decoration: none; }
+  td a:hover { text-decoration: underline; }
+  .ellip { max-width: 240px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+  /* Sayfalama */
+  .pager { display: flex; gap: 8px; align-items: center; justify-content: center; padding: 14px; }
+  .pager button { border: 1px solid var(--line); background: #fff; border-radius: 8px; padding: 6px 12px; cursor: pointer; }
+  .pager button:disabled { opacity: .4; cursor: default; }
+
+  /* Detay paneli */
+  .overlay { position: fixed; inset: 0; background: rgba(15,25,50,.35); display: none; z-index: 40; }
+  .panel { position: fixed; top: 0; right: -520px; width: 500px; max-width: 95vw; height: 100vh; background: #fff;
+           box-shadow: -6px 0 24px rgba(0,0,0,.18); z-index: 50; transition: right .2s ease; display: flex; flex-direction: column; }
+  .panel.open { right: 0; }
+  .panel header { background: var(--brand); }
+  .panel .body { padding: 16px 20px; overflow-y: auto; flex: 1; }
+  .field { margin-bottom: 13px; }
+  .field label { display: block; font-size: 11.5px; color: var(--muted); margin-bottom: 3px; text-transform: uppercase; letter-spacing: .4px; }
+  .field input, .field select, .field textarea {
+    width: 100%; border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px; font-size: 13.5px; font-family: inherit; background: #fff; color: var(--ink);
+  }
+  .field textarea { min-height: 70px; resize: vertical; }
+  .field .ro { background: #f6f8fb; color: var(--muted); border: 1px dashed var(--line); border-radius: 8px; padding: 8px 10px; font-size: 13px; word-break: break-word; }
+  .panel .foot { padding: 12px 20px; border-top: 1px solid var(--line); display: flex; gap: 10px; align-items: center; }
+  .savemsg { font-size: 12.5px; }
+  .savemsg.ok { color: var(--ok); } .savemsg.err { color: var(--bad); }
+
+  .toast { position: fixed; bottom: 18px; left: 50%; transform: translateX(-50%); background: var(--ink); color: #fff;
+           border-radius: 10px; padding: 10px 18px; font-size: 13px; opacity: 0; transition: opacity .2s; z-index: 90; pointer-events: none; }
+  .toast.show { opacity: .95; }
+  .loading td { text-align: center; color: var(--muted); padding: 30px; }
+
+  /* Modal (mail + fuar ekle) */
+  .modal-bg { position: fixed; inset: 0; background: rgba(15,25,50,.45); display: none; z-index: 60;
+              align-items: center; justify-content: center; }
+  .modal-bg.open { display: flex; }
+  .modal { background: #fff; border-radius: 14px; width: 640px; max-width: 94vw; max-height: 88vh;
+           display: flex; flex-direction: column; box-shadow: 0 12px 40px rgba(0,0,0,.25); }
+  .modal .m-head { padding: 14px 20px; border-bottom: 1px solid var(--line); display: flex; align-items: center; }
+  .modal .m-head h2 { font-size: 15px; margin: 0; flex: 1; }
+  .modal .m-body { padding: 16px 20px; overflow-y: auto; }
+  .modal .m-foot { padding: 12px 20px; border-top: 1px solid var(--line); display: flex; gap: 10px; align-items: center; }
+  .preview-box { background: #f6f8fb; border: 1px solid var(--line); border-radius: 8px; padding: 10px 12px;
+                 font-size: 12.5px; margin-bottom: 8px; white-space: pre-wrap; max-height: 180px; overflow-y: auto; }
+  .preview-box .p-subj { font-weight: 600; margin-bottom: 6px; }
+  .banner { border-radius: 8px; padding: 9px 12px; font-size: 12.5px; margin-bottom: 12px; }
+  .banner.warn { background: var(--warn-bg); color: var(--warn); }
+  .banner.ok { background: var(--ok-bg); color: var(--ok); }
+  .banner.err { background: var(--bad-bg); color: var(--bad); }
+  .selbar { display: none; gap: 10px; align-items: center; background: var(--brand); color: #fff;
+            border-radius: 10px; padding: 8px 14px; margin-bottom: 12px; font-size: 13px; }
+  .selbar.show { display: flex; }
+  td.chk, th.chk { width: 34px; text-align: center; }
+  input[type=checkbox] { width: 15px; height: 15px; cursor: pointer; }
+  .btn-ghost { background: transparent; border: 1px solid var(--line); color: var(--ink); }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>📊 Reyart Lead Manager</h1>
+  <span id="hdr-info" style="font-size:12.5px;opacity:.85"></span>
+  <div class="tabs">
+    <button class="tab active" id="tab-companies">🏢 Firmalar</button>
+    <button class="tab" id="tab-calendar">📅 Gelecek Fuarlar</button>
+  </div>
+  <div class="spacer"></div>
+  <button class="btn btn-light" id="btn-addfair">➕ Fuar Ekle</button>
+  <button class="btn btn-light" id="btn-refresh">🔄 Yenile</button>
+  <a class="btn btn-light" href="/api/export" style="text-decoration:none">⬇️ Excel İndir</a>
+  <a class="btn btn-light" href="/api/export/csv" style="text-decoration:none">⬇️ CSV İndir</a>
+</header>
+
+<div class="wrap" id="view-companies">
+
+  <div class="cards" id="cards"></div>
+
+  <div class="filters">
+    <select id="f-fair"><option value="">Tüm Fuarlar</option></select>
+    <select id="f-priority"><option value="">Tüm Öncelikler</option></select>
+    <select id="f-guven">
+      <option value="">Tüm Güven Seviyeleri</option>
+      <option value="🟢">🟢 Yüksek</option>
+      <option value="🟡">🟡 Orta</option>
+      <option value="⚪">⚪ Belirsiz</option>
+    </select>
+    <select id="f-status"><option value="">Tüm Durumlar</option></select>
+    <select id="f-mensei">
+      <option value="">Tüm Menşeiler</option>
+      <option value="yerli">🇹🇷 Yerli</option>
+      <option value="yabanci">🌍 Yabancı</option>
+    </select>
+    <select id="f-sicaklik">
+      <option value="">Tüm Sıcaklıklar</option>
+      <option value="🔥">🔥 Sıcak (fuar ≤150 gün)</option>
+      <option value="🌡">🌡 Yaklaşıyor</option>
+      <option value="❄">❄ Soğuk / geçmiş</option>
+    </select>
+    <select id="f-sort">
+      <option value="">Normal Sıralama</option>
+      <option value="skor">💰 Satış Skoruna Göre</option>
+    </select>
+    <button class="btn btn-primary" id="btn-today" style="padding:7px 12px">📞 Bugün Aranacaklar</button>
+    <select id="f-missing">
+      <option value="">Eksik Veri Filtresi</option>
+      <option value="phone">📵 Telefonu olmayanlar</option>
+      <option value="email">📭 E-postası olmayanlar</option>
+      <option value="website">🌐 Websitesi olmayanlar</option>
+      <option value="linkedin">🔗 LinkedIn'i olmayanlar</option>
+    </select>
+    <input type="search" id="f-search" placeholder="🔍 Firma / ülke / mail / not ara...">
+    <span class="count" id="count"></span>
+  </div>
+
+  <div class="selbar" id="selbar">
+    <span id="sel-count"></span>
+    <button class="btn btn-light" id="btn-mail">✉️ Seçilenlere Mail</button>
+    <button class="btn btn-light" id="btn-clear-sel">Seçimi Temizle</button>
+  </div>
+
+  <div class="tablebox">
+    <table>
+      <thead>
+        <tr>
+          <th class="chk"><input type="checkbox" id="sel-all" title="Sayfadakileri seç"></th>
+          <th>Firma Adı</th><th>Fuar</th><th>Menşei</th><th>Telefon</th>
+          <th>E-posta</th><th>Website</th><th>Öncelik</th><th>Güven</th><th>Durum</th>
+        </tr>
+      </thead>
+      <tbody id="tbody"></tbody>
+    </table>
+  </div>
+
+  <div class="pager">
+    <button id="pg-prev">◀ Önceki</button>
+    <span id="pg-info"></span>
+    <button id="pg-next">Sonraki ▶</button>
+  </div>
+</div>
+
+<div class="wrap" id="view-calendar" style="display:none">
+
+  <div class="banner ok" style="display:flex;align-items:center;gap:10px">
+    <span id="cal-updated" style="flex:1"></span>
+    <button class="btn btn-ghost" id="cal-refresh" style="border-color:var(--ok)">🔄 TOBB'dan Güncelle</button>
+  </div>
+
+  <div class="filters">
+    <select id="cal-sehir"><option value="">Tüm Şehirler</option></select>
+    <label style="display:flex;align-items:center;gap:6px;font-size:13px;color:var(--muted)">
+      <input type="checkbox" id="cal-upcoming" checked> Sadece gelecek fuarlar
+    </label>
+    <input type="search" id="cal-search" placeholder="🔍 Fuar adı / konu / şehir ara...">
+    <span class="count" id="cal-count"></span>
+  </div>
+
+  <div class="tablebox">
+    <table>
+      <thead>
+        <tr>
+          <th>Başlangıç</th><th>Bitiş</th><th>Fuar Adı</th><th>Konusu</th>
+          <th>Şehir</th><th>Yer</th><th>Düzenleyici</th><th>İletişim</th><th>İşlem</th>
+        </tr>
+      </thead>
+      <tbody id="cal-tbody"></tbody>
+    </table>
+  </div>
+</div>
+
+<!-- Detay paneli -->
+<div class="overlay" id="overlay"></div>
+<aside class="panel" id="panel">
+  <header style="display:flex;align-items:center;padding:14px 20px">
+    <h1 id="p-title" style="font-size:15px;margin:0;flex:1"></h1>
+    <button class="btn btn-light" id="p-close">✕</button>
+  </header>
+  <div class="body">
+    <div class="field"><label>Fuar</label><div class="ro" id="p-fair"></div></div>
+    <div class="field"><label>Satış Durumu</label><div class="ro" id="p-satis"></div></div>
+    <div class="field"><label>Menşei</label><div class="ro" id="p-country"></div></div>
+    <div class="field"><label>Doğrulama</label><div class="ro" id="p-dogrulama"></div></div>
+    <div class="field" id="p-updatedwrap" style="display:none"><label>Son Güncelleme</label><div class="ro" id="p-updated"></div></div>
+    <div class="field" id="p-standwrap" style="display:none"><label>Salon / Stant</label><div class="ro" id="p-stand"></div></div>
+    <div class="field"><label>Website</label><input id="e-website"></div>
+    <div class="field"><label>Telefon</label><input id="e-phone"></div>
+    <div class="field"><label>E-posta</label><input id="e-email"></div>
+    <div class="field"><label>LinkedIn</label><input id="e-linkedin"></div>
+    <div class="field"><label>Öncelik</label><select id="e-priority"></select></div>
+    <div class="field"><label>Durum</label><select id="e-status"></select></div>
+    <div class="field"><label>Takip Tarihi (bu gün tekrar ara)</label><input type="date" id="e-takip"></div>
+    <div class="field"><label>Not</label><textarea id="e-note"></textarea></div>
+  </div>
+  <div class="foot">
+    <button class="btn btn-primary" id="p-save">💾 Kaydet</button>
+    <button class="btn btn-ghost" id="p-mailto" style="display:none">📧 Mail Yaz (Outlook)</button>
+    <span class="savemsg" id="p-msg"></span>
+  </div>
+</aside>
+
+<!-- Mail modalı -->
+<div class="modal-bg" id="mail-modal">
+  <div class="modal">
+    <div class="m-head"><h2>✉️ Seçilenlere Mail Gönder</h2>
+      <button class="btn btn-ghost" id="mail-close">✕</button></div>
+    <div class="m-body">
+      <div class="banner warn" id="mail-smtp-banner" style="display:none"></div>
+      <div class="field"><label>Şablon</label>
+        <select id="mail-template" style="width:100%;border:1px solid var(--line);border-radius:8px;padding:8px 10px"></select>
+      </div>
+      <div id="mail-summary" style="font-size:13px;margin:10px 0;color:var(--muted)"></div>
+      <div id="mail-previews"></div>
+      <div id="mail-result"></div>
+    </div>
+    <div class="m-foot">
+      <button class="btn btn-ghost" id="mail-dryrun">🧪 Kuru Çalıştırma</button>
+      <button class="btn btn-primary" id="mail-send">🚀 Gerçek Gönder</button>
+      <span class="savemsg" id="mail-msg"></span>
+    </div>
+  </div>
+</div>
+
+<!-- Fuar ekleme modalı -->
+<div class="modal-bg" id="fair-modal">
+  <div class="modal">
+    <div class="m-head"><h2>➕ Yeni Fuar Ekle (URL'den kazı)</h2>
+      <button class="btn btn-ghost" id="fair-close">✕</button></div>
+    <div class="m-body">
+      <div class="field"><label>Fuar Adı</label>
+        <input id="fair-name" placeholder="örn: Bauma 2026" style="width:100%;border:1px solid var(--line);border-radius:8px;padding:8px 10px"></div>
+      <div class="field"><label>Katılımcı Listesi URL'si</label>
+        <input id="fair-url" placeholder="https://... (katılımcı/exhibitor listesi sayfası)" style="width:100%;border:1px solid var(--line);border-radius:8px;padding:8px 10px"></div>
+      <div class="banner warn" style="font-size:12px">Direkt katılımcı listesi URL'si vermezsen (ör. sadece ana sayfa) sistem
+        sayfadaki linklerden "katılımcı listesi" sayfasını otomatik bulmayı dener. Login
+        gerektiren platformlar yine de kazınamaz.</div>
+      <div id="fair-status"></div>
+    </div>
+    <div class="m-foot">
+      <button class="btn btn-primary" id="fair-start">🔍 Kazımayı Başlat</button>
+      <span class="savemsg" id="fair-msg"></span>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+"use strict";
+const $ = id => document.getElementById(id);
+const state = { page: 1, per_page: 50, meta: null, items: [], current: null, fairFilter: "", takipFilter: false };
+const selection = new Set();  // seçili firma id'leri (sayfalar arası korunur)
+
+function esc(s) {
+  return String(s ?? "").replace(/[&<>"']/g, m => ({ "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;" }[m]));
+}
+
+function toast(msg) {
+  const t = $("toast"); t.textContent = msg; t.classList.add("show");
+  setTimeout(() => t.classList.remove("show"), 2200);
+}
+
+async function jget(url) {
+  const r = await fetch(url);
+  if (!r.ok) throw new Error("HTTP " + r.status);
+  return r.json();
+}
+
+async function loadMeta() {
+  state.meta = await jget("/api/meta");
+  const ff = $("f-fair"), fp = $("f-priority"), fs = $("f-status"),
+        ep = $("e-priority"), es = $("e-status");
+  state.meta.fairs.forEach(f => ff.add(new Option(f, f)));
+  state.meta.priorities.forEach(p => { fp.add(new Option(p, p)); ep.add(new Option(p, p)); });
+  state.meta.statuses.forEach(s => { fs.add(new Option(s, s)); es.add(new Option(s, s)); });
+}
+
+async function loadStats() {
+  const st = await jget("/api/stats");
+  const c = $("cards");
+  const t = st.total;
+  let html = `
+    <div class="card clickable ${state.fairFilter === "" ? "active" : ""}" data-fair="">
+      <div class="k">TOPLAM FİRMA</div><div class="v">${t.total}</div>
+      <div class="sub">🌐 ${t.web} · 📞 ${t.tel} · ✉️ ${t.mail}</div>
+    </div>`;
+  // 164 fuarın hepsine kart basma — en kalabalık 11 fuarı göster (aktif
+  // filtre farklı bir fuardaysa onu da dahil et), gerisi f-fair select'inde.
+  const fairEntries = Object.entries(st.fairs).sort((a, b) => b[1].total - a[1].total);
+  const topFairs = fairEntries.slice(0, 11);
+  if (state.fairFilter && !topFairs.some(([f]) => f === state.fairFilter) && st.fairs[state.fairFilter]) {
+    topFairs.push([state.fairFilter, st.fairs[state.fairFilter]]);
+  }
+  for (const [fair, s] of topFairs) {
+    html += `
+    <div class="card clickable ${state.fairFilter === fair ? "active" : ""}" data-fair="${esc(fair)}">
+      <div class="k ellip" title="${esc(fair)}" style="max-width:100%">${esc(fair.length > 38 ? fair.slice(0, 36) + "…" : fair)}</div>
+      <div class="v">${s.total}</div>
+      <div class="sub">🔥 ${s.sicak} · 🟢 ${s.yuksek} · 🟡 ${s.orta}</div>
+    </div>`;
+  }
+  html += `
+    <div class="card"><div class="k">🟢 YÜKSEK GÜVEN</div><div class="v">${t.yuksek}</div>
+      <div class="sub">site + telefon iki kaynaktan doğrulandı</div></div>
+    <div class="card clickable ${$("f-mensei").value === "yabanci" ? "active" : ""}" data-mensei="yabanci">
+      <div class="k">🌍 YABANCI FİRMA</div><div class="v">${t.yabanci}</div>
+      <div class="sub">${t.yerli} yerli · yurt dışı lead adayı</div></div>
+    <div class="card clickable ${$("f-sicaklik").value === "🔥" ? "active" : ""}" data-sicaklik="🔥" style="outline:2px solid #c5221f22">
+      <div class="k">🔥 SICAK LEAD</div><div class="v" style="color:#c5221f">${t.sicak}</div>
+      <div class="sub">fuarı ≤150 gün — stand kararı ŞİMDİ veriliyor</div></div>`;
+  c.innerHTML = html;
+  c.querySelectorAll(".clickable[data-fair]").forEach(el => el.addEventListener("click", () => {
+    state.fairFilter = el.dataset.fair;
+    $("f-fair").value = state.fairFilter;
+    state.page = 1;
+    refresh();
+  }));
+  c.querySelectorAll(".clickable[data-mensei]").forEach(el => el.addEventListener("click", () => {
+    const f = $("f-mensei");
+    f.value = f.value === el.dataset.mensei ? "" : el.dataset.mensei;
+    state.page = 1;
+    refresh();
+  }));
+  c.querySelectorAll(".clickable[data-sicaklik]").forEach(el => el.addEventListener("click", () => {
+    const f = $("f-sicaklik");
+    f.value = f.value === el.dataset.sicaklik ? "" : el.dataset.sicaklik;
+    if (f.value) $("f-sort").value = "skor";  // sıcak filtrede skor sıralaması mantıklı varsayılan
+    state.page = 1;
+    refresh();
+  }));
+  $("hdr-info").textContent = `${t.total} firma · ${Object.keys(st.fairs).length} fuar`;
+}
+
+function guvenClass(g) {
+  if (g.includes("🟢")) return "g-yuksek";
+  if (g.includes("🟡")) return "g-orta";
+  return "g-belirsiz";
+}
+
+function sicaklikClass(s) {
+  if ((s || "").includes("🔥")) return "s-sicak";
+  if ((s || "").includes("🌡")) return "s-yaklasiyor";
+  return "s-soguk";
+}
+
+let tableReqSeq = 0;  // eşzamanlı iki loadTable yarışırsa (canlı senkron +
+                      // kullanıcı tıklaması) eski yanıt yenisini ezmesin
+
+async function loadTable() {
+  const mySeq = ++tableReqSeq;
+  const tb = $("tbody");
+  tb.innerHTML = `<tr class="loading"><td colspan="11">Yükleniyor…</td></tr>`;
+  const q = new URLSearchParams({
+    page: state.page, per_page: state.per_page,
+    fair: $("f-fair").value, priority: $("f-priority").value,
+    guven: $("f-guven").value.trim(), status: $("f-status").value,
+    mensei: $("f-mensei").value, sicaklik: $("f-sicaklik").value,
+    sort: $("f-sort").value, takip: state.takipFilter ? "bugun" : "",
+    missing: $("f-missing").value, search: $("f-search").value,
+  });
+  const res = await jget("/api/companies?" + q);
+  if (mySeq !== tableReqSeq) return;  // bu arada daha yeni bir istek atıldı
+  state.items = res.items;
+  $("count").textContent = `${res.total} sonuç`;
+  const maxPage = Math.max(1, Math.ceil(res.total / state.per_page));
+  if (state.page > maxPage) { state.page = maxPage; return loadTable(); }
+  $("pg-info").textContent = `Sayfa ${state.page} / ${maxPage}`;
+  $("pg-prev").disabled = state.page <= 1;
+  $("pg-next").disabled = state.page >= maxPage;
+
+  if (!res.items.length) {
+    tb.innerHTML = `<tr class="loading"><td colspan="11">Sonuç bulunamadı.</td></tr>`;
+    return;
+  }
+  tb.innerHTML = res.items.map((c, i) => {
+    const cls = c.priority === "⭐⭐⭐" ? "p3" : (c.priority === "⭐⭐" ? "p2" : "");
+    const g = c.guven_seviyesi || "⚪ Belirsiz";
+    const web = c.website
+      ? `<a href="${esc(c.website)}" target="_blank" rel="noopener" onclick="event.stopPropagation()">${esc(c.website.replace(/^https?:\/\/(www\.)?/, "").slice(0, 28))}</a>` : "—";
+    const checked = selection.has(c.id) ? "checked" : "";
+    return `<tr class="row ${cls}" data-i="${i}">
+      <td class="chk"><input type="checkbox" class="selbox" data-id="${esc(c.id)}" ${checked} onclick="event.stopPropagation()"></td>
+      <td class="ellip" title="${esc(c.name)}"><strong>${esc(c.name)}</strong></td>
+      <td class="ellip" style="max-width:200px" title="${esc(c.fair)}${c.fuar_tarihi ? " — " + esc(c.fuar_tarihi) : ""}">
+        <span class="pill ${sicaklikClass(c.sicaklik)}" title="Satış skoru: ${c.satis_skoru ?? "?"}">${esc((c.sicaklik || "❄").split(" ")[0])}</span>
+        ${esc(c.fair)}</td>
+      <td><span class="pill ${c.mensei === "🌍 Yabancı" ? "m-yabanci" : "m-yerli"}">${esc(c.mensei || "🇹🇷 Yerli")}</span> ${esc(c.country || "—")}</td>
+      <td>${esc(c.phone || "—")}</td>
+      <td class="ellip">${esc(c.email || "—")}</td>
+      <td class="ellip">${web}</td>
+      <td>${esc(c.priority || "⭐")}</td>
+      <td><span class="pill ${guvenClass(g)}">${esc(g)}</span></td>
+      <td>${esc(c.status || "⬜ Aranmadı")}</td>
+    </tr>`;
+  }).join("");
+  tb.querySelectorAll("tr.row").forEach(tr =>
+    tr.addEventListener("click", () => openPanel(state.items[+tr.dataset.i]))
+  );
+  tb.querySelectorAll(".selbox").forEach(cb =>
+    cb.addEventListener("change", () => {
+      cb.checked ? selection.add(cb.dataset.id) : selection.delete(cb.dataset.id);
+      updateSelBar();
+    })
+  );
+  $("sel-all").checked = state.items.length > 0 && state.items.every(c => selection.has(c.id));
+}
+
+function updateSelBar() {
+  const n = selection.size;
+  $("selbar").classList.toggle("show", n > 0);
+  $("sel-count").textContent = `${n} firma seçili`;
+}
+
+function openPanel(c) {
+  state.current = c;
+  $("p-title").textContent = c.name;
+  $("p-fair").textContent = (c.fair || "—") + (c.fuar_tarihi ? ` (${c.fuar_tarihi})` : "");
+  $("p-satis").textContent = `${c.sicaklik || "❄ Soğuk"} · Satış skoru: ${c.satis_skoru ?? "?"}`;
+  $("p-country").textContent = `${c.mensei || "🇹🇷 Yerli"} — ${c.country || "—"}`;
+  const dg = [c.site_dogrulama, c.tel_dogrulama].filter(Boolean).join("  |  ") || "➖ Henüz kontrol edilmedi";
+  $("p-dogrulama").textContent = dg;
+  if (c.updated_at) {
+    $("p-updatedwrap").style.display = "";
+    $("p-updated").textContent = c.updated_at;
+  } else {
+    $("p-updatedwrap").style.display = "none";
+  }
+  if (c.hall || c.stand) {
+    $("p-standwrap").style.display = "";
+    $("p-stand").textContent = `Salon ${c.hall || "?"} / Stant ${c.stand || "?"}`;
+  } else {
+    $("p-standwrap").style.display = "none";
+  }
+  $("e-website").value = c.website || "";
+  $("e-phone").value = c.phone || "";
+  $("e-email").value = c.email || "";
+  $("e-linkedin").value = c.linkedin || "";
+  $("e-priority").value = c.priority || "⭐";
+  $("e-status").value = c.status || "⬜ Aranmadı";
+  $("e-takip").value = c.takip_tarihi || "";
+  $("e-note").value = c.note || "";
+  $("p-msg").textContent = "";
+  $("p-mailto").style.display = c.email ? "" : "none";
+  $("overlay").style.display = "block";
+  $("panel").classList.add("open");
+}
+
+function closePanel() {
+  $("panel").classList.remove("open");
+  $("overlay").style.display = "none";
+  state.current = null;
+}
+
+async function savePanel() {
+  if (!state.current) return;
+  const body = {
+    website: $("e-website").value, phone: $("e-phone").value,
+    email: $("e-email").value, linkedin: $("e-linkedin").value,
+    priority: $("e-priority").value, status: $("e-status").value,
+    takip_tarihi: $("e-takip").value, note: $("e-note").value,
+  };
+  const msg = $("p-msg");
+  msg.textContent = "Kaydediliyor…"; msg.className = "savemsg";
+  try {
+    const r = await fetch("/api/companies/" + state.current.id, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(body),
+    });
+    const j = await r.json();
+    if (!r.ok) throw new Error(j.error || "HTTP " + r.status);
+    msg.textContent = "✅ Kaydedildi"; msg.className = "savemsg ok";
+    toast("Kaydedildi: " + state.current.name);
+    await Promise.all([loadTable(), loadStats()]);
+  } catch (e) {
+    msg.textContent = "❌ " + e.message; msg.className = "savemsg err";
+  }
+}
+
+function refresh() { loadStats(); loadTable(); }
+
+// Olay bağlama
+["f-fair", "f-priority", "f-guven", "f-status", "f-mensei", "f-sicaklik", "f-sort", "f-missing"].forEach(id =>
+  $(id).addEventListener("change", () => {
+    if (id === "f-fair") state.fairFilter = $(id).value;
+    state.page = 1; refresh();
+  })
+);
+
+// 📞 Bugün Aranacaklar: takip tarihi bugün/geçmiş olanları gösterir (toggle).
+$("btn-today").addEventListener("click", () => {
+  state.takipFilter = !state.takipFilter;
+  $("btn-today").style.opacity = state.takipFilter ? "1" : "";
+  $("btn-today").textContent = state.takipFilter ? "📞 Bugün Aranacaklar ✓" : "📞 Bugün Aranacaklar";
+  state.page = 1; loadTable();
+});
+let searchTimer;
+$("f-search").addEventListener("input", () => {
+  clearTimeout(searchTimer);
+  searchTimer = setTimeout(() => { state.page = 1; loadTable(); }, 300);
+});
+$("pg-prev").addEventListener("click", () => { state.page--; loadTable(); });
+$("pg-next").addEventListener("click", () => { state.page++; loadTable(); });
+$("btn-refresh").addEventListener("click", refresh);
+// closePanel/savePanel aşağıda senkronizasyon için sarmalanıyor — bu yüzden
+// doğrudan referans değil, çağrı anında güncel fonksiyonu kullanan wrapper bağla.
+$("p-close").addEventListener("click", () => closePanel());
+$("overlay").addEventListener("click", () => closePanel());
+$("p-save").addEventListener("click", () => savePanel());
+document.addEventListener("keydown", e => { if (e.key === "Escape") closePanel(); });
+
+// ── Seçim + Mail ─────────────────────────────────────────────────────────
+$("sel-all").addEventListener("change", () => {
+  const on = $("sel-all").checked;
+  state.items.forEach(c => on ? selection.add(c.id) : selection.delete(c.id));
+  document.querySelectorAll(".selbox").forEach(cb => cb.checked = on);
+  updateSelBar();
+});
+$("btn-clear-sel").addEventListener("click", () => {
+  selection.clear();
+  document.querySelectorAll(".selbox").forEach(cb => cb.checked = false);
+  $("sel-all").checked = false;
+  updateSelBar();
+});
+
+async function openMailModal() {
+  if (!selection.size) return;
+  const sel = $("mail-template");
+  if (!sel.options.length) {
+    const templates = await jget("/api/mail/templates");
+    templates.forEach(t => sel.add(new Option(t.name, t.id)));
+  }
+  const st = await jget("/api/mail/status");
+  const banner = $("mail-smtp-banner");
+  if (!st.configured) {
+    banner.style.display = "";
+    banner.className = "banner warn";
+    banner.textContent = "⚠️ Classic Outlook'a bağlanılamadı — sadece Kuru Çalıştırma yapılabilir. " + st.hint;
+    $("mail-send").disabled = true;
+  } else {
+    banner.style.display = "";
+    banner.className = "banner ok";
+    banner.textContent = `✅ Classic Outlook üzerinden gönderilecek: ${st.email} · Bugün gönderilen: ${st.sent_today}`;
+    $("mail-send").disabled = false;
+  }
+  $("mail-result").innerHTML = "";
+  $("mail-msg").textContent = "";
+  await refreshMailPreview();
+  $("mail-modal").classList.add("open");
+}
+
+async function refreshMailPreview() {
+  const r = await fetch("/api/mail/preview", {
+    method: "POST", headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ ids: [...selection], template: $("mail-template").value }),
+  });
+  const j = await r.json();
+  if (!r.ok) { $("mail-summary").textContent = j.error; return; }
+  $("mail-summary").textContent =
+    `${j.selected} seçili · ${j.eligible} tanesinin e-postası var · ${j.no_email} tanesi e-postasız (atlanacak)`;
+  $("mail-previews").innerHTML = j.previews.map(p => `
+    <div class="preview-box">
+      <div class="p-subj">→ ${esc(p.to)} — ${esc(p.subject)}</div>${esc(p.body)}
+    </div>`).join("") || "<div class='banner warn'>Önizlenecek uygun firma yok.</div>";
+}
+
+async function doMailSend(dryRun) {
+  const msg = $("mail-msg");
+  msg.textContent = dryRun ? "Kuru çalıştırma…" : "Gönderiliyor… (firma başına ~4 sn)";
+  msg.className = "savemsg";
+  try {
+    const r = await fetch("/api/mail/send", {
+      method: "POST", headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ ids: [...selection], template: $("mail-template").value, dry_run: dryRun }),
+    });
+    const j = await r.json();
+    if (!r.ok) throw new Error(j.error || "HTTP " + r.status);
+    const mode = j.dry_run ? "KURU ÇALIŞTIRMA (gönderilmedi)" : "GÖNDERİLDİ";
+    $("mail-result").innerHTML = `
+      <div class="banner ${j.dry_run ? "warn" : "ok"}">
+        <strong>${mode}</strong> — ${j.sent.length} mail · ${j.skipped.length} atlandı · ${j.errors.length} hata
+      </div>
+      ${j.skipped.slice(0, 8).map(s => `<div style="font-size:12px;color:var(--muted)">⏭ ${esc(s.name)}: ${esc(s.reason)}</div>`).join("")}
+      ${j.errors.slice(0, 8).map(s => `<div style="font-size:12px;color:var(--bad)">❌ ${esc(s.name)}: ${esc(s.error)}</div>`).join("")}`;
+    msg.textContent = "✅ Bitti"; msg.className = "savemsg ok";
+    if (!j.dry_run) { refresh(); }
+  } catch (e) {
+    msg.textContent = "❌ " + e.message; msg.className = "savemsg err";
+  }
+}
+
+$("btn-mail").addEventListener("click", openMailModal);
+$("mail-close").addEventListener("click", () => $("mail-modal").classList.remove("open"));
+$("mail-template").addEventListener("change", refreshMailPreview);
+$("mail-dryrun").addEventListener("click", () => doMailSend(true));
+$("mail-send").addEventListener("click", () => {
+  if (confirm(`${selection.size} firmaya GERÇEK mail gönderilecek. Emin misin?`)) doMailSend(false);
+});
+
+// Panelden tekli mail — mailto: KULLANMIYORUZ (Windows'un varsayılan mail
+// uygulamasına, ör. yanlış hesaplı yeni Outlook'a gidiyordu). Bunun yerine
+// sunucu COM ile doğrudan classic Outlook'ta taslak açıyor (göndermiyor).
+$("p-mailto").addEventListener("click", async () => {
+  const c = state.current;
+  if (!c || !c.email) return;
+  const btn = $("p-mailto");
+  const orig = btn.textContent;
+  btn.textContent = "⏳ Outlook açılıyor..."; btn.disabled = true;
+  const tpl = c.mensei === "🌍 Yabancı" ? "tanitim_en" : "tanitim_tr";
+  try {
+    const r = await fetch("/api/mail/compose", {
+      method: "POST", headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ ids: [c.id], template: tpl }),
+    });
+    const j = await r.json();
+    if (!r.ok) throw new Error(j.error || "HTTP " + r.status);
+    toast(`📧 Outlook'ta taslak açıldı: ${j.account} → ${j.to}`);
+  } catch (e) {
+    toast("❌ " + e.message);
+  } finally {
+    btn.textContent = orig; btn.disabled = false;
+  }
+});
+
+// ── Fuar ekleme ──────────────────────────────────────────────────────────
+let fairPollTimer = null;
+
+$("btn-addfair").addEventListener("click", () => {
+  $("fair-status").innerHTML = ""; $("fair-msg").textContent = "";
+  $("fair-name").value = ""; $("fair-url").value = "";
+  $("fair-modal").classList.add("open");
+});
+
+// "Gelecek Fuarlar" sekmesindeki "➕ Ekle" butonu — TOBB'dan gelen fuar adı +
+// organizatör websitesiyle modalı önceden doldurur. Website genelde direkt
+// katılımcı listesi olmayabilir; sunucu tarafı (discover_participant_url)
+// otomatik olarak "katılımcı listesi" linkini bulmayı dener.
+function openFairModalWith(name, url) {
+  $("fair-status").innerHTML = ""; $("fair-msg").textContent = "";
+  $("fair-name").value = name || "";
+  $("fair-url").value = url ? (url.startsWith("http") ? url : "https://" + url) : "";
+  $("fair-modal").classList.add("open");
+}
+$("fair-close").addEventListener("click", () => {
+  $("fair-modal").classList.remove("open");
+  // kapansa da iş arka planda sürer; canlı senkron sonuçları düşürür
+});
+
+$("fair-start").addEventListener("click", async () => {
+  const name = $("fair-name").value.trim(), url = $("fair-url").value.trim();
+  const msg = $("fair-msg");
+  if (!name || !url.startsWith("http")) {
+    msg.textContent = "❌ Fuar adı ve geçerli URL gerekli"; msg.className = "savemsg err"; return;
+  }
+  msg.textContent = "";
+  const r = await fetch("/api/fairs/scrape", {
+    method: "POST", headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ name, url }),
+  });
+  const j = await r.json();
+  if (!r.ok) { msg.textContent = "❌ " + j.error; msg.className = "savemsg err"; return; }
+  $("fair-start").disabled = true;
+  pollFairJob(j.job_id);
+});
+
+function pollFairJob(jobId) {
+  clearInterval(fairPollTimer);
+  fairPollTimer = setInterval(async () => {
+    try {
+      const j = await jget("/api/fairs/scrape/" + jobId);
+      const box = $("fair-status");
+      if (j.status === "hata") {
+        box.innerHTML = `<div class="banner err">❌ ${esc(j.error)}</div>`;
+        clearInterval(fairPollTimer); $("fair-start").disabled = false;
+      } else if (j.status.startsWith("✅")) {
+        const urlNote = (j.scraped_url && j.scraped_url !== $("fair-url").value.trim())
+          ? `<div style="font-size:11.5px;color:var(--muted);margin-top:4px">🔎 Otomatik bulunan sayfa: ${esc(j.scraped_url)}</div>` : "";
+        box.innerHTML = `<div class="banner ok">✅ Tamamlandı — ${j.found} firma bulundu, ${j.added} yeni eklendi. İletişim bilgileri toplandı.${urlNote}</div>`;
+        clearInterval(fairPollTimer); $("fair-start").disabled = false;
+        refresh(); loadMeta && loadStats();
+      } else {
+        box.innerHTML = `<div class="banner warn">${esc(j.status)} ${j.found ? `— ${j.found} firma bulundu, ${j.added} eklendi` : ""}</div>`;
+      }
+    } catch (e) { /* sunucu geçici ulaşılamaz olabilir */ }
+  }, 3000);
+}
+
+// ── Canlı senkronizasyon ─────────────────────────────────────────────────
+// 8 sn'de bir sunucudaki veri sürümünü kontrol et; başka bir kullanıcı
+// (ör. arama yapıldı işaretleyen satışçı) veriyi değiştirdiyse tabloyu ve
+// kartları sessizce yenile. Detay paneli açıkken dokunma — kullanıcının
+// yazmakta olduğu formu ezmeyelim; panel kapanınca zaten yenilenir.
+let dataVersion = null;
+let pendingSync = false;
+
+async function checkVersion() {
+  try {
+    const v = (await jget("/api/version")).version;
+    if (dataVersion === null) { dataVersion = v; return; }
+    if (v !== dataVersion) {
+      dataVersion = v;
+      if (state.current) {          // panel açık → kapanınca yenile
+        pendingSync = true;
+      } else {
+        toast("🔄 Veri güncellendi (başka kullanıcı değişiklik yaptı)");
+        refresh();
+      }
+    }
+  } catch (e) { /* sunucuya ulaşılamadı — sessiz geç, sonraki tur dener */ }
+}
+setInterval(checkVersion, 8000);
+
+const _origClose = closePanel;
+closePanel = function () {
+  _origClose();
+  if (pendingSync) { pendingSync = false; refresh(); toast("🔄 Veri güncellendi"); }
+};
+
+// Kendi kaydetmelerimizin sürüm damgasını da takip et ki kendi değişikliğimiz
+// "başkası değiştirdi" bildirimi üretmesin.
+const _origSave = savePanel;
+savePanel = async function () {
+  await _origSave();
+  try { dataVersion = (await jget("/api/version")).version; } catch (e) {}
+};
+
+// ── Gelecek Fuarlar (TOBB Fuar Takvimi) ───────────────────────────────────
+const calState = { fairs: [], loaded: false };
+
+function foldTr(s) {
+  const table = { "İ":"i","I":"i","ı":"i","Ş":"s","ş":"s","Ğ":"g","ğ":"g","Ü":"u","ü":"u","Ö":"o","ö":"o","Ç":"c","ç":"c" };
+  return String(s ?? "").replace(/[İIışŞğĞüÜöÖçÇ]/g, m => table[m] || m).toLowerCase();
+}
+
+async function loadCalendar(force) {
+  if (calState.loaded && !force) return renderCalendar();
+  $("cal-tbody").innerHTML = `<tr class="loading"><td colspan="8">Yükleniyor…</td></tr>`;
+  try {
+    const j = await jget("/api/calendar");
+    if (j.error && !j.fairs.length) throw new Error(j.error);
+    calState.fairs = j.fairs;
+    calState.loaded = true;
+    $("cal-updated").textContent = j.fetched_at
+      ? `TOBB Fuar Takvimi — ${j.count} fuar · son güncelleme: ${j.fetched_at}`
+      : "Henüz veri yok.";
+    const sel = $("cal-sehir");
+    if (!sel.dataset.filled) {
+      const cities = [...new Set(j.fairs.map(f => f.sehir).filter(Boolean))].sort();
+      cities.forEach(c => sel.add(new Option(c, c)));
+      sel.dataset.filled = "1";
+    }
+    renderCalendar();
+  } catch (e) {
+    $("cal-tbody").innerHTML = `<tr class="loading"><td colspan="8">❌ ${esc(e.message)}</td></tr>`;
+  }
+}
+
+function renderCalendar() {
+  const sehir = $("cal-sehir").value;
+  const search = foldTr($("cal-search").value.trim());
+  const upcomingOnly = $("cal-upcoming").checked;
+  const today = new Date().toISOString().slice(0, 10);
+
+  const rows = calState.fairs.filter(f => {
+    if (sehir && f.sehir !== sehir) return false;
+    if (upcomingOnly && f.end_date_iso && f.end_date_iso < today) return false;
+    if (search) {
+      const hay = foldTr(`${f.name} ${f.konu} ${f.sehir} ${f.duzenleyici}`);
+      if (!hay.includes(search)) return false;
+    }
+    return true;
+  });
+
+  $("cal-count").textContent = `${rows.length} / ${calState.fairs.length} fuar`;
+  $("cal-tbody").innerHTML = rows.length ? rows.map(f => {
+    const web = f.web
+      ? `<a href="${esc(f.web.startsWith('http') ? f.web : 'https://' + f.web)}" target="_blank" rel="noopener">${esc(f.web)}</a>` : "—";
+    const mail = f.email ? `<a href="mailto:${esc(f.email)}">${esc(f.email)}</a>` : "";
+    return `<tr>
+      <td>${esc(f.start_date)}</td>
+      <td>${esc(f.end_date)}</td>
+      <td class="ellip" title="${esc(f.name)}"><strong>${esc(f.name)}</strong></td>
+      <td class="ellip" title="${esc(f.konu)}">${esc(f.konu)}</td>
+      <td>${esc(f.sehir)}</td>
+      <td class="ellip" title="${esc(f.yer)}">${esc(f.yer)}</td>
+      <td class="ellip" title="${esc(f.duzenleyici)}">${esc(f.duzenleyici)}</td>
+      <td class="ellip">${web}${mail ? "<br>" + mail : ""}</td>
+      <td><button class="btn btn-ghost cal-add" data-name="${esc(f.name)}" data-url="${esc(f.web)}">➕ Ekle</button></td>
+    </tr>`;
+  }).join("") : `<tr class="loading"><td colspan="9">Sonuç bulunamadı.</td></tr>`;
+  $("cal-tbody").querySelectorAll(".cal-add").forEach(btn =>
+    btn.addEventListener("click", () => openFairModalWith(btn.dataset.name, btn.dataset.url))
+  );
+}
+
+function showView(view) {
+  $("view-companies").style.display = view === "companies" ? "" : "none";
+  $("view-calendar").style.display = view === "calendar" ? "" : "none";
+  $("tab-companies").classList.toggle("active", view === "companies");
+  $("tab-calendar").classList.toggle("active", view === "calendar");
+  if (view === "calendar") loadCalendar(false);
+}
+
+$("tab-companies").addEventListener("click", () => showView("companies"));
+$("tab-calendar").addEventListener("click", () => showView("calendar"));
+["cal-sehir", "cal-upcoming"].forEach(id => $(id).addEventListener("change", renderCalendar));
+let calSearchTimer;
+$("cal-search").addEventListener("input", () => {
+  clearTimeout(calSearchTimer);
+  calSearchTimer = setTimeout(renderCalendar, 250);
+});
+$("cal-refresh").addEventListener("click", async () => {
+  const btn = $("cal-refresh");
+  btn.disabled = true; btn.textContent = "⏳ Güncelleniyor…";
+  try {
+    await loadCalendar(true);
+    toast("✅ TOBB Fuar Takvimi güncellendi");
+  } catch (e) {
+    toast("❌ " + e.message);
+  } finally {
+    btn.disabled = false; btn.textContent = "🔄 TOBB'dan Güncelle";
+  }
+});
+
+// Başlat
+(async () => {
+  await loadMeta();
+  refresh();
+  checkVersion();
+})();
+</script>
+</body>
+</html>

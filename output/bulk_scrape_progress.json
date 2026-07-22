@@ -1,0 +1,1652 @@
+{
+  "started_at": "2026-07-08 05:34:38",
+  "updated_at": "2026-07-08 06:32:49",
+  "total": 234,
+  "done": 234,
+  "found_lists": 165,
+  "no_list": 69,
+  "errors": 0,
+  "companies_added": 3836,
+  "current": "",
+  "results": [
+    {
+      "name": "Parfüm Expo Fuarı 2026",
+      "sehir": "İSTANBUL",
+      "start": "08.07.2026",
+      "status": "❌ liste yok/erişilemedi",
+      "count": 0
+    },
+    {
+      "name": "Umre Ve Turizm Profesyoneller Fuarı",
+      "sehir": "İSTANBUL",
+      "start": "11.07.2026",
+      "status": "✅ bulundu (https://www.huitm.org)",
+      "count": 10
+    },
+    {
+      "name": "3.Keşan Tarım, Hayvancılık, Gıda, Sanayi, Otomotiv Ve İş Makinaları Fuarı",
+      "sehir": "EDİRNE",
+      "start": "14.07.2026",
+      "status": "❌ liste yok/erişilemedi",
+      "count": 0
+    },
+    {
+      "name": "Ankara Üniversite Tercih Fuarı",
+      "sehir": "ANKARA",
+      "start": "22.07.2026",
+      "status": "✅ bulundu (https://www.tercihfuari.com)",
+      "count": 26
+    },
+    {
+      "name": "Bursa Üniversite Tercih Fuarı",
+      "sehir": "BURSA",
+      "start": "22.07.2026",
+      "status": "✅ bulundu (https://www.tercihfuari.com)",
+      "count": 26
+    },
+    {
+      "name": "2.Gaziantep Üniversite Tercih Fuarı",
+      "sehir": "GAZİANTEP",
+      "start": "22.07.2026",
+      "status": "✅ bulundu (https://www.eket.com.tr)",
+      "count": 13
+    },
+    {
+      "name": "İzmir Üniversite Tercih Fuarı",
+      "sehir": "İZMİR",
+      "start": "23.07.2026",
+      "status": "✅ bulundu (https://www.tercihfuari.com)",
+      "count": 26
+    },
+    {
+      "name": "8. Bursa Üniversite Tercih Fuarı",
+      "sehir": "BURSA",
+      "start": "23.07.2026",
+      "status": "✅ bulundu (https://www.unitercih.com)",
+      "count": 16
+    },
+    {
+      "name": "8. Adana Üniversite Tercih Fuarı",
+      "sehir": "ADANA",
+      "start": "24.07.2026",
+      "status": "✅ bulundu (https://www.unitercih.com)",
+      "count": 16
+    },
+    {
+      "name": "11. Ankara Üniversite Tercih Fuarı",
+      "sehir": "ANKARA",
+      "start": "25.07.2026",
+      "status": "✅ bulundu (https://www.unitercih.com)",
+      "count": 16
+    },
+    {
+      "name": "Gaziantep Üniversite Tercih Fuarı",
+      "sehir": "GAZİANTEP",
+      "start": "27.07.2026",
+      "status": "✅ bulundu (https://www.tercihfuari.com)",
+      "count": 26
+    },
+    {
+      "name": "10.İzmir Üniversite Tercih Fuarı",
+      "sehir": "İZMİR",
+      "start": "27.07.2026",
+      "status": "✅ bulundu (https://www.unitercih.com)",
+      "count": 16
+    },
+    {
+      "name": "Konya Üniversite Tercih Fuarı",
+      "sehir": "KONYA",
+      "start": "28.07.2026",
+      "status": "✅ bulundu (https://www.tercihfuari.com)",
+      "count": 26
+    },
+    {
+      "name": "9. Antalya Üniversite Tercih Fuarı",
+      "sehir": "ANTALYA",
+      "start": "30.07.2026",
+      "status": "✅ bulundu (https://www.unitercih.com)",
+      "count": 16
+    },
+    {
+      "name": "Üniversite Tercih Fuarı",
+      "sehir": "İSTANBUL",
+      "start": "01.08.2026",
+      "status": "✅ bulundu (https://www.tercihfuari.com)",
+      "count": 26
+    },
+    {
+      "name": "9. Euro Animalia Trakya Avrupa Hayvancılık Süt Ve Süt Ürünleri Edüstrisi, İş Makinaları Fuarı",
+      "sehir": "TEKİRDAĞ",
+      "start": "10.08.2026",
+      "status": "❌ liste yok/erişilemedi",
+      "count": 0
+    },
+    {
+      "name": "Çorlu 19.Tarımtech Trakya Avrupa Hayvancılık Sanayi Ve Gıda Fuarı",
+      "sehir": "TEKİRDAĞ",
+      "start": "10.08.2026",
+      "status": "❌ liste yok/erişilemedi",
+      "count": 0
+    },
+    {
+      "name": "İstanbul Arapça Kitap Fuarı",
+      "sehir": "İSTANBUL",
+      "start": "15.08.2026",
+      "status": "❌ liste yok/erişilemedi",
+      "count": 0
+    },
+    {
+      "name": "Ifco İstanbul Fashion Connection Hazır Giyim Ve Moda Fuarı",
+      "sehir": "İSTANBUL",
+      "start": "19.08.2026",
+      "status": "✅ bulundu (https://www.ifco.com.tr)",
+      "count": 13
+    },
+    {
+      "name": "World Sports İstanbul - Uluslararası Fitness Ekipmanları, Spor Teknolojileri, Gıda, Giyim Ve Wellness Fuarı",
+      "sehir": "İSTANBUL",
+      "start": "27.08.2026",
+      "status": "✅ bulundu (https://www.worldsportsistanbul.com)",
+      "count": 39
+    },
+    {
+      "name": "Foodist  2026  İstanbul Gıda Ve İçecek Ürünleri Fuarı •\tCoğrafi İşaretli Ürünler Özel Bölümü     •\tBeyaz Et Özel Bölümü      •\tAlkollü İçecekler Özel Bölümü",
+      "sehir": "İSTANBUL",
+      "start": "01.09.2026",
+      "status": "✅ bulundu (https://www.tuyap.com.tr)",
+      "count": 12
+    },
+    {
+      "name": "Beauty Eurasia 2026 - 21. Uluslararası Kozmetik, Güzellik, Kuaför, Ambalaj, Hammadde, Hijyen Ve Private Label Fuarı",
+      "sehir": "İSTANBUL",
+      "start": "02.09.2026",
+      "status": "✅ bulundu (https://www.beautyeurasia.com)",
+      "count": 21
+    },
+    {
+      "name": "Akşehir Tarım, Hayvancılık Ve Yem Fuarı",
+      "sehir": "KONYA",
+      "start": "03.09.2026",
+      "status": "✅ bulundu (https://www.linafair.com)",
+      "count": 25
+    },
+    {
+      "name": "Sivas 11.Tarım Ve Hayvancılık Ve Gıda  Fuarı",
+      "sehir": "SİVAS",
+      "start": "03.09.2026",
+      "status": "✅ bulundu (https://www.showfuar.com)",
+      "count": 49
+    },
+    {
+      "name": "Yozgat 16.Tarım, Gıda Ve Hayvancılık Fuarı",
+      "sehir": "YOZGAT",
+      "start": "03.09.2026",
+      "status": "❌ liste yok/erişilemedi",
+      "count": 0
+    },
+    {
+      "name": "İstanbul Küresel E- İhracat Zirvesi",
+      "sehir": "İSTANBUL",
+      "start": "03.09.2026",
+      "status": "✅ bulundu (https://igexx.com)",
+      "count": 34
+    },
+    {
+      "name": "Karadeniz Tarım Hayvancılık Gıda Ve Teknolojileri Fuarı",
+      "sehir": "SAMSUN",
+      "start": "03.09.2026",
+      "status": "✅ bulundu (https://www.proaktiffuarcilik.com)",
+      "count": 15
+    },
+    {
+      "name": "95. İzmir Enternasyonal Fuarı",
+      "sehir": "İZMİR",
+      "start": "05.09.2026",
+      "status": "✅ bulundu (https://www.izfas.com.tr)",
+      "count": 111
+    },
+    {
+      "name": "İnterfresh Eurasia / Interfood Eurasia Meyve,Sebze,Gıda,Gıda Ürünleri ,Gıda Teknolojileri Ambalaj,Tarım Teknolojileri,Depolama Ve   Lojistik Fuarı",
+      "sehir": "İZMİR",
+      "start": "08.09.2026",
+      "status": "✅ bulundu (https://www.euroasiainterfresh.com)",
+      "count": 9
+    },
+    {
+      "name": "Eskişehir Tarım Fuarı  7. Tarım, Hayvancılık Ve Teknolojileri Fuarı",
+      "sehir": "ESKİŞEHİR",
+      "start": "08.09.2026",
+      "status": "✅ bulundu (https://www.tuyap.com.tr)",
+      "count": 12
+    },
+    {
+      "name": "We-Cycle 3. Çevre Ve Geri Dönüşüm Teknolojileri Fuarı",
+      "sehir": "İZMİR",
+      "start": "08.09.2026",
+      "status": "✅ bulundu (https://www.izfas.com.tr)",
+      "count": 111
+    },
+    {
+      "name": "Junıoshow Bursa 22.Uluslararası Bebe, Çocuk Hazır Giyim Ve Çocuk İhtiyaçları Fuarı",
+      "sehir": "BURSA",
+      "start": "08.09.2026",
+      "status": "✅ bulundu (https://www.kfa.com.tr)",
+      "count": 15
+    },
+    {
+      "name": "Texhibition İstanbul Kumaş, Denim, Tekstil Aksesuarları Ve İplik Fuarı",
+      "sehir": "İSTANBUL",
+      "start": "09.09.2026",
+      "status": "❌ liste yok/erişilemedi",
+      "count": 0
+    },
+    {
+      "name": "Promosyon Show İstanbul Fuarı",
+      "sehir": "İSTANBUL",
+      "start": "09.09.2026",
+      "status": "✅ bulundu (https://www.promosyonshow.com)",
+      "count": 7
+    },
+    {
+      "name": "Zuchex 36. Uluslararası Ev Ve Mutfak Eşyaları Fuarı",
+      "sehir": "İSTANBUL",
+      "start": "09.09.2026",
+      "status": "✅ bulundu (https://www.zuchex.com)",
+      "count": 19
+    },
+    {
+      "name": "17. Perakende Zirvesi 2026, Yerel Zincirler Buluşuyor Fuarı",
+      "sehir": "İSTANBUL",
+      "start": "09.09.2026",
+      "status": "✅ bulundu (https://www.yzb.focusfairs.com)",
+      "count": 13
+    },
+    {
+      "name": "Psb Anatolıa 2026",
+      "sehir": "SAKARYA",
+      "start": "09.09.2026",
+      "status": "✅ bulundu (https://www.psbanatolia.com)",
+      "count": 19
+    },
+    {
+      "name": "Çerkezköy Endüstriyel Fuarı (Çef)",
+      "sehir": "TEKİRDAĞ",
+      "start": "09.09.2026",
+      "status": "✅ bulundu (https://www.endustriyelfuar.org)",
+      "count": 10
+    },
+    {
+      "name": "Gıtex Aı Türkiye",
+      "sehir": "İSTANBUL",
+      "start": "09.09.2026",
+      "status": "✅ bulundu (https://www.gitexturkiye.com)",
+      "count": 17
+    },
+    {
+      "name": "Doğuanadolu Gıda Tarım Ve Hayvancılık Fuarı",
+      "sehir": "ERZURUM",
+      "start": "09.09.2026",
+      "status": "❌ liste yok/erişilemedi",
+      "count": 0
+    },
+    {
+      "name": "Agrotec 2026 29. Uluslararası Tarım Ve Tarım Teknolojileri Fuarı",
+      "sehir": "ANKARA",
+      "start": "10.09.2026",
+      "status": "❌ liste yok/erişilemedi",
+      "count": 0
+    },
+    {
+      "name": "Vı.Marmaraka  Kamp Karavan Ve Doğa Sporları Fuarı",
+      "sehir": "İSTANBUL",
+      "start": "10.09.2026",
+      "status": "✅ bulundu (https://www.anadoluekspo.com)",
+      "count": 12
+    },
+    {
+      "name": "Başkent Optik Fuarı",
+      "sehir": "ANKARA",
+      "start": "11.09.2026",
+      "status": "❌ liste yok/erişilemedi",
+      "count": 0
+    },
+    {
+      "name": "Electricity Eurasia - Elektrik Ve Elektrik Ekipmanları Fuarı",
+      "sehir": "İSTANBUL",
+      "start": "16.09.2026",
+      "status": "❌ liste yok/erişilemedi",
+      "count": 0
+    },
+    {
+      "name": "Iccı - Uluslararası Enerji Ve Çevre Fuarı Ve Konferansı",
+      "sehir": "İSTANBUL",
+      "start": "16.09.2026",
+      "status": "✅ bulundu (https://www.icci.com.tr)",
+      "count": 46
+    },
+    {
+      "name": "Ibıa Expo - 5. Uluslararası Yatak Yan Sanayi Ve Teknolojileri Fuarı",
+      "sehir": "İSTANBUL",
+      "start": "16.09.2026",
+      "status": "✅ bulundu (https://www.bifasfuar.com)",
+      "count": 25
+    },
+    {
+      "name": "Metal Expo Eurasıa İstanbul – 8. Uluslararası Demir, Demir Dışı Metaller, Çelik, Boru, Profil, Paslanmaz Çelik, Alaşımlı Metal Dövme Teknolojileri Ve Ürünleri Fuarı.",
+      "sehir": "İSTANBUL",
+      "start": "16.09.2026",
+      "status": "✅ bulundu (https://www.metalexpo.com.tr)",
+      "count": 8
+    },
+    {
+      "name": "Akhisar Tarım Ve Zeytincilik Fuarı",
+      "sehir": "MANİSA",
+      "start": "16.09.2026",
+      "status": "❌ liste yok/erişilemedi",
+      "count": 0
+    },
+    {
+      "name": "Uşak 11. Ege Tarım Ve Hayvancılık, Süt Teknolojileri, Çiftlik Ekipmanları, Tarım Makineleri, Sera Teknolojileri Fuarı",
+      "sehir": "UŞAK",
+      "start": "17.09.2026",
+      "status": "✅ bulundu (https://www.glplatformfuar.com)",
+      "count": 30
+    },
+    {
+      "name": "İnterfresh Eurasia / Interfood Eurasia Meyve,Sebze,Gıda,Gıda Ürünleri ,Gıda Teknolojileri Ambalaj,Tarım Teknolojileri,Depolama Ve   Lojistik Fuarı",
+      "sehir": "ANTALYA",
+      "start": "17.09.2026",
+      "status": "✅ bulundu (https://euroasiainterfresh.com)",
+      "count": 9
+    },
+    {
+      "name": "Fastener Expo Eurasia \nAvrasya Endüstriyel Bağlantı Ve Sabitleme Elemanları Fuarı",
+      "sehir": "İSTANBUL",
+      "start": "17.09.2026",
+      "status": "✅ bulundu (https://www.tuyap.com.tr)",
+      "count": 12
+    },
+    {
+      "name": "Iv.Expo Sport Uluslararası Spor Fuarı",
+      "sehir": "İZMİR",
+      "start": "17.09.2026",
+      "status": "✅ bulundu (https://www.expo-sport.com)",
+      "count": 17
+    },
+    {
+      "name": "Expo 3D Istanbul - Eklemeli İmalat, Tasarım Ve Üretim Teknolojileri Fuarı",
+      "sehir": "İSTANBUL",
+      "start": "17.09.2026",
+      "status": "✅ bulundu (https://www.expo3d.istanbul)",
+      "count": 14
+    },
+    {
+      "name": "Platform Günleri",
+      "sehir": "İSTANBUL",
+      "start": "17.09.2026",
+      "status": "❌ liste yok/erişilemedi",
+      "count": 0
+    },
+    {
+      "name": "Saruhanlı Tarım Ve Hayvancılık Fuarı",
+      "sehir": "MANİSA",
+      "start": "17.09.2026",
+      "status": "❌ liste yok/erişilemedi",
+      "count": 0
+    },
+    {
+      "name": "6.Antalya Estetik Güzellik Kişisel Bakım Kozmetik Fuarı",
+      "sehir": "ANTALYA",
+      "start": "18.09.2026",
+      "status": "✅ bulundu (https://usfuar.com)",
+      "count": 11
+    },
+    {
+      "name": "4. Oyfest Oyuncak Ve Çocuk Gereçleri Fuarı",
+      "sehir": "ANTALYA",
+      "start": "20.09.2026",
+      "status": "❌ liste yok/erişilemedi",
+      "count": 0
+    },
+    {
+      "name": "Vitahealth Fuarı",
+      "sehir": "İSTANBUL",
+      "start": "21.09.2026",
+      "status": "❌ liste yok/erişilemedi",
+      "count": 0
+    },
+    {
+      "name": "Vitahealth Sağlık Turizm Fuarı",
+      "sehir": "İSTANBUL",
+      "start": "21.09.2026",
+      "status": "❌ liste yok/erişilemedi",
+      "count": 0
+    },
+    {
+      "name": "Contemporary İstanbul Çağdaş Sanat Hizmet Fuarı",
+      "sehir": "İSTANBUL",
+      "start": "22.09.2026",
+      "status": "✅ bulundu (https://www.contemporaryistanbul.com)",
+      "count": 9
+    },
+    {
+      "name": "Bandırma Tarım, Hayvancılık Ve Ekipmanları Fuarı",
+      "sehir": "BALIKESİR",
+      "start": "22.09.2026",
+      "status": "✅ bulundu (https://www.linafair.com)",
+      "count": 25
+    },
+    {
+      "name": "Denizli Kent Yaşam 2026 - 3 .Ev Otomasyonu Ve Ev İhtiyaçları Fuarı",
+      "sehir": "DENİZLİ",
+      "start": "22.09.2026",
+      "status": "✅ bulundu (https://www.4mfuar.com)",
+      "count": 11
+    },
+    {
+      "name": "Müsiad Expo 2026 Uluslararası Müsiad Ticaret Fuarı",
+      "sehir": "İSTANBUL",
+      "start": "23.09.2026",
+      "status": "❌ liste yok/erişilemedi",
+      "count": 0
+    },
+    {
+      "name": "21. Trakya Lüleburgaz Tarımtech Tarım, Hayvancılık, Sanayi Ve Gıda Fuarı",
+      "sehir": "KIRKLARELİ",
+      "start": "23.09.2026",
+      "status": "❌ liste yok/erişilemedi",
+      "count": 0
+    },
+    {
+      "name": "Flora Garden 5.Peyzaj Ve Bahçe Mobilyaları Fuarı",
+      "sehir": "ANKARA",
+      "start": "23.09.2026",
+      "status": "❌ liste yok/erişilemedi",
+      "count": 0
+    },
+    {
+      "name": "Su-Tek 4.Su Ve Su Teknolojileri Fuarı",
+      "sehir": "ANKARA",
+      "start": "23.09.2026",
+      "status": "❌ liste yok/erişilemedi",
+      "count": 0
+    },
+    {
+      "name": "Cıtytech 15.Çevre, Şehircilik Ve Belediye Fuarı",
+      "sehir": "ANKARA",
+      "start": "23.09.2026",
+      "status": "❌ liste yok/erişilemedi",
+      "count": 0
+    },
+    {
+      "name": "Sıgn İstanbul 27. Uluslararası Endüstriyel Reklam Ve Dijital Baskı Teknolojileri Fuarı",
+      "sehir": "İSTANBUL",
+      "start": "23.09.2026",
+      "status": "✅ bulundu (https://www.signistanbul.com)",
+      "count": 33
+    },
+    {
+      "name": "Fdı Furnıshıngs And Desıgn Istanbul (Mobilya Tasarım Fuarı)",
+      "sehir": "İSTANBUL",
+      "start": "24.09.2026",
+      "status": "✅ bulundu (https://www.fdistanbul.com)",
+      "count": 23
+    },
+    {
+      "name": "Future Fısh Eurasıa",
+      "sehir": "İZMİR",
+      "start": "24.09.2026",
+      "status": "❌ liste yok/erişilemedi",
+      "count": 0
+    },
+    {
+      "name": "İstanbul Turizm Fuarı",
+      "sehir": "İSTANBUL",
+      "start": "24.09.2026",
+      "status": "✅ bulundu (https://www.istanbulturizmfuari.com.tr)",
+      "count": 28
+    },
+    {
+      "name": "Dinar Tarım Hayvancılık Makinaları, Teknolojileri Ve Yem Fuarı",
+      "sehir": "AFYONKARAHİSAR",
+      "start": "24.09.2026",
+      "status": "❌ liste yok/erişilemedi",
+      "count": 0
+    },
+    {
+      "name": "3. Balıkesir Tarım Ve Hayvancılık Fuarı",
+      "sehir": "BALIKESİR",
+      "start": "24.09.2026",
+      "status": "✅ bulundu (https://balikesirtarimvehayvancilikfuari.com)",
+      "count": 9
+    },
+    {
+      "name": "Ankara Ice Cream&Sweet Expo Ankara Dondurma Ve Tatlı Fuarı",
+      "sehir": "ANKARA",
+      "start": "24.09.2026",
+      "status": "✅ bulundu (https://www.zirvefuarcilik.com.tr)",
+      "count": 13
+    },
+    {
+      "name": "Diyarbakır 10. Kitap Fuarı",
+      "sehir": "DİYARBAKIR",
+      "start": "26.09.2026",
+      "status": "✅ bulundu (https://www.tuyap.com.tr)",
+      "count": 12
+    },
+    {
+      "name": "Qs Discover Master Fuarı",
+      "sehir": "İSTANBUL",
+      "start": "26.09.2026",
+      "status": "✅ bulundu (https://www.qs.topuniversities.com/tr/events/masters/istanbul)",
+      "count": 30
+    },
+    {
+      "name": "İngiltere Eğitim Günleri Fuarı",
+      "sehir": "ANKARA",
+      "start": "26.09.2026",
+      "status": "✅ bulundu (https://www.educationukdays.com)",
+      "count": 26
+    },
+    {
+      "name": "1.İpek Ev Ve Yaşam Teknolojileri Fuarı",
+      "sehir": "ANTALYA",
+      "start": "27.09.2026",
+      "status": "❌ liste yok/erişilemedi",
+      "count": 0
+    },
+    {
+      "name": "İngiltere Eğitim Günleri Fuarı",
+      "sehir": "İZMİR",
+      "start": "29.09.2026",
+      "status": "✅ bulundu (https://www.educationukdays.com)",
+      "count": 26
+    },
+    {
+      "name": "Atech",
+      "sehir": "İSTANBUL",
+      "start": "30.09.2026",
+      "status": "✅ bulundu (https://www.atechfuari.com)",
+      "count": 14
+    },
+    {
+      "name": "Ijs - İstanbul Jewelry Show 60. İstanbul Uluslararası Mücevher, Altın, Gümüş, Değerli Taş Ve Teknolojileri Fuarı",
+      "sehir": "İSTANBUL",
+      "start": "30.09.2026",
+      "status": "✅ bulundu (https://www.istanbuljewelryshow.com)",
+      "count": 16
+    },
+    {
+      "name": "14.Malatya Tarım Teknolojileri Makine Hayvancılık Ve Ekipmanları Fuarı",
+      "sehir": "MALATYA",
+      "start": "30.09.2026",
+      "status": "✅ bulundu (https://www.malatyakultur.com)",
+      "count": 6
+    },
+    {
+      "name": "Sigorta Sektörü İş Birliği Fuarı Ve Kongresi",
+      "sehir": "İSTANBUL",
+      "start": "30.09.2026",
+      "status": "✅ bulundu (https://sigortacilikfuar.com)",
+      "count": 59
+    },
+    {
+      "name": "Craftistanbul 7.Uluslararası Yöresel Ve Geleneksel El Sanatları Fuarı",
+      "sehir": "İSTANBUL",
+      "start": "01.10.2026",
+      "status": "✅ bulundu (https://www.craftfairistanbul.com)",
+      "count": 20
+    },
+    {
+      "name": "Komtrans Ticari Araçlar Fuarı",
+      "sehir": "BURSA",
+      "start": "01.10.2026",
+      "status": "✅ bulundu (https://www.kfa.com.tr)",
+      "count": 15
+    },
+    {
+      "name": "Bursa Food Poınt Gıda Ürünleri Ve Teknolojileri Fuarı",
+      "sehir": "BURSA",
+      "start": "01.10.2026",
+      "status": "✅ bulundu (https://www.kfa.com.tr)",
+      "count": 15
+    },
+    {
+      "name": "Turfood/ 7.Bursa Gıda Fuarı",
+      "sehir": "BURSA",
+      "start": "01.10.2026",
+      "status": "❌ liste yok/erişilemedi",
+      "count": 0
+    },
+    {
+      "name": "Türk Dişhekimleri Birliği Expodental 2026",
+      "sehir": "İSTANBUL",
+      "start": "01.10.2026",
+      "status": "✅ bulundu (https://www.tdb.org.tr)",
+      "count": 14
+    },
+    {
+      "name": "16. Biga Tarım, Hayvancılık Sanayi Ve Gıda Fuarı",
+      "sehir": "ÇANAKKALE",
+      "start": "02.10.2026",
+      "status": "❌ liste yok/erişilemedi",
+      "count": 0
+    },
+    {
+      "name": "16.Antalya Kitap Fuarı",
+      "sehir": "ANTALYA",
+      "start": "02.10.2026",
+      "status": "❌ liste yok/erişilemedi",
+      "count": 0
+    },
+    {
+      "name": "Van Yöresel Ürünler, Gıda Ve El Sanatları Fuarı",
+      "sehir": "VAN",
+      "start": "02.10.2026",
+      "status": "❌ liste yok/erişilemedi",
+      "count": 0
+    },
+    {
+      "name": "Studyexpo Yurtdışı Eğitim Fuarı",
+      "sehir": "İSTANBUL",
+      "start": "03.10.2026",
+      "status": "✅ bulundu (https://www.studyexpo.com/exhibitors)",
+      "count": 29
+    },
+    {
+      "name": "İngiltere Eğitim Günleri Fuarı",
+      "sehir": "İSTANBUL",
+      "start": "03.10.2026",
+      "status": "✅ bulundu (https://www.educationukdays.com)",
+      "count": 26
+    },
+    {
+      "name": "İstanbul Çocuk Kitapları Fuarı",
+      "sehir": "İSTANBUL",
+      "start": "03.10.2026",
+      "status": "✅ bulundu (https://www.kipatfuar.com)",
+      "count": 13
+    },
+    {
+      "name": "Studyexpo Yurtdışı Eğitim Fuarı",
+      "sehir": "İSTANBUL",
+      "start": "04.10.2026",
+      "status": "✅ bulundu (https://www.studyexpo.com/exhibitors)",
+      "count": 29
+    },
+    {
+      "name": "İngiltere Eğitim Günleri Fuarı",
+      "sehir": "İSTANBUL",
+      "start": "04.10.2026",
+      "status": "✅ bulundu (https://www.educationukdays.com)",
+      "count": 26
+    },
+    {
+      "name": "Studyexpo Yurtdışı Eğitim Fuarı",
+      "sehir": "ANKARA",
+      "start": "06.10.2026",
+      "status": "✅ bulundu (https://www.studyexpo.com/exhibitors)",
+      "count": 29
+    },
+    {
+      "name": "Logistech \"5. Lojistik, Depolama Ve Teknolojileri Fuarı\"",
+      "sehir": "İZMİR",
+      "start": "07.10.2026",
+      "status": "✅ bulundu (https://www.izfas.com.tr)",
+      "count": 111
+    },
+    {
+      "name": "Data Center Eurasia",
+      "sehir": "İSTANBUL",
+      "start": "07.10.2026",
+      "status": "✅ bulundu (https://www.datacentereurasia.com)",
+      "count": 34
+    },
+    {
+      "name": "6. Uluslararası Mobısad Imex Fuarı",
+      "sehir": "İSTANBUL",
+      "start": "07.10.2026",
+      "status": "❌ liste yok/erişilemedi",
+      "count": 0
+    },
+    {
+      "name": "Isaf Smartex Fuarı - 15.Uluslararası Akıllı Şehirler, Binalar, Ulaşım, Yönetim Ve Yaşam Fuarı",
+      "sehir": "İSTANBUL",
+      "start": "07.10.2026",
+      "status": "❌ liste yok/erişilemedi",
+      "count": 0
+    },
+    {
+      "name": "Isaf International Fuarı - 30.Uluslararası Güvenlik, Ülke Güvenliği, Siber Güvenlik, Yangın, İsg Fuarı",
+      "sehir": "İSTANBUL",
+      "start": "07.10.2026",
+      "status": "❌ liste yok/erişilemedi",
+      "count": 0
+    },
+    {
+      "name": "Petzoo Eurasia 12. Uluslararası Evcil Hayvan Ürün Malzeme Ve Aksesuar Tedarikçileri Fuarı",
+      "sehir": "İSTANBUL",
+      "start": "07.10.2026",
+      "status": "✅ bulundu (https://www.ulusalfair.com)",
+      "count": 58
+    },
+    {
+      "name": "3. Motta Ege Motorlu Taşıtlar Fuarı",
+      "sehir": "DENİZLİ",
+      "start": "07.10.2026",
+      "status": "❌ liste yok/erişilemedi",
+      "count": 0
+    },
+    {
+      "name": "Anamob Anadolu Mobilya",
+      "sehir": "KAYSERİ",
+      "start": "07.10.2026",
+      "status": "✅ bulundu (https://www.nobelanamob.com)",
+      "count": 10
+    },
+    {
+      "name": "Mobidictum Conference 2026",
+      "sehir": "İSTANBUL",
+      "start": "07.10.2026",
+      "status": "✅ bulundu (https://www.mobidictum.com)",
+      "count": 49
+    },
+    {
+      "name": "5. Peyzaj İstanbul Fuarı 2026",
+      "sehir": "İSTANBUL",
+      "start": "07.10.2026",
+      "status": "✅ bulundu (https://www.PeyzajistanbulFuari.com.tr)",
+      "count": 18
+    },
+    {
+      "name": "3.Jojo Caravanport  - Hobbyport Antalya Karavan, Karavan Ekipmanları Kamp Tiny House Outdoor - Modüler Evler Otomotiv Ve Otomotiv Yan Ürünieri Fuarı",
+      "sehir": "ANTALYA",
+      "start": "07.10.2026",
+      "status": "❌ liste yok/erişilemedi",
+      "count": 0
+    },
+    {
+      "name": "Kahramanmaraş Tarım,Gıda, Seracılık, Hayvancılık Ve Teknolojileri",
+      "sehir": "KAHRAMANMARAŞ",
+      "start": "07.10.2026",
+      "status": "✅ bulundu (https://www.ktftr.com)",
+      "count": 21
+    },
+    {
+      "name": "Avrasya Teknoloji Haftası",
+      "sehir": "İSTANBUL",
+      "start": "08.10.2026",
+      "status": "✅ bulundu (https://www.etwistanbul.com/en/exhibitors/)",
+      "count": 132
+    },
+    {
+      "name": "\"Ayfidex \" Aydın Fidancılık, Peyzaj Ve Süs Bitkileri Fuarı",
+      "sehir": "AYDIN",
+      "start": "08.10.2026",
+      "status": "❌ liste yok/erişilemedi",
+      "count": 0
+    },
+    {
+      "name": "Sıhex 2026 - Samsun İkiztepe Sağlık Zirvesi Ve Fuarı",
+      "sehir": "SAMSUN",
+      "start": "08.10.2026",
+      "status": "✅ bulundu (https://www.sihex.com.tr)",
+      "count": 48
+    },
+    {
+      "name": "Şanlıurfa Gıda Yöresel Ürünler Hediyelik Eşya Ve El Sanatları Fuarı",
+      "sehir": "ŞANLIURFA",
+      "start": "09.10.2026",
+      "status": "✅ bulundu (https://www.medyatrend.com.tr)",
+      "count": 29
+    },
+    {
+      "name": "Nobel Çukurova Mobilya Fuarı",
+      "sehir": "ADANA",
+      "start": "09.10.2026",
+      "status": "✅ bulundu (https://www.nobelexpo.com)",
+      "count": 23
+    },
+    {
+      "name": "Vef Yurt Dışı Eğitim Fuarı",
+      "sehir": "İZMİR",
+      "start": "12.10.2026",
+      "status": "✅ bulundu (https://www.endlessg.com)",
+      "count": 10
+    },
+    {
+      "name": "Avrasya Ambalaj 2026- İstanbul 31.Uluslararası Ambalaj Endüstrisi Fuarı (Printpack&Converting-Ambalaj Baskı Teknolojileri, Oluklu Mukavva-Kağıt-Karton Ambalaj Üretim Teknolojileri Özel Bölümü) /Foodtech Eurasia Gıda İçecek Üretim Ve İşleme Teknolojileri Özel Bölümü",
+      "sehir": "İSTANBUL",
+      "start": "13.10.2026",
+      "status": "✅ bulundu (https://www.tuyap.com.tr)",
+      "count": 12
+    },
+    {
+      "name": "(Modef Expo 2026) 55.Uluslararası Mobilya Ve Dekorasyon Fuarı",
+      "sehir": "BURSA",
+      "start": "13.10.2026",
+      "status": "✅ bulundu (https://www.modef.com.tr/katilimcilar)",
+      "count": 141
+    },
+    {
+      "name": "Sıvılaştırılmış Gaz Haftası 2026",
+      "sehir": "İSTANBUL",
+      "start": "13.10.2026",
+      "status": "✅ bulundu (https://www.liquidgasweek.com)",
+      "count": 33
+    },
+    {
+      "name": "Ibaktech 15. Uluslararası Ekmek, Pasta Makinalari, Dondurma, Çikolata Ve Teknolojileri Fuarı",
+      "sehir": "İSTANBUL",
+      "start": "14.10.2026",
+      "status": "✅ bulundu (https://www.messe-stuttgart.com.tr)",
+      "count": 15
+    },
+    {
+      "name": "Agrogreen Bursa 2. Tarım, Hayvancılık, Süt, Sera Teknolojileri, Tohum Fide Fidan Ve Canlı Hayvan Fuarı",
+      "sehir": "BURSA",
+      "start": "14.10.2026",
+      "status": "❌ liste yok/erişilemedi",
+      "count": 0
+    },
+    {
+      "name": "10. Bıotecnıca Uluslararası Biyoteknoloji, Yaşam Bilimleri Ve Endüstrileri Fuarı",
+      "sehir": "İSTANBUL",
+      "start": "14.10.2026",
+      "status": "✅ bulundu (https://www.bioexpo.com.tr)",
+      "count": 19
+    },
+    {
+      "name": "9. Analytech Uluslararası Analiz Ve Labaratuvar Teknolojileri, Ekipmanları Fuarı",
+      "sehir": "İSTANBUL",
+      "start": "14.10.2026",
+      "status": "✅ bulundu (https://www.bioexpo.com.tr)",
+      "count": 19
+    },
+    {
+      "name": "9. Cleanroom Uluslararası Temizoda Teknolojisi, Bakım Ve Donanımları Fuarı",
+      "sehir": "İSTANBUL",
+      "start": "14.10.2026",
+      "status": "✅ bulundu (https://www.bioexpo.com.tr)",
+      "count": 19
+    },
+    {
+      "name": "7. Pharmanext Uluslararası İlaç Endüstrisi, Teknolojileri Ve Bileşenleri Fuarı",
+      "sehir": "İSTANBUL",
+      "start": "14.10.2026",
+      "status": "✅ bulundu (https://www.bioexpo.com.tr)",
+      "count": 19
+    },
+    {
+      "name": "İmeak Deniz Ticaret Odası Bodrum Boat Show",
+      "sehir": "MUĞLA",
+      "start": "14.10.2026",
+      "status": "✅ bulundu (https://www.bodrumboatshow.com.tr)",
+      "count": 18
+    },
+    {
+      "name": "Ida Türkiye - Savunma Ve Havacılıkta Endüstriyel İşbirliği Günleri Ve Fuarı",
+      "sehir": "ANKARA",
+      "start": "14.10.2026",
+      "status": "✅ bulundu (https://www.icdda.com.tr)",
+      "count": 31
+    },
+    {
+      "name": "Bayim Olur Musun? 24. Franchising Ve Markalı Bayilik Fuarı",
+      "sehir": "İSTANBUL",
+      "start": "15.10.2026",
+      "status": "✅ bulundu (https://www.medyafors.com)",
+      "count": 17
+    },
+    {
+      "name": "12. Magrotex'26 Uluslararası Mardin Tarım Ekipmanları Gıda Ve Hayvancılık Fuarı",
+      "sehir": "MARDİN",
+      "start": "15.10.2026",
+      "status": "❌ liste yok/erişilemedi",
+      "count": 0
+    },
+    {
+      "name": "Poultry Show Avrasya Tavukculuk Teknolojılerı Ekipmanları Fuarı Ve Kongresı",
+      "sehir": "ANKARA",
+      "start": "15.10.2026",
+      "status": "❌ liste yok/erişilemedi",
+      "count": 0
+    },
+    {
+      "name": "Vef Yurt Dışı Eğitim Fuarı",
+      "sehir": "İSTANBUL",
+      "start": "16.10.2026",
+      "status": "✅ bulundu (https://www.endlessg.com)",
+      "count": 10
+    },
+    {
+      "name": "Akare Yurtdışı Eğitim Fuarları",
+      "sehir": "İSTANBUL",
+      "start": "17.10.2026",
+      "status": "✅ bulundu (https://www.akare.com.tr)",
+      "count": 18
+    },
+    {
+      "name": "Bosphorus Boat Show",
+      "sehir": "İSTANBUL",
+      "start": "17.10.2026",
+      "status": "❌ liste yok/erişilemedi",
+      "count": 0
+    },
+    {
+      "name": "4. Çivril Tarım, Hayvancılık Makinaları Teknolojileri Ve Yem Fuarı",
+      "sehir": "DENİZLİ",
+      "start": "17.10.2026",
+      "status": "❌ liste yok/erişilemedi",
+      "count": 0
+    },
+    {
+      "name": "Denizli Kitap Fuarı",
+      "sehir": "DENİZLİ",
+      "start": "17.10.2026",
+      "status": "✅ bulundu (https://www.tuyap.com.tr)",
+      "count": 12
+    },
+    {
+      "name": "Akare Yurtdışı Eğitim Fuarları",
+      "sehir": "İSTANBUL",
+      "start": "19.10.2026",
+      "status": "✅ bulundu (https://www.akare.com.tr)",
+      "count": 18
+    },
+    {
+      "name": "Ieft Yurt Dışı Eğitim Fuar Ve Seminerleri",
+      "sehir": "İZMİR",
+      "start": "20.10.2026",
+      "status": "✅ bulundu (https://www.ieft.net)",
+      "count": 5
+    },
+    {
+      "name": "Akare Yurtdışı Eğitim Fuarları",
+      "sehir": "ANKARA",
+      "start": "21.10.2026",
+      "status": "✅ bulundu (https://www.akare.com.tr)",
+      "count": 18
+    },
+    {
+      "name": "Artnouva  3.Sanat Fuarı",
+      "sehir": "ANKARA",
+      "start": "21.10.2026",
+      "status": "✅ bulundu (https://www.artnovafair.com)",
+      "count": 44
+    },
+    {
+      "name": "Turkcomposıte  2026 Kompozit Sanayi Fuarı",
+      "sehir": "İSTANBUL",
+      "start": "21.10.2026",
+      "status": "✅ bulundu (https://turkcomposite.com)",
+      "count": 30
+    },
+    {
+      "name": "Nobel Master Shoes - Ayakkabı & Çanta Moda Fuarı",
+      "sehir": "KONYA",
+      "start": "21.10.2026",
+      "status": "✅ bulundu (https://www.nobelexpo.com)",
+      "count": 23
+    },
+    {
+      "name": "Fashion Prime 9. Tekstil, Hazır Giyim Tedarikçileri Ve Teknolojileri Fuarı",
+      "sehir": "İZMİR",
+      "start": "21.10.2026",
+      "status": "✅ bulundu (https://www.izfas.com.tr)",
+      "count": 111
+    },
+    {
+      "name": "Maden-Tek 2026, Maden Endüstrisi Teknoloji Günleri",
+      "sehir": "ANKARA",
+      "start": "22.10.2026",
+      "status": "❌ liste yok/erişilemedi",
+      "count": 0
+    },
+    {
+      "name": "Ankiros 17. Uluslararası Demir-Çelik, Döküm, Demirdışı Metalürji Teknolojileri, Makine Ve Ürünleri İhtisas Fuarı",
+      "sehir": "İSTANBUL",
+      "start": "22.10.2026",
+      "status": "✅ bulundu (https://www.hmankiros.com)",
+      "count": 9
+    },
+    {
+      "name": "Woodtech 2026 - 39.Uluslararası Ağaç İşleme Makineleri, Kesici Takımlar, El Aletleri Fuarı",
+      "sehir": "İSTANBUL",
+      "start": "22.10.2026",
+      "status": "✅ bulundu (https://www.tuyap.com.tr)",
+      "count": 12
+    },
+    {
+      "name": "Ieft Yurt Dışı Eğitim Fuar Ve Seminerleri",
+      "sehir": "ANKARA",
+      "start": "22.10.2026",
+      "status": "✅ bulundu (https://www.ieft.net)",
+      "count": 5
+    },
+    {
+      "name": "1.Düzce Tarım, Hayvancılık Ve Sanayi Fuarı",
+      "sehir": "DÜZCE",
+      "start": "22.10.2026",
+      "status": "✅ bulundu (https://www.linafair.com)",
+      "count": 25
+    },
+    {
+      "name": "Adana Otomotiv Ve Mobilite Fuarı",
+      "sehir": "ADANA",
+      "start": "22.10.2026",
+      "status": "✅ bulundu (https://www.anatoliagrup.com.tr)",
+      "count": 8
+    },
+    {
+      "name": "Ceviz Türkiye Fuarı-3.Çorum Ceviz Yetiştiriciliği Teknolojileri Tarım Alet Ekipmanları Ve Pazarlaması Fuarı",
+      "sehir": "ÇORUM",
+      "start": "22.10.2026",
+      "status": "❌ liste yok/erişilemedi",
+      "count": 0
+    },
+    {
+      "name": "Broadcastex-Radyo & Televizyon, Dijital Yayıncılık Ekipmanları Ve Film Prodüksiyon, Ses & Işık Teknolojileri Fuarı",
+      "sehir": "İSTANBUL",
+      "start": "22.10.2026",
+      "status": "❌ liste yok/erişilemedi",
+      "count": 0
+    },
+    {
+      "name": "6. Batman Gıda Tarım Ve Hayvancılık Fuarı",
+      "sehir": "BATMAN",
+      "start": "22.10.2026",
+      "status": "✅ bulundu (https://www.startfuar.com)",
+      "count": 20
+    },
+    {
+      "name": "Akare Yurtdışı Eğitim Fuarları",
+      "sehir": "İZMİR",
+      "start": "23.10.2026",
+      "status": "✅ bulundu (https://www.akare.com.tr)",
+      "count": 18
+    },
+    {
+      "name": "12. Malatya Kitap Ve Kültür Fuarı",
+      "sehir": "MALATYA",
+      "start": "23.10.2026",
+      "status": "❌ liste yok/erişilemedi",
+      "count": 0
+    },
+    {
+      "name": "Ieft Yurt Dışı Eğitim Fuar Ve Seminerleri",
+      "sehir": "İSTANBUL",
+      "start": "24.10.2026",
+      "status": "✅ bulundu (https://www.ieft.net)",
+      "count": 5
+    },
+    {
+      "name": "Ieft Yurt Dışı Eğitim Fuar Ve Seminerleri",
+      "sehir": "İSTANBUL",
+      "start": "26.10.2026",
+      "status": "✅ bulundu (https://www.ieft.net)",
+      "count": 5
+    },
+    {
+      "name": "Uluslararası Antalya Turizm Fuarı",
+      "sehir": "ANTALYA",
+      "start": "26.10.2026",
+      "status": "✅ bulundu (https://antalyaturizmfuari.com)",
+      "count": 20
+    },
+    {
+      "name": "Ibıa Expo - 6. Uluslararası Yatak Yan Sanayi Ve Teknolojileri Fuarı",
+      "sehir": "İSTANBUL",
+      "start": "28.10.2026",
+      "status": "✅ bulundu (https://www.bifasfuar.com)",
+      "count": 25
+    },
+    {
+      "name": "Denizli Tarım Fuarı",
+      "sehir": "DENİZLİ",
+      "start": "28.10.2026",
+      "status": "❌ liste yok/erişilemedi",
+      "count": 0
+    },
+    {
+      "name": "İstanbul Maraton Ve Spor Fuarı",
+      "sehir": "İSTANBUL",
+      "start": "29.10.2026",
+      "status": "✅ bulundu (https://www.thorajans.com)",
+      "count": 15
+    },
+    {
+      "name": "5.Ankara Beautylıfe Expo Estetik Güzellik Kozmetik Fuarı",
+      "sehir": "ANKARA",
+      "start": "30.10.2026",
+      "status": "✅ bulundu (https://www.usfuar.com)",
+      "count": 11
+    },
+    {
+      "name": "Promogıft Istanbul 2026, Kurumsal Tanıtım Ve Reklam Ürünleri Fuarı",
+      "sehir": "İSTANBUL",
+      "start": "31.10.2026",
+      "status": "✅ bulundu (https://www.promogiftistanbul.com)",
+      "count": 23
+    },
+    {
+      "name": "Unıcera - İstanbul Seramik, Banyo, Mutfak Fuarı",
+      "sehir": "İSTANBUL",
+      "start": "02.11.2026",
+      "status": "✅ bulundu (https://www.unicera.com.tr)",
+      "count": 22
+    },
+    {
+      "name": "Evlilik Fuarı",
+      "sehir": "DENİZLİ",
+      "start": "02.11.2026",
+      "status": "❌ liste yok/erişilemedi",
+      "count": 0
+    },
+    {
+      "name": "Kalite Ankara 2026",
+      "sehir": "ANKARA",
+      "start": "04.11.2026",
+      "status": "❌ liste yok/erişilemedi",
+      "count": 0
+    },
+    {
+      "name": "2. Motta İzmir Motorlu Taşıtlar Fuarı",
+      "sehir": "İZMİR",
+      "start": "04.11.2026",
+      "status": "❌ liste yok/erişilemedi",
+      "count": 0
+    },
+    {
+      "name": "Europort İstanbul",
+      "sehir": "İSTANBUL",
+      "start": "04.11.2026",
+      "status": "✅ bulundu (https://www.europort.com.tr)",
+      "count": 92
+    },
+    {
+      "name": "Adana Tarım – Sera&Bahçe Fuarı   19. Tarım, Sera-Bahçe, Hayvancılık, Tavukçuluk Ve Süt Endüstrisi Fuarı",
+      "sehir": "ADANA",
+      "start": "04.11.2026",
+      "status": "✅ bulundu (https://www.tuyapadana@tuyap.com.tr)",
+      "count": 12
+    },
+    {
+      "name": "Sakarya 8. Tarım Hayvancılık Makineleri Teknolojileri Ve Yem Fuarı",
+      "sehir": "SAKARYA",
+      "start": "05.11.2026",
+      "status": "✅ bulundu (https://www.glplatformfuar.com)",
+      "count": 30
+    },
+    {
+      "name": "Manisa 20.Uluslararası Tarım Gıda Ve Hayvancılık Fuarı",
+      "sehir": "MANİSA",
+      "start": "05.11.2026",
+      "status": "✅ bulundu (https://www.tactfair.com)",
+      "count": 11
+    },
+    {
+      "name": "Gönen 14.Tarım Hayvancılık Gıda Sanayi Ve Otomotiv Fuarı",
+      "sehir": "BALIKESİR",
+      "start": "05.11.2026",
+      "status": "❌ liste yok/erişilemedi",
+      "count": 0
+    },
+    {
+      "name": "Eıf 2026 15. Enerji Dönüşümü Fuarı",
+      "sehir": "ANTALYA",
+      "start": "05.11.2026",
+      "status": "✅ bulundu (https://www.eif2050.com)",
+      "count": 10
+    },
+    {
+      "name": "Orta Doğu Gıda Ve Gıda Teknolojileri Fuarı",
+      "sehir": "GAZİANTEP",
+      "start": "05.11.2026",
+      "status": "✅ bulundu (https://www.nobelexpo.com)",
+      "count": 23
+    },
+    {
+      "name": "Hostech By Tusıd  İstanbul Uluslararası  Otel, Restoran, Kafe Gastronomi, Unlu Mamuller Ve Teknolojileri Fuarı",
+      "sehir": "İSTANBUL",
+      "start": "10.11.2026",
+      "status": "✅ bulundu (https://www.tuyap.com.tr)",
+      "count": 12
+    },
+    {
+      "name": "Uluslararası Logitrans Transport Lojistik Fuarı",
+      "sehir": "İSTANBUL",
+      "start": "11.11.2026",
+      "status": "❌ liste yok/erişilemedi",
+      "count": 0
+    },
+    {
+      "name": "Foam Eurasia 2026",
+      "sehir": "İSTANBUL",
+      "start": "11.11.2026",
+      "status": "✅ bulundu (https://foameurasia.events)",
+      "count": 14
+    },
+    {
+      "name": "Pu Expo İstanbul 2026",
+      "sehir": "İSTANBUL",
+      "start": "11.11.2026",
+      "status": "✅ bulundu (https://puexpoistanbul.com)",
+      "count": 10
+    },
+    {
+      "name": "Aysaf 2026 Ayakkabı Yan Sanayi Fuarı",
+      "sehir": "İSTANBUL",
+      "start": "11.11.2026",
+      "status": "❌ liste yok/erişilemedi",
+      "count": 0
+    },
+    {
+      "name": "21. Göller Bölgesi Tarım Ve Hayvancılık Fuarı",
+      "sehir": "ISPARTA",
+      "start": "12.11.2026",
+      "status": "✅ bulundu (https://www.detayfuarcilik.com)",
+      "count": 19
+    },
+    {
+      "name": "İgef'26 - 3.Uluslararası İç Güvenlik Ekipmanları Fuarı",
+      "sehir": "ANKARA",
+      "start": "12.11.2026",
+      "status": "✅ bulundu (https://www.igef.com.tr)",
+      "count": 12
+    },
+    {
+      "name": "Trend Ev Fuarı",
+      "sehir": "ANTALYA",
+      "start": "15.11.2026",
+      "status": "✅ bulundu (https://www.partnerfuar.com)",
+      "count": 10
+    },
+    {
+      "name": "Mezopotamya Gurme Ve Yöresel Lezzetler Fuarı",
+      "sehir": "DİYARBAKIR",
+      "start": "17.11.2026",
+      "status": "❌ liste yok/erişilemedi",
+      "count": 0
+    },
+    {
+      "name": "10. Uluslararası İstanbul Hırdavat Fuarı",
+      "sehir": "İSTANBUL",
+      "start": "18.11.2026",
+      "status": "✅ bulundu (https://www.voli.com.tr)",
+      "count": 6
+    },
+    {
+      "name": "Uluslararası Sılmo Istanbul Optık Fuarı",
+      "sehir": "İSTANBUL",
+      "start": "18.11.2026",
+      "status": "❌ liste yok/erişilemedi",
+      "count": 0
+    },
+    {
+      "name": "Travel Expo Ankara 9. Uluslararası Turizm Ve Seyahat Fuarı",
+      "sehir": "ANKARA",
+      "start": "19.11.2026",
+      "status": "❌ liste yok/erişilemedi",
+      "count": 0
+    },
+    {
+      "name": "Yanexpo Ahşap, Metal, Plastik Üretim Yan Sanayileri Teknolojileri Ve Aksesuarları Fuarı",
+      "sehir": "KAYSERİ",
+      "start": "19.11.2026",
+      "status": "✅ bulundu (https://www.nobelyanexpo.com)",
+      "count": 46
+    },
+    {
+      "name": "Anatex Anadolu Döşemelik Kumaş, Deri Ve Üretim Teknolojileri",
+      "sehir": "KAYSERİ",
+      "start": "19.11.2026",
+      "status": "✅ bulundu (https://www.nobelanatex.com)",
+      "count": 45
+    },
+    {
+      "name": "Souvenır Expo Türkiye Turistik Hediyelik Ve Hatıra Eşya Fuarı",
+      "sehir": "İSTANBUL",
+      "start": "19.11.2026",
+      "status": "✅ bulundu (https://www.rotaexhibitions.com.tr)",
+      "count": 20
+    },
+    {
+      "name": "Anamak  Anadolu Ağaç İşleme Makineleri, Kesici Takımlar, El Aletleri",
+      "sehir": "KAYSERİ",
+      "start": "19.11.2026",
+      "status": "✅ bulundu (https://www.nobelanamak.com)",
+      "count": 68
+    },
+    {
+      "name": "Expo Toybir 4. Oyuncak Ve Çocuk Gereçleri Fuarı",
+      "sehir": "ANTALYA",
+      "start": "19.11.2026",
+      "status": "❌ liste yok/erişilemedi",
+      "count": 0
+    },
+    {
+      "name": "İslam Sanatları Fuarı",
+      "sehir": "ANKARA",
+      "start": "19.11.2026",
+      "status": "✅ bulundu (https://islamsanatlarifuari.com)",
+      "count": 16
+    },
+    {
+      "name": "Towel Expo Denizli Havlu Bornoz Otel Tekstili Ve Teknolojileri Fuarı",
+      "sehir": "DENİZLİ",
+      "start": "19.11.2026",
+      "status": "❌ liste yok/erişilemedi",
+      "count": 0
+    },
+    {
+      "name": "6.Piktech Denizli Tekstil Fuarı (Pamuk, İplik, Kumaş, Tekstil Aksesuarları Ve Tekstil Teknolojileri)",
+      "sehir": "DENİZLİ",
+      "start": "19.11.2026",
+      "status": "✅ bulundu (https://terminfuarcilik.com)",
+      "count": 5
+    },
+    {
+      "name": "15.Van Doğu Anadolu Turizm  Ve Seyahat  Fuarı",
+      "sehir": "VAN",
+      "start": "19.11.2026",
+      "status": "❌ liste yok/erişilemedi",
+      "count": 0
+    },
+    {
+      "name": "Start Beauty Çukurova Expo-Adana Estetik Kozmetik Ve Güzellik Fuarı",
+      "sehir": "ADANA",
+      "start": "20.11.2026",
+      "status": "✅ bulundu (https://www.startfuar.com)",
+      "count": 20
+    },
+    {
+      "name": "Avrasya Cam 2026 - 16. Uluslararası Cam Ürünleri Ve Uygulamaları, Üretim-İşleme Teknolojileri Ve Makineleri, Tamamlayıcı Ürün Ve Kimyasalları Fuarı",
+      "sehir": "İSTANBUL",
+      "start": "21.11.2026",
+      "status": "✅ bulundu (https://www.tuyap.com.tr)",
+      "count": 12
+    },
+    {
+      "name": "Growtech. Antalya 2026, 25.Uluslararası Sera, Tarım Teknolojileri Ve Hayvancılık Ekipmanları Fuarı",
+      "sehir": "ANTALYA",
+      "start": "24.11.2026",
+      "status": "❌ liste yok/erişilemedi",
+      "count": 0
+    },
+    {
+      "name": "İzmir Brıdal Week",
+      "sehir": "İZMİR",
+      "start": "24.11.2026",
+      "status": "✅ bulundu (https://www.izmirbridalweek.com.tr)",
+      "count": 12
+    },
+    {
+      "name": "Nov Naturel Organıc Vegan Ürünler Ve Hizmetler Fuarı",
+      "sehir": "İSTANBUL",
+      "start": "25.11.2026",
+      "status": "✅ bulundu (https://aselexpo.com)",
+      "count": 19
+    },
+    {
+      "name": "Prıvate Label Expo",
+      "sehir": "İSTANBUL",
+      "start": "25.11.2026",
+      "status": "✅ bulundu (https://discoverevents.com.tr)",
+      "count": 26
+    },
+    {
+      "name": "Sefpex-Seafood And Processing Expo",
+      "sehir": "İSTANBUL",
+      "start": "25.11.2026",
+      "status": "✅ bulundu (https://discoverevents.com.tr)",
+      "count": 26
+    },
+    {
+      "name": "Egpex Eurasia Emlak Fuarı",
+      "sehir": "İSTANBUL",
+      "start": "25.11.2026",
+      "status": "✅ bulundu (https://www.aselexpo.com)",
+      "count": 19
+    },
+    {
+      "name": "11 .Turkchem Eurasıa Uluslararası Kimya Sanayi Fuarı",
+      "sehir": "İSTANBUL",
+      "start": "25.11.2026",
+      "status": "✅ bulundu (https://www.artkim.com.tr)",
+      "count": 12
+    },
+    {
+      "name": "7.Interdye & Textıle Prıntıng Eurasıa",
+      "sehir": "İSTANBUL",
+      "start": "25.11.2026",
+      "status": "✅ bulundu (https://www.artkim.com.tr)",
+      "count": 12
+    },
+    {
+      "name": "Meexx Makine Ve Teknolojileri Fuarı",
+      "sehir": "BURSA",
+      "start": "25.11.2026",
+      "status": "✅ bulundu (https://www.kfa.com.tr)",
+      "count": 15
+    },
+    {
+      "name": "Ethexpo Eurasia Turizm Ve Sağlık Fuarı",
+      "sehir": "İSTANBUL",
+      "start": "25.11.2026",
+      "status": "✅ bulundu (https://www.aselexpo.com)",
+      "count": 19
+    },
+    {
+      "name": "Uluslararası Helal Ekspo / Dünya Helal Zirvesi",
+      "sehir": "İSTANBUL",
+      "start": "25.11.2026",
+      "status": "❌ liste yok/erişilemedi",
+      "count": 0
+    },
+    {
+      "name": "İstanbul Filtre Endüstrisi, Teknolojileri Ve Yan Sanayi Fuarı",
+      "sehir": "İSTANBUL",
+      "start": "26.11.2026",
+      "status": "✅ bulundu (https://www.iftexhibition.com)",
+      "count": 12
+    },
+    {
+      "name": "Lıght+Intellıgent Buıldıng Istanbul",
+      "sehir": "İSTANBUL",
+      "start": "26.11.2026",
+      "status": "✅ bulundu (https://tr.messefrankfurt.com)",
+      "count": 34
+    },
+    {
+      "name": "Elf Teknoloji Fuarı",
+      "sehir": "İSTANBUL",
+      "start": "26.11.2026",
+      "status": "✅ bulundu (https://www.elffuar.com)",
+      "count": 13
+    },
+    {
+      "name": "5. Ev Charge Show - Elektrikli Araç Şarj Teknolojileri Ve Ekipmanları Fuarı",
+      "sehir": "İSTANBUL",
+      "start": "26.11.2026",
+      "status": "✅ bulundu (https://www.voli.com.tr)",
+      "count": 6
+    },
+    {
+      "name": "Gafshoes 38. Uluslararası Ayakkabı, Terlik Ve Yan Sanayi Yaz Fuarı",
+      "sehir": "GAZİANTEP",
+      "start": "01.12.2026",
+      "status": "✅ bulundu (https://www.akort.com)",
+      "count": 43
+    },
+    {
+      "name": "5.Yöresel Ürünler Ve Hediyelik Eşya Fuarı 2025",
+      "sehir": "ADANA",
+      "start": "01.12.2026",
+      "status": "✅ bulundu (https://aksoyaytul@hotmail.com)",
+      "count": 32
+    },
+    {
+      "name": "Plast  Eurasia  İstanbul    35.Uluslararası  Plastik Endüstrisi Fuarı",
+      "sehir": "İSTANBUL",
+      "start": "02.12.2026",
+      "status": "✅ bulundu (https://www.tuyap.com.tr)",
+      "count": 12
+    },
+    {
+      "name": "Cbme Türkiye, 44.Uluslararası İstanbul Anne Bebek Çocuk Ürünleri Fuarı",
+      "sehir": "İSTANBUL",
+      "start": "02.12.2026",
+      "status": "❌ liste yok/erişilemedi",
+      "count": 0
+    },
+    {
+      "name": "Pack&Plast Fair Türkiye 4.Uluslararası Ambalajlama, Paketleme Plastik Endüstri Teknolojileri Fuarı",
+      "sehir": "İZMİR",
+      "start": "02.12.2026",
+      "status": "✅ bulundu (https://www.glplatformfuar.com)",
+      "count": 30
+    },
+    {
+      "name": "Horeca Fair 7. Uluslararası Otel, Restoran, Kafe, Fırın Ekipmanları, Unlu Mamuller, Dondurma, Pastacılık Teknolojileri Ve Ev Dışı Tüketim Fuarı",
+      "sehir": "İZMİR",
+      "start": "02.12.2026",
+      "status": "✅ bulundu (https://www.glplatformfuar.com)",
+      "count": 30
+    },
+    {
+      "name": "Ttı İzmir  \"20. Uluslararası Turizm Ticaret  Fuar Ve Kongresi\"",
+      "sehir": "İZMİR",
+      "start": "02.12.2026",
+      "status": "❌ liste yok/erişilemedi",
+      "count": 0
+    },
+    {
+      "name": "Nadmex - Afet Yönetimi Fuarı Ve Zirvesi",
+      "sehir": "İSTANBUL",
+      "start": "02.12.2026",
+      "status": "✅ bulundu (https://www.nadmex.com)",
+      "count": 71
+    },
+    {
+      "name": "Kırklareli 6. Tarım Hayvancılık Gıda Sanayi Ve Otomotiv Fuarı",
+      "sehir": "KIRKLARELİ",
+      "start": "03.12.2026",
+      "status": "❌ liste yok/erişilemedi",
+      "count": 0
+    },
+    {
+      "name": "Denyapı 2026",
+      "sehir": "DENİZLİ",
+      "start": "03.12.2026",
+      "status": "✅ bulundu (https://www.4mfuar.com)",
+      "count": 11
+    },
+    {
+      "name": "İmeef-İstanbul Müzik Endüstrileri Ve Ekipmanları Fuarı",
+      "sehir": "İSTANBUL",
+      "start": "03.12.2026",
+      "status": "✅ bulundu (https://www.imeef.com)",
+      "count": 12
+    },
+    {
+      "name": "24.Ankara Kitap Fuarı",
+      "sehir": "ANKARA",
+      "start": "04.12.2026",
+      "status": "❌ liste yok/erişilemedi",
+      "count": 0
+    },
+    {
+      "name": "Afrıka Prıme Gıda Fuarı",
+      "sehir": "ANTALYA",
+      "start": "05.12.2026",
+      "status": "✅ bulundu (https://www.partnerfuar.com)",
+      "count": 10
+    },
+    {
+      "name": "İstanbul Yerel Marketler Buluşması Ve Fuarı",
+      "sehir": "İSTANBUL",
+      "start": "09.12.2026",
+      "status": "✅ bulundu (https://www.focusfairs.com)",
+      "count": 18
+    },
+    {
+      "name": "12.Şanlıurfa Gıda Tarım Ve Hayvancılık Fuarı",
+      "sehir": "ŞANLIURFA",
+      "start": "09.12.2026",
+      "status": "❌ liste yok/erişilemedi",
+      "count": 0
+    },
+    {
+      "name": "Tdk Deri Ve Kürk Moda Şov",
+      "sehir": "ANTALYA",
+      "start": "10.12.2026",
+      "status": "❌ liste yok/erişilemedi",
+      "count": 0
+    },
+    {
+      "name": "Hoteltech Antalya - Otel Teknik Ekipman Ve Malzemeleri İhtisas Fuarı",
+      "sehir": "ANTALYA",
+      "start": "10.12.2026",
+      "status": "❌ liste yok/erişilemedi",
+      "count": 0
+    },
+    {
+      "name": "İstanbul 43. Uluslararası  Kitap Fuarı",
+      "sehir": "İSTANBUL",
+      "start": "12.12.2026",
+      "status": "✅ bulundu (https://www.tuyap.com.tr)",
+      "count": 12
+    },
+    {
+      "name": "Outdoorist  Karavan Ve Ekipmanları, Tiny House, Outdoor Ve Kamp Malzemeleri, Su Sporları, Amatör Balıkçılık, 10 Metre Altı Deniz Araçları, 4X4 -  Off Road Araçlar, Alternatif Turizm Fuarı",
+      "sehir": "İSTANBUL",
+      "start": "14.12.2026",
+      "status": "✅ bulundu (https://www.tuyap.com.tr)",
+      "count": 12
+    },
+    {
+      "name": "Worldfood İstanbul 2026 - 34. Uluslararası Gıda Ürünleri Teknolojileri Fuarı",
+      "sehir": "İSTANBUL",
+      "start": "15.12.2026",
+      "status": "❌ liste yok/erişilemedi",
+      "count": 0
+    },
+    {
+      "name": "Candy Expo",
+      "sehir": "İZMİR",
+      "start": "16.12.2026",
+      "status": "❌ liste yok/erişilemedi",
+      "count": 0
+    },
+    {
+      "name": "Franchıse İzmir Expo",
+      "sehir": "İZMİR",
+      "start": "17.12.2026",
+      "status": "✅ bulundu (https://www.franchiseizmirexpo.com)",
+      "count": 85
+    },
+    {
+      "name": "Ehatech Expo,Yenilenebilir Enerji,Elektrikli Ve Hibrit Araçlar,Şarj İstasyonları Ve Batarya Teknolojileri Fuarı",
+      "sehir": "ANTALYA",
+      "start": "17.12.2026",
+      "status": "✅ bulundu (https://EHATECH.COM.TR)",
+      "count": 15
+    },
+    {
+      "name": "Denizli 2026",
+      "sehir": "DENİZLİ",
+      "start": "23.12.2026",
+      "status": "✅ bulundu (https://www.4mfuar.com)",
+      "count": 11
+    },
+    {
+      "name": "Denizli Tarım Gıda Sera Ve Hayvancılık Fuarı",
+      "sehir": "DENİZLİ",
+      "start": "26.12.2026",
+      "status": "❌ liste yok/erişilemedi",
+      "count": 0
+    }
+  ],
+  "finished": true
+}

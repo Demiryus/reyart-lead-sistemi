@@ -1,0 +1,23 @@
+05:25:56  INFO  Toplam 3 fuar denenecek (2026-07-08 - 2026-07-15)
+05:25:56  INFO  (1/3) Parfüm Expo Fuar\u0131 2026 — www.istanbul-ask.com
+05:25:56  INFO  Generic scrape: https://www.istanbul-ask.com
+05:26:00  WARNING  \u0130stek ba\u015far\u0131s\u0131z (3 deneme): https://www.istanbul-ask.com — HTTPSConnectionPool(host='www.istanbul-ask.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001DE0368A480>: Failed to resolve 'www.istanbul-ask.com' ([Errno 11001] getaddrinfo failed)"))
+05:26:00  INFO  \u0130çerik az (0 byte), Playwright deneniyor
+05:26:12  ERROR  Playwright hatas\u0131: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.istanbul-ask.com/
+Call log:
+  - navigating to "https://www.istanbul-ask.com/", waiting until "networkidle"
+
+05:26:12  ERROR  Sayfa hiç yüklenemedi: https://www.istanbul-ask.com
+05:26:16  WARNING  \u0130stek ba\u015far\u0131s\u0131z (3 deneme): https://www.istanbul-ask.com — HTTPSConnectionPool(host='www.istanbul-ask.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001DE037DDA90>: Failed to resolve 'www.istanbul-ask.com' ([Errno 11001] getaddrinfo failed)"))
+05:26:18  INFO  (2/3) Umre Ve Turizm Profesyoneller Fuar\u0131 — www.huitm.org
+05:26:18  INFO  Generic scrape: https://www.huitm.org
+05:26:23  INFO  Seçilen strateji: blocks div.e-con-inner \u2192 10 firma (sayfa 1)
+05:26:28  INFO  (3/3) 3.Ke\u015fan Tar\u0131m, Hayvanc\u0131l\u0131k, G\u0131da, Sanayi, Otomotiv Ve \u0130\u015f Makinalar\u0131 Fuar\u0131 — www.renklyfuar.com
+05:26:28  INFO  Generic scrape: https://www.renklyfuar.com
+05:26:30  INFO  Statik HTML'de aday bulunamad\u0131, Playwright ile tekrar deneniyor
+05:27:34  ERROR  Playwright hatas\u0131: Page.goto: Timeout 60000ms exceeded.
+Call log:
+  - navigating to "https://www.renklyfuar.com/", waiting until "networkidle"
+
+05:27:34  WARNING  Hiçbir strateji 10+ geçerli kay\u0131t bulamad\u0131: https://www.renklyfuar.com
+05:27:37  INFO  B\u0130TT\u0130: 3 fuar denendi, 1 liste bulundu, 10 firma eklendi

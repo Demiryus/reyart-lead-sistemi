@@ -1,0 +1,20 @@
+{
+  "tanitim_tr": {
+    "name": "Tanıtım — Türkçe (fuar standı teklifi)",
+    "language": "tr",
+    "subject": "{fuar} standınız için anahtar teslim çözüm — Reyart",
+    "body": "Merhaba,\n\n{fuar} katılımcı listesinde {firma} olarak yer aldığınızı gördük, hayırlı olsun.\n\nBiz Reyart Fuar Stand Tasarım olarak 25 yılı aşkın süredir Sandvik, Liebherr, Kubota ve XCMG gibi markalara anahtar teslim fuar standı tasarlıyor ve uyguluyoruz.\n\nStandınız henüz netleşmediyse, firmanıza özel 3D konsept tasarımı ücretsiz hazırlayıp sunmak isteriz. 15 dakikalık kısa bir telefon görüşmesi için müsait olduğunuz bir zamanı yazmanız yeterli.\n\nSaygılarımızla,\nDemir\nReyart Fuar Stand Tasarım\n"
+  },
+  "tanitim_en": {
+    "name": "Introduction — English (stand offer, foreign exhibitors)",
+    "language": "en",
+    "subject": "Turnkey exhibition stand for {fuar} — Reyart Istanbul",
+    "body": "Hello,\n\nWe noticed that {firma} is listed as an exhibitor at {fuar}.\n\nReyart Exhibition Stand Design, based in Istanbul, has been designing and building turnkey exhibition stands for over 25 years — for global brands such as Sandvik, Liebherr, Kubota and XCMG.\n\nIf your stand for the fair is not finalized yet, we would be glad to prepare a free 3D concept design tailored to your brand. A short 15-minute call is enough to get started — just let us know a convenient time.\n\nBest regards,\nDemir\nReyart Exhibition Stand Design — Istanbul\n"
+  },
+  "takip_tr": {
+    "name": "Takip — Türkçe (cevapsız ilk maile hatırlatma)",
+    "language": "tr",
+    "subject": "Hk: {fuar} stand teklifi — kısa hatırlatma",
+    "body": "Merhaba,\n\nGeçtiğimiz günlerde {fuar} katılımınızla ilgili ulaşmıştık; yoğunluktan gözden kaçmış olabilir diye kısa bir hatırlatma yapmak istedik.\n\n{firma} için ücretsiz 3D stand konsepti teklifimiz hâlâ geçerli. İlgilenirseniz tek cümlelik bir dönüş yeterli, gerisini biz halledelim.\n\nSaygılarımızla,\nDemir\nReyart Fuar Stand Tasarım\n"
+  }
+}

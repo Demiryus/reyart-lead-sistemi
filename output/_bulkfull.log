@@ -1,0 +1,954 @@
+05:34:38  INFO  Toplam 234 fuar denenecek (2026-07-08 - 2026-12-31)
+05:34:38  INFO  (1/234) Parfüm Expo Fuar\u0131 2026 — www.istanbul-ask.com
+05:34:38  INFO  Generic scrape: https://www.istanbul-ask.com
+05:34:42  WARNING  \u0130stek ba\u015far\u0131s\u0131z (3 deneme): https://www.istanbul-ask.com — HTTPSConnectionPool(host='www.istanbul-ask.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000020A4092A240>: Failed to resolve 'www.istanbul-ask.com' ([Errno 11001] getaddrinfo failed)"))
+05:34:42  INFO  \u0130çerik az (0 byte), Playwright deneniyor
+05:34:44  ERROR  Playwright hatas\u0131: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.istanbul-ask.com/
+Call log:
+  - navigating to "https://www.istanbul-ask.com/", waiting until "networkidle"
+
+05:34:44  ERROR  Sayfa hiç yüklenemedi: https://www.istanbul-ask.com
+05:34:49  WARNING  \u0130stek ba\u015far\u0131s\u0131z (3 deneme): https://www.istanbul-ask.com — HTTPSConnectionPool(host='www.istanbul-ask.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000020A40A7ED50>: Failed to resolve 'www.istanbul-ask.com' ([Errno 11001] getaddrinfo failed)"))
+05:34:50  INFO  (2/234) Umre Ve Turizm Profesyoneller Fuar\u0131 — www.huitm.org
+05:34:50  INFO  Generic scrape: https://www.huitm.org
+05:34:55  INFO  Seçilen strateji: blocks div.e-con-inner \u2192 10 firma (sayfa 1)
+05:34:59  INFO  (3/234) 3.Ke\u015fan Tar\u0131m, Hayvanc\u0131l\u0131k, G\u0131da, Sanayi, Otomotiv Ve \u0130\u015f Makinalar\u0131 Fuar\u0131 — www.renklyfuar.com
+05:34:59  INFO  Generic scrape: https://www.renklyfuar.com
+05:35:00  INFO  Statik HTML'de aday bulunamad\u0131, Playwright ile tekrar deneniyor
+05:36:02  ERROR  Playwright hatas\u0131: Page.goto: Timeout 60000ms exceeded.
+Call log:
+  - navigating to "https://www.renklyfuar.com/", waiting until "networkidle"
+
+05:36:02  WARNING  Hiçbir strateji 10+ geçerli kay\u0131t bulamad\u0131: https://www.renklyfuar.com
+05:36:05  INFO  (4/234) Ankara Üniversite Tercih Fuar\u0131 — www.tercihfuari.com
+05:36:05  INFO  Generic scrape: https://www.tercihfuari.com
+05:36:08  INFO  Seçilen strateji: blocks div.penci-bgitin \u2192 27 firma (sayfa 1)
+05:36:16  INFO  (5/234) Bursa Üniversite Tercih Fuar\u0131 — www.tercihfuari.com
+05:36:16  INFO  Generic scrape: https://www.tercihfuari.com
+05:36:19  INFO  Seçilen strateji: blocks div.penci-bgitin \u2192 27 firma (sayfa 1)
+05:36:27  INFO  (6/234) 2.Gaziantep Üniversite Tercih Fuar\u0131 — www.eket.com.tr
+05:36:27  INFO  Generic scrape: https://www.eket.com.tr
+05:36:28  INFO  Seçilen strateji: blocks div.container \u2192 14 firma (sayfa 1)
+05:36:31  INFO  (7/234) \u0130zmir Üniversite Tercih Fuar\u0131 — www.tercihfuari.com
+05:36:31  INFO  Generic scrape: https://www.tercihfuari.com
+05:36:34  INFO  Seçilen strateji: blocks div.penci-bgitin \u2192 27 firma (sayfa 1)
+05:36:42  INFO  (8/234) 8. Bursa Üniversite Tercih Fuar\u0131 — www.unitercih.com
+05:36:42  INFO  Generic scrape: https://www.unitercih.com
+05:36:42  INFO  Seçilen strateji: blocks div.fair-location \u2192 16 firma (sayfa 1)
+05:36:45  INFO  (9/234) 8. Adana Üniversite Tercih Fuar\u0131 — www.unitercih.com
+05:36:45  INFO  Generic scrape: https://www.unitercih.com
+05:36:46  INFO  Seçilen strateji: blocks div.fair-location \u2192 16 firma (sayfa 1)
+05:36:48  INFO  (10/234) 11. Ankara Üniversite Tercih Fuar\u0131 — www.unitercih.com
+05:36:48  INFO  Generic scrape: https://www.unitercih.com
+05:36:49  INFO  Seçilen strateji: blocks div.fair-location \u2192 16 firma (sayfa 1)
+05:36:52  INFO  (11/234) Gaziantep Üniversite Tercih Fuar\u0131 — www.tercihfuari.com
+05:36:52  INFO  Generic scrape: https://www.tercihfuari.com
+05:36:55  INFO  Seçilen strateji: blocks div.penci-bgitin \u2192 27 firma (sayfa 1)
+05:37:02  INFO  (12/234) 10.\u0130zmir Üniversite Tercih Fuar\u0131 — www.unitercih.com
+05:37:02  INFO  Generic scrape: https://www.unitercih.com
+05:37:02  INFO  Seçilen strateji: blocks div.fair-location \u2192 16 firma (sayfa 1)
+05:37:05  INFO  (13/234) Konya Üniversite Tercih Fuar\u0131 — www.tercihfuari.com
+05:37:05  INFO  Generic scrape: https://www.tercihfuari.com
+05:37:08  INFO  Seçilen strateji: blocks div.penci-bgitin \u2192 27 firma (sayfa 1)
+05:37:16  INFO  (14/234) 9. Antalya Üniversite Tercih Fuar\u0131 — www.unitercih.com
+05:37:16  INFO  Generic scrape: https://www.unitercih.com
+05:37:16  INFO  Seçilen strateji: blocks div.fair-location \u2192 16 firma (sayfa 1)
+05:37:19  INFO  (15/234) Üniversite Tercih Fuar\u0131 — www.tercihfuari.com
+05:37:19  INFO  Generic scrape: https://www.tercihfuari.com
+05:37:22  INFO  Seçilen strateji: blocks div.penci-bgitin \u2192 27 firma (sayfa 1)
+05:37:30  INFO  (16/234) 9. Euro Animalia Trakya Avrupa Hayvanc\u0131l\u0131k Süt Ve Süt Ürünleri Edüstrisi, \u0130\u015f Makinalar\u0131 Fuar\u0131 — www.renklyfuar.com
+05:37:30  INFO  Generic scrape: https://www.renklyfuar.com
+05:37:30  INFO  Statik HTML'de aday bulunamad\u0131, Playwright ile tekrar deneniyor
+05:38:32  ERROR  Playwright hatas\u0131: Page.goto: Timeout 60000ms exceeded.
+Call log:
+  - navigating to "https://www.renklyfuar.com/", waiting until "networkidle"
+
+05:38:32  WARNING  Hiçbir strateji 10+ geçerli kay\u0131t bulamad\u0131: https://www.renklyfuar.com
+05:38:34  INFO  (17/234) Çorlu 19.Tar\u0131mtech Trakya Avrupa Hayvanc\u0131l\u0131k Sanayi Ve G\u0131da Fuar\u0131 — www.renklyfuar.com
+05:38:34  INFO  Generic scrape: https://www.renklyfuar.com
+05:38:35  INFO  Statik HTML'de aday bulunamad\u0131, Playwright ile tekrar deneniyor
+05:39:36  ERROR  Playwright hatas\u0131: Page.goto: Timeout 60000ms exceeded.
+Call log:
+  - navigating to "https://www.renklyfuar.com/", waiting until "networkidle"
+
+05:39:36  WARNING  Hiçbir strateji 10+ geçerli kay\u0131t bulamad\u0131: https://www.renklyfuar.com
+05:39:39  INFO  (18/234) \u0130stanbul Arapça Kitap Fuar\u0131 — www.anadolufuar.com
+05:39:39  INFO  Generic scrape: https://www.anadolufuar.com
+05:39:39  INFO  \u0130çerik az (373 byte), Playwright deneniyor
+05:39:52  WARNING  Hiçbir strateji 10+ geçerli kay\u0131t bulamad\u0131: https://www.anadolufuar.com
+05:39:53  INFO  (19/234) Ifco \u0130stanbul Fashion Connection Haz\u0131r Giyim Ve Moda Fuar\u0131 — www.ifco.com.tr
+05:39:53  INFO  Generic scrape: https://www.ifco.com.tr
+05:39:54  INFO  Seçilen strateji: blocks div.item \u2192 13 firma (sayfa 1)
+05:39:58  INFO  (20/234) World Sports \u0130stanbul - Uluslararas\u0131 Fitness Ekipmanlar\u0131, Spor Teknolojileri, G\u0131da, Giyim Ve Wellness Fuar\u0131 — www.worldsportsistanbul.com
+05:39:58  INFO  Generic scrape: https://www.worldsportsistanbul.com
+05:39:59  INFO  Seçilen strateji: blocks div.elementor-widget-container \u2192 49 firma (sayfa 1)
+05:40:04  INFO  (21/234) Foodist  2026  \u0130stanbul G\u0131da Ve \u0130çecek Ürünleri Fuar\u0131 •	Co\u011frafi \u0130\u015faretli Ürünler Özel Bölümü     •	Beyaz Et Özel Bölümü      •	Alkollü \u0130çecekler Özel Bölümü — www.tuyap.com.tr
+05:40:04  INFO  Generic scrape: https://www.tuyap.com.tr
+05:40:05  INFO  Seçilen strateji: ul[13 li] \u2192 12 firma (sayfa 1)
+05:40:09  INFO  (22/234) Beauty Eurasia 2026 - 21. Uluslararas\u0131 Kozmetik, Güzellik, Kuaför, Ambalaj, Hammadde, Hijyen Ve Private Label Fuar\u0131 — www.beautyeurasia.com
+05:40:09  INFO  Generic scrape: https://www.beautyeurasia.com
+05:40:10  INFO  Seçilen strateji: blocks li.d-none.dropend.nav-item.submen \u2192 21 firma (sayfa 1)
+05:40:14  INFO  (23/234) Ak\u015fehir Tar\u0131m, Hayvanc\u0131l\u0131k Ve Yem Fuar\u0131 — www.linafair.com
+05:40:14  INFO  Generic scrape: https://www.linafair.com
+05:40:17  INFO  Seçilen strateji: blocks div.elementor-widget-container \u2192 27 firma (sayfa 1)
+05:40:23  INFO  (24/234) Sivas 11.Tar\u0131m Ve Hayvanc\u0131l\u0131k Ve G\u0131da  Fuar\u0131 — www.showfuar.com
+05:40:23  INFO  Generic scrape: https://www.showfuar.com
+05:40:26  INFO  Seçilen strateji: blocks div.elementor-widget-container \u2192 58 firma (sayfa 1)
+05:40:31  INFO  (25/234) Yozgat 16.Tar\u0131m, G\u0131da Ve Hayvanc\u0131l\u0131k Fuar\u0131 — www.kobifuarcilik.com
+05:40:31  INFO  Generic scrape: https://www.kobifuarcilik.com
+05:40:32  INFO  Statik HTML'de aday bulunamad\u0131, Playwright ile tekrar deneniyor
+05:40:49  WARNING  Hiçbir strateji 10+ geçerli kay\u0131t bulamad\u0131: https://www.kobifuarcilik.com
+05:40:51  INFO  (26/234) \u0130stanbul Küresel E- \u0130hracat Zirvesi — igexx.com
+05:40:51  INFO  Generic scrape: https://igexx.com
+05:40:52  INFO  Seçilen strateji: blocks div.text \u2192 38 firma (sayfa 1)
+05:40:56  INFO  (27/234) Karadeniz Tar\u0131m Hayvanc\u0131l\u0131k G\u0131da Ve Teknolojileri Fuar\u0131 — www.proaktiffuarcilik.com
+05:40:56  INFO  Generic scrape: https://www.proaktiffuarcilik.com
+05:40:56  INFO  \u0130çerik az (1 byte), Playwright deneniyor
+05:41:22  INFO  Seçilen strateji: blocks div.vc_column-inner \u2192 16 firma (sayfa 1)
+05:41:24  INFO  (28/234) 95. \u0130zmir Enternasyonal Fuar\u0131 — www.izfas.com.tr
+05:41:24  INFO  Generic scrape: https://www.izfas.com.tr
+05:41:27  INFO  Seçilen strateji: blocks div.d-flex \u2192 114 firma (sayfa 1)
+05:41:32  INFO  (29/234) \u0130nterfresh Eurasia / Interfood Eurasia Meyve,Sebze,G\u0131da,G\u0131da Ürünleri ,G\u0131da Teknolojileri Ambalaj,Tar\u0131m Teknolojileri,Depolama Ve   Lojistik Fuar\u0131 — www.euroasiainterfresh.com
+05:41:32  INFO  Generic scrape: https://www.euroasiainterfresh.com
+05:41:37  INFO  Statik HTML'de aday bulunamad\u0131, Playwright ile tekrar deneniyor
+05:41:59  INFO  Seçilen strateji: blocks div.elementor-widget-container \u2192 13 firma (sayfa 1)
+05:42:13  INFO  (30/234) Eski\u015fehir Tar\u0131m Fuar\u0131  7. Tar\u0131m, Hayvanc\u0131l\u0131k Ve Teknolojileri Fuar\u0131 — www.tuyap.com.tr
+05:42:13  INFO  Generic scrape: https://www.tuyap.com.tr
+05:42:15  INFO  Seçilen strateji: ul[13 li] \u2192 12 firma (sayfa 1)
+05:42:19  INFO  (31/234) We-Cycle 3. Çevre Ve Geri Dönü\u015füm Teknolojileri Fuar\u0131 — www.izfas.com.tr
+05:42:19  INFO  Generic scrape: https://www.izfas.com.tr
+05:42:21  INFO  Seçilen strateji: blocks div.d-flex \u2192 114 firma (sayfa 1)
+05:42:26  INFO  (32/234) Jun\u0131oshow Bursa 22.Uluslararas\u0131 Bebe, Çocuk Haz\u0131r Giyim Ve Çocuk \u0130htiyaçlar\u0131 Fuar\u0131 — www.kfa.com.tr
+05:42:26  INFO  Generic scrape: https://www.kfa.com.tr
+05:42:29  INFO  Seçilen strateji: blocks div.row \u2192 15 firma (sayfa 1)
+05:42:33  INFO  (33/234) Texhibition \u0130stanbul Kuma\u015f, Denim, Tekstil Aksesuarlar\u0131 Ve \u0130plik Fuar\u0131 — wwwtexhibitionist.com
+05:42:33  INFO  Generic scrape: https://wwwtexhibitionist.com
+05:42:37  WARNING  \u0130stek ba\u015far\u0131s\u0131z (3 deneme): https://wwwtexhibitionist.com — HTTPSConnectionPool(host='wwwtexhibitionist.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000020A44295A00>: Failed to resolve 'wwwtexhibitionist.com' ([Errno 11001] getaddrinfo failed)"))
+05:42:37  INFO  \u0130çerik az (0 byte), Playwright deneniyor
+05:42:44  ERROR  Playwright hatas\u0131: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://wwwtexhibitionist.com/
+Call log:
+  - navigating to "https://wwwtexhibitionist.com/", waiting until "networkidle"
+
+05:42:44  ERROR  Sayfa hiç yüklenemedi: https://wwwtexhibitionist.com
+05:42:49  WARNING  \u0130stek ba\u015far\u0131s\u0131z (3 deneme): https://wwwtexhibitionist.com — HTTPSConnectionPool(host='wwwtexhibitionist.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000020A447AEF30>: Failed to resolve 'wwwtexhibitionist.com' ([Errno 11001] getaddrinfo failed)"))
+05:42:51  INFO  (34/234) Promosyon Show \u0130stanbul Fuar\u0131 — www.promosyonshow.com
+05:42:51  INFO  Generic scrape: https://www.promosyonshow.com
+05:42:51  INFO  Statik HTML'de aday bulunamad\u0131, Playwright ile tekrar deneniyor
+05:43:48  INFO  Seçilen strateji: blocks div.desc \u2192 11 firma (sayfa 1)
+05:43:54  INFO  (35/234) Zuchex 36. Uluslararas\u0131 Ev Ve Mutfak E\u015fyalar\u0131 Fuar\u0131 — www.zuchex.com
+05:43:54  INFO  Generic scrape: https://www.zuchex.com
+05:43:58  INFO  Seçilen strateji: blocks li.cmp-subnavigation__item.cmp-su \u2192 22 firma (sayfa 1)
+05:44:08  INFO  (36/234) 17. Perakende Zirvesi 2026, Yerel Zincirler Bulu\u015fuyor Fuar\u0131 — www.yzb.focusfairs.com
+05:44:08  INFO  Generic scrape: https://www.yzb.focusfairs.com
+05:44:10  INFO  Seçilen strateji: ul[14 li] \u2192 13 firma (sayfa 1)
+05:44:18  INFO  (37/234) Psb Anatol\u0131a 2026 — www.psbanatolia.com
+05:44:18  INFO  Generic scrape: https://www.psbanatolia.com
+05:44:21  INFO  Seçilen strateji: blocks li.nav-item \u2192 20 firma (sayfa 1)
+05:44:43  INFO  (38/234) Çerkezköy Endüstriyel Fuar\u0131 (Çef) — www.endustriyelfuar.org
+05:44:43  INFO  Generic scrape: https://www.endustriyelfuar.org
+05:44:43  INFO  \u0130çerik az (4963 byte), Playwright deneniyor
+05:45:21  INFO  Seçilen strateji: blocks div.border.border-white/10.cursor- \u2192 10 firma (sayfa 1)
+05:45:24  INFO  (39/234) G\u0131tex A\u0131 Türkiye — www.gitexturkiye.com
+05:45:24  INFO  Generic scrape: https://www.gitexturkiye.com
+05:45:26  INFO  Seçilen strateji: blocks div.auto-container \u2192 19 firma (sayfa 1)
+05:45:37  INFO  (40/234) Do\u011fuanadolu G\u0131da Tar\u0131m Ve Hayvanc\u0131l\u0131k Fuar\u0131 — www.trendfaur.com.tr
+05:45:37  INFO  Generic scrape: https://www.trendfaur.com.tr
+05:45:41  WARNING  \u0130stek ba\u015far\u0131s\u0131z (3 deneme): https://www.trendfaur.com.tr — HTTPSConnectionPool(host='www.trendfaur.com.tr', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000020A40FB4DA0>: Failed to resolve 'www.trendfaur.com.tr' ([Errno 11001] getaddrinfo failed)"))
+05:45:41  INFO  \u0130çerik az (0 byte), Playwright deneniyor
+05:45:51  ERROR  Playwright hatas\u0131: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.trendfaur.com.tr/
+Call log:
+  - navigating to "https://www.trendfaur.com.tr/", waiting until "networkidle"
+
+05:45:51  ERROR  Sayfa hiç yüklenemedi: https://www.trendfaur.com.tr
+05:45:56  WARNING  \u0130stek ba\u015far\u0131s\u0131z (3 deneme): https://www.trendfaur.com.tr — HTTPSConnectionPool(host='www.trendfaur.com.tr', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000020A40FB5C10>: Failed to resolve 'www.trendfaur.com.tr' ([Errno 11001] getaddrinfo failed)"))
+05:45:57  INFO  (41/234) Agrotec 2026 29. Uluslararas\u0131 Tar\u0131m Ve Tar\u0131m Teknolojileri Fuar\u0131 — www.ankaexpo.com.tr
+05:45:57  INFO  Generic scrape: https://www.ankaexpo.com.tr
+05:46:03  WARNING  \u0130stek ba\u015far\u0131s\u0131z (3 deneme): https://www.ankaexpo.com.tr — HTTPSConnectionPool(host='imajmarket.com.tr', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000020A441E6120>: Failed to resolve 'imajmarket.com.tr' ([Errno 11001] getaddrinfo failed)"))
+05:46:03  INFO  \u0130çerik az (0 byte), Playwright deneniyor
+05:46:06  ERROR  Playwright hatas\u0131: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.ankaexpo.com.tr/
+Call log:
+  - navigating to "https://www.ankaexpo.com.tr/", waiting until "networkidle"
+
+05:46:06  ERROR  Sayfa hiç yüklenemedi: https://www.ankaexpo.com.tr
+05:46:11  WARNING  \u0130stek ba\u015far\u0131s\u0131z (3 deneme): https://www.ankaexpo.com.tr — HTTPSConnectionPool(host='imajmarket.com.tr', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000020A441E4110>: Failed to resolve 'imajmarket.com.tr' ([Errno 11001] getaddrinfo failed)"))
+05:46:13  INFO  (42/234) V\u0131.Marmaraka  Kamp Karavan Ve Do\u011fa Sporlar\u0131 Fuar\u0131 — www.anadoluekspo.com
+05:46:13  INFO  Generic scrape: https://www.anadoluekspo.com
+05:46:16  INFO  Seçilen strateji: blocks div.ae-gecmis-year \u2192 22 firma (sayfa 1)
+05:46:21  INFO  (43/234) Ba\u015fkent Optik Fuar\u0131 — www.baskentoptikfuarcilik.com
+05:46:21  INFO  Generic scrape: https://www.baskentoptikfuarcilik.com
+05:46:25  WARNING  \u0130stek ba\u015far\u0131s\u0131z (3 deneme): https://www.baskentoptikfuarcilik.com — HTTPSConnectionPool(host='www.baskentoptikfuarcilik.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000020A4472EAE0>: Failed to resolve 'www.baskentoptikfuarcilik.com' ([Errno 11001] getaddrinfo failed)"))
+05:46:25  INFO  \u0130çerik az (0 byte), Playwright deneniyor
+05:46:27  ERROR  Playwright hatas\u0131: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.baskentoptikfuarcilik.com/
+Call log:
+  - navigating to "https://www.baskentoptikfuarcilik.com/", waiting until "networkidle"
+
+05:46:27  ERROR  Sayfa hiç yüklenemedi: https://www.baskentoptikfuarcilik.com
+05:46:31  WARNING  \u0130stek ba\u015far\u0131s\u0131z (3 deneme): https://www.baskentoptikfuarcilik.com — HTTPSConnectionPool(host='www.baskentoptikfuarcilik.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000020A4472EBD0>: Failed to resolve 'www.baskentoptikfuarcilik.com' ([Errno 11001] getaddrinfo failed)"))
+05:46:33  INFO  (44/234) Electricity Eurasia - Elektrik Ve Elektrik Ekipmanlar\u0131 Fuar\u0131 — www.electricityeurasia.com
+05:46:33  INFO  Generic scrape: https://www.electricityeurasia.com
+05:46:37  WARNING  \u0130stek ba\u015far\u0131s\u0131z (3 deneme): https://www.electricityeurasia.com — HTTPSConnectionPool(host='www.electricityeurasia.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000020A43C2AFF0>: Failed to resolve 'www.electricityeurasia.com' ([Errno 11001] getaddrinfo failed)"))
+05:46:37  INFO  \u0130çerik az (0 byte), Playwright deneniyor
+05:46:38  ERROR  Playwright hatas\u0131: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.electricityeurasia.com/
+Call log:
+  - navigating to "https://www.electricityeurasia.com/", waiting until "networkidle"
+
+05:46:38  ERROR  Sayfa hiç yüklenemedi: https://www.electricityeurasia.com
+05:46:43  WARNING  \u0130stek ba\u015far\u0131s\u0131z (3 deneme): https://www.electricityeurasia.com — HTTPSConnectionPool(host='www.electricityeurasia.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000020A4472C6E0>: Failed to resolve 'www.electricityeurasia.com' ([Errno 11001] getaddrinfo failed)"))
+05:46:44  INFO  (45/234) Icc\u0131 - Uluslararas\u0131 Enerji Ve Çevre Fuar\u0131 Ve Konferans\u0131 — www.icci.com.tr
+05:46:44  INFO  Generic scrape: https://www.icci.com.tr
+05:46:46  INFO  Seçilen strateji: blocks div.elementor-widget-container \u2192 54 firma (sayfa 1)
+05:46:51  INFO  (46/234) Ib\u0131a Expo - 5. Uluslararas\u0131 Yatak Yan Sanayi Ve Teknolojileri Fuar\u0131 — www.bifasfuar.com
+05:46:51  INFO  Generic scrape: https://www.bifasfuar.com
+05:46:52  INFO  Seçilen strateji: selector [class*='firm'] \u2192 27 firma (sayfa 1)
+05:46:59  INFO  (47/234) Metal Expo Euras\u0131a \u0130stanbul – 8. Uluslararas\u0131 Demir, Demir D\u0131\u015f\u0131 Metaller, Çelik, Boru, Profil, Paslanmaz Çelik, Ala\u015f\u0131ml\u0131 Metal Dövme Teknolojileri Ve Ürünleri Fuar\u0131. — www.metalexpo.com.tr
+05:46:59  INFO  Generic scrape: https://www.metalexpo.com.tr
+05:46:59  INFO  Statik HTML'de aday bulunamad\u0131, Playwright ile tekrar deneniyor
+05:47:24  INFO  Seçilen strateji: blocks li.menu-item-has-children \u2192 16 firma (sayfa 1)
+05:47:30  INFO  (48/234) Akhisar Tar\u0131m Ve Zeytincilik Fuar\u0131 — www.alsancakfuarcilik.com
+05:47:30  INFO  Generic scrape: https://www.alsancakfuarcilik.com
+05:47:33  INFO  Statik HTML'de aday bulunamad\u0131, Playwright ile tekrar deneniyor
+05:47:50  WARNING  Hiçbir strateji 10+ geçerli kay\u0131t bulamad\u0131: https://www.alsancakfuarcilik.com
+05:47:53  INFO  (49/234) U\u015fak 11. Ege Tar\u0131m Ve Hayvanc\u0131l\u0131k, Süt Teknolojileri, Çiftlik Ekipmanlar\u0131, Tar\u0131m Makineleri, Sera Teknolojileri Fuar\u0131 — www.glplatformfuar.com
+05:47:53  INFO  Generic scrape: https://www.glplatformfuar.com
+05:47:58  INFO  Seçilen strateji: blocks div.elementor-widget-container \u2192 45 firma (sayfa 1)
+05:48:12  INFO  (50/234) \u0130nterfresh Eurasia / Interfood Eurasia Meyve,Sebze,G\u0131da,G\u0131da Ürünleri ,G\u0131da Teknolojileri Ambalaj,Tar\u0131m Teknolojileri,Depolama Ve   Lojistik Fuar\u0131 — euroasiainterfresh.com
+05:48:12  INFO  Generic scrape: https://euroasiainterfresh.com
+05:48:30  INFO  Statik HTML'de aday bulunamad\u0131, Playwright ile tekrar deneniyor
+05:48:58  INFO  Seçilen strateji: blocks div.elementor-widget-container \u2192 13 firma (sayfa 1)
+05:49:33  INFO  (51/234) Fastener Expo Eurasia 
+Avrasya Endüstriyel Ba\u011flant\u0131 Ve Sabitleme Elemanlar\u0131 Fuar\u0131 — www.tuyap.com.tr
+05:49:33  INFO  Generic scrape: https://www.tuyap.com.tr
+05:49:35  INFO  Seçilen strateji: ul[13 li] \u2192 12 firma (sayfa 1)
+05:49:43  INFO  (52/234) Iv.Expo Sport Uluslararas\u0131 Spor Fuar\u0131 — www.expo-sport.com
+05:49:43  INFO  Generic scrape: https://www.expo-sport.com
+05:49:46  INFO  Seçilen strateji: blocks div.wpb_wrapper \u2192 31 firma (sayfa 1)
+05:49:53  INFO  (53/234) Expo 3D Istanbul - Eklemeli \u0130malat, Tasar\u0131m Ve Üretim Teknolojileri Fuar\u0131 — www.expo3d.istanbul
+05:49:53  INFO  Generic scrape: https://www.expo3d.istanbul
+05:49:59  INFO  Seçilen strateji: blocks div.tech-card \u2192 14 firma (sayfa 1)
+05:50:09  INFO  (54/234) Platform Günleri — www.platformgunleri.org
+05:50:09  INFO  Generic scrape: https://www.platformgunleri.org
+05:50:10  INFO  Statik HTML'de aday bulunamad\u0131, Playwright ile tekrar deneniyor
+05:50:29  WARNING  Hiçbir strateji 10+ geçerli kay\u0131t bulamad\u0131: https://www.platformgunleri.org
+05:50:30  INFO  Generic scrape: https://www.platformgunleri.org/katilimcilar/
+05:50:30  INFO  Statik HTML'de aday bulunamad\u0131, Playwright ile tekrar deneniyor
+05:50:46  WARNING  Hiçbir strateji 10+ geçerli kay\u0131t bulamad\u0131: https://www.platformgunleri.org/katilimcilar/
+05:50:47  INFO  (55/234) Saruhanl\u0131 Tar\u0131m Ve Hayvanc\u0131l\u0131k Fuar\u0131 — www.efrfairs.com
+05:50:47  INFO  Generic scrape: https://www.efrfairs.com
+05:50:53  WARNING  \u0130stek ba\u015far\u0131s\u0131z (3 deneme): https://www.efrfairs.com — HTTP 502
+05:50:53  INFO  \u0130çerik az (0 byte), Playwright deneniyor
+05:51:05  WARNING  Hiçbir strateji 10+ geçerli kay\u0131t bulamad\u0131: https://www.efrfairs.com
+05:51:11  WARNING  \u0130stek ba\u015far\u0131s\u0131z (3 deneme): https://www.efrfairs.com — HTTP 502
+05:51:12  INFO  (56/234) 6.Antalya Estetik Güzellik Ki\u015fisel Bak\u0131m Kozmetik Fuar\u0131 — usfuar.com
+05:51:12  INFO  Generic scrape: https://usfuar.com
+05:51:13  INFO  Seçilen strateji: blocks div.footer-center-item \u2192 11 firma (sayfa 1)
+05:51:15  INFO  (57/234) 4. Oyfest Oyuncak Ve Çocuk Gereçleri Fuar\u0131 — oyfest.com.tr
+05:51:15  INFO  Generic scrape: https://oyfest.com.tr
+05:51:16  INFO  Statik HTML'de aday bulunamad\u0131, Playwright ile tekrar deneniyor
+05:51:31  WARNING  Hiçbir strateji 10+ geçerli kay\u0131t bulamad\u0131: https://oyfest.com.tr
+05:51:32  INFO  Generic scrape: https://oyfest.com.tr/exhibitors
+05:51:33  INFO  Statik HTML'de aday bulunamad\u0131, Playwright ile tekrar deneniyor
+05:51:46  WARNING  Hiçbir strateji 10+ geçerli kay\u0131t bulamad\u0131: https://oyfest.com.tr/exhibitors
+05:51:48  INFO  (58/234) Vitahealth Fuar\u0131 — www.vitahealthfair.com
+05:51:48  INFO  Generic scrape: https://www.vitahealthfair.com
+05:51:50  INFO  Statik HTML'de aday bulunamad\u0131, Playwright ile tekrar deneniyor
+05:52:03  WARNING  Hiçbir strateji 10+ geçerli kay\u0131t bulamad\u0131: https://www.vitahealthfair.com
+05:52:05  INFO  (59/234) Vitahealth Sa\u011fl\u0131k Turizm Fuar\u0131 — www.vitahealthfair.com
+05:52:05  INFO  Generic scrape: https://www.vitahealthfair.com
+05:52:06  INFO  Statik HTML'de aday bulunamad\u0131, Playwright ile tekrar deneniyor
+05:52:19  WARNING  Hiçbir strateji 10+ geçerli kay\u0131t bulamad\u0131: https://www.vitahealthfair.com
+05:52:22  INFO  (60/234) Contemporary \u0130stanbul Ça\u011fda\u015f Sanat Hizmet Fuar\u0131 — www.contemporaryistanbul.com
+05:52:22  INFO  Generic scrape: https://www.contemporaryistanbul.com
+05:52:23  INFO  Statik HTML'de aday bulunamad\u0131, Playwright ile tekrar deneniyor
+05:52:42  INFO  Seçilen strateji: blocks div.font-semibold.justify-start.te \u2192 13 firma (sayfa 1)
+05:52:45  INFO  (61/234) Band\u0131rma Tar\u0131m, Hayvanc\u0131l\u0131k Ve Ekipmanlar\u0131 Fuar\u0131 — www.linafair.com
+05:52:45  INFO  Generic scrape: https://www.linafair.com
+05:52:46  INFO  Seçilen strateji: blocks div.elementor-widget-container \u2192 27 firma (sayfa 1)
+05:52:50  INFO  (62/234) Denizli Kent Ya\u015fam 2026 - 3 .Ev Otomasyonu Ve Ev \u0130htiyaçlar\u0131 Fuar\u0131 — www.4mfuar.com
+05:52:50  INFO  Generic scrape: https://www.4mfuar.com
+05:52:51  INFO  Seçilen strateji: blocks div.modal-content \u2192 12 firma (sayfa 1)
+05:52:54  INFO  (63/234) Müsiad Expo 2026 Uluslararas\u0131 Müsiad Ticaret Fuar\u0131 — www.musiadexpo.com
+05:52:54  INFO  Generic scrape: https://www.musiadexpo.com
+05:52:54  INFO  Statik HTML'de aday bulunamad\u0131, Playwright ile tekrar deneniyor
+05:53:09  WARNING  Hiçbir strateji 10+ geçerli kay\u0131t bulamad\u0131: https://www.musiadexpo.com
+05:53:10  INFO  (64/234) 21. Trakya Lüleburgaz Tar\u0131mtech Tar\u0131m, Hayvanc\u0131l\u0131k, Sanayi Ve G\u0131da Fuar\u0131 — www.renklyfuar.com
+05:53:10  INFO  Generic scrape: https://www.renklyfuar.com
+05:53:11  INFO  Statik HTML'de aday bulunamad\u0131, Playwright ile tekrar deneniyor
+05:54:13  ERROR  Playwright hatas\u0131: Page.goto: Timeout 60000ms exceeded.
+Call log:
+  - navigating to "https://www.renklyfuar.com/", waiting until "networkidle"
+
+05:54:13  WARNING  Hiçbir strateji 10+ geçerli kay\u0131t bulamad\u0131: https://www.renklyfuar.com
+05:54:15  INFO  (65/234) Flora Garden 5.Peyzaj Ve Bahçe Mobilyalar\u0131 Fuar\u0131 — www.ankaexpo.com.tr
+05:54:15  INFO  Generic scrape: https://www.ankaexpo.com.tr
+05:54:20  WARNING  \u0130stek ba\u015far\u0131s\u0131z (3 deneme): https://www.ankaexpo.com.tr — HTTPSConnectionPool(host='imajmarket.com.tr', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000020A40DB49E0>: Failed to resolve 'imajmarket.com.tr' ([Errno 11001] getaddrinfo failed)"))
+05:54:20  INFO  \u0130çerik az (0 byte), Playwright deneniyor
+05:54:22  ERROR  Playwright hatas\u0131: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.ankaexpo.com.tr/
+Call log:
+  - navigating to "https://www.ankaexpo.com.tr/", waiting until "networkidle"
+
+05:54:22  ERROR  Sayfa hiç yüklenemedi: https://www.ankaexpo.com.tr
+05:54:27  WARNING  \u0130stek ba\u015far\u0131s\u0131z (3 deneme): https://www.ankaexpo.com.tr — HTTPSConnectionPool(host='imajmarket.com.tr', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000020A40FBCE60>: Failed to resolve 'imajmarket.com.tr' ([Errno 11001] getaddrinfo failed)"))
+05:54:28  INFO  (66/234) Su-Tek 4.Su Ve Su Teknolojileri Fuar\u0131 — www.ankaexpo.com.tr
+05:54:28  INFO  Generic scrape: https://www.ankaexpo.com.tr
+05:54:33  WARNING  \u0130stek ba\u015far\u0131s\u0131z (3 deneme): https://www.ankaexpo.com.tr — HTTPSConnectionPool(host='imajmarket.com.tr', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000020A40FBF200>: Failed to resolve 'imajmarket.com.tr' ([Errno 11001] getaddrinfo failed)"))
+05:54:33  INFO  \u0130çerik az (0 byte), Playwright deneniyor
+05:54:34  ERROR  Playwright hatas\u0131: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.ankaexpo.com.tr/
+Call log:
+  - navigating to "https://www.ankaexpo.com.tr/", waiting until "networkidle"
+
+05:54:34  ERROR  Sayfa hiç yüklenemedi: https://www.ankaexpo.com.tr
+05:54:40  WARNING  \u0130stek ba\u015far\u0131s\u0131z (3 deneme): https://www.ankaexpo.com.tr — HTTPSConnectionPool(host='imajmarket.com.tr', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000020A440A9280>: Failed to resolve 'imajmarket.com.tr' ([Errno 11001] getaddrinfo failed)"))
+05:54:41  INFO  (67/234) C\u0131tytech 15.Çevre, \u015eehircilik Ve Belediye Fuar\u0131 — www.ankaexpo.com.tr
+05:54:41  INFO  Generic scrape: https://www.ankaexpo.com.tr
+05:54:46  WARNING  \u0130stek ba\u015far\u0131s\u0131z (3 deneme): https://www.ankaexpo.com.tr — HTTPSConnectionPool(host='imajmarket.com.tr', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000020A440A9E50>: Failed to resolve 'imajmarket.com.tr' ([Errno 11001] getaddrinfo failed)"))
+05:54:46  INFO  \u0130çerik az (0 byte), Playwright deneniyor
+05:54:47  ERROR  Playwright hatas\u0131: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.ankaexpo.com.tr/
+Call log:
+  - navigating to "https://www.ankaexpo.com.tr/", waiting until "networkidle"
+
+05:54:47  ERROR  Sayfa hiç yüklenemedi: https://www.ankaexpo.com.tr
+05:54:53  WARNING  \u0130stek ba\u015far\u0131s\u0131z (3 deneme): https://www.ankaexpo.com.tr — HTTPSConnectionPool(host='imajmarket.com.tr', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000020A446157C0>: Failed to resolve 'imajmarket.com.tr' ([Errno 11001] getaddrinfo failed)"))
+05:54:54  INFO  (68/234) S\u0131gn \u0130stanbul 27. Uluslararas\u0131 Endüstriyel Reklam Ve Dijital Bask\u0131 Teknolojileri Fuar\u0131 — www.signistanbul.com
+05:54:54  INFO  Generic scrape: https://www.signistanbul.com
+05:54:55  INFO  Seçilen strateji: blocks li.cmp-subnavigation__item.cmp-su \u2192 18 firma (sayfa 1)
+05:54:57  INFO  Sayfalama ile toplam 18 \u2192 35 firmaya ç\u0131kt\u0131
+05:54:59  INFO  (69/234) Fd\u0131 Furn\u0131sh\u0131ngs And Des\u0131gn Istanbul (Mobilya Tasar\u0131m Fuar\u0131) — www.fdistanbul.com
+05:54:59  INFO  Generic scrape: https://www.fdistanbul.com
+05:55:01  INFO  Seçilen strateji: blocks div.fusion-column-has-shadow.fusio \u2192 40 firma (sayfa 1)
+05:55:07  INFO  (70/234) Future F\u0131sh Euras\u0131a — www.future-fish.com
+05:55:07  INFO  Generic scrape: https://www.future-fish.com
+05:55:08  INFO  \u0130çerik az (384 byte), Playwright deneniyor
+05:55:20  WARNING  Hiçbir strateji 10+ geçerli kay\u0131t bulamad\u0131: https://www.future-fish.com
+05:55:21  INFO  (71/234) \u0130stanbul Turizm Fuar\u0131 — www.istanbulturizmfuari.com.tr
+05:55:21  INFO  Generic scrape: https://www.istanbulturizmfuari.com.tr
+05:55:23  INFO  Seçilen strateji: blocks li.link.root \u2192 28 firma (sayfa 1)
+05:55:27  INFO  (72/234) Dinar Tar\u0131m Hayvanc\u0131l\u0131k Makinalar\u0131, Teknolojileri Ve Yem Fuar\u0131 — www.basakfuar.com
+05:55:27  INFO  Generic scrape: https://www.basakfuar.com
+05:55:28  WARNING  UYARI: sayfa login/üyelik duvar\u0131 arkas\u0131nda görünüyor, gerçek liste görülemiyor: https://www.basakfuar.com
+05:55:30  INFO  (73/234) 3. Bal\u0131kesir Tar\u0131m Ve Hayvanc\u0131l\u0131k Fuar\u0131 — balikesirtarimvehayvancilikfuari.com
+05:55:30  INFO  Generic scrape: https://balikesirtarimvehayvancilikfuari.com
+05:55:31  INFO  Seçilen strateji: blocks div.elementor-element-populated.el \u2192 12 firma (sayfa 1)
+05:55:35  INFO  (74/234) Ankara Ice Cream&Sweet Expo Ankara Dondurma Ve Tatl\u0131 Fuar\u0131 — www.zirvefuarcilik.com.tr
+05:55:35  INFO  Generic scrape: https://www.zirvefuarcilik.com.tr
+05:55:39  INFO  Seçilen strateji: blocks div.wpb_wrapper \u2192 19 firma (sayfa 1)
+05:55:45  INFO  (75/234) Diyarbak\u0131r 10. Kitap Fuar\u0131 — www.tuyap.com.tr
+05:55:45  INFO  Generic scrape: https://www.tuyap.com.tr
+05:55:47  INFO  Seçilen strateji: ul[13 li] \u2192 12 firma (sayfa 1)
+05:55:51  INFO  (76/234) Qs Discover Master Fuar\u0131 — www.qs.topuniversities.com/tr/events/masters/istanbul
+05:55:51  INFO  Generic scrape: https://www.qs.topuniversities.com/tr/events/masters/istanbul
+05:55:52  INFO  Seçilen strateji: blocks div.field-error-text \u2192 33 firma (sayfa 1)
+05:55:57  INFO  (77/234) \u0130ngiltere E\u011fitim Günleri Fuar\u0131 — www.educationukdays.com
+05:55:57  INFO  Generic scrape: https://www.educationukdays.com
+05:56:00  INFO  Seçilen strateji: blocks div.elementor-widget-container \u2192 29 firma (sayfa 1)
+05:56:03  INFO  (78/234) 1.\u0130pek Ev Ve Ya\u015fam Teknolojileri Fuar\u0131 — www.planbmice.com.tr
+05:56:03  INFO  Generic scrape: https://www.planbmice.com.tr
+05:56:03  INFO  \u0130çerik az (163 byte), Playwright deneniyor
+05:56:15  WARNING  Hiçbir strateji 10+ geçerli kay\u0131t bulamad\u0131: https://www.planbmice.com.tr
+05:56:17  INFO  (79/234) \u0130ngiltere E\u011fitim Günleri Fuar\u0131 — www.educationukdays.com
+05:56:17  INFO  Generic scrape: https://www.educationukdays.com
+05:56:17  INFO  Seçilen strateji: blocks div.elementor-widget-container \u2192 29 firma (sayfa 1)
+05:56:19  INFO  (80/234) Atech — www.atechfuari.com
+05:56:19  INFO  Generic scrape: https://www.atechfuari.com
+05:56:20  INFO  Seçilen strateji: blocks div.inner-box \u2192 16 firma (sayfa 1)
+05:56:24  INFO  (81/234) Ijs - \u0130stanbul Jewelry Show 60. \u0130stanbul Uluslararas\u0131 Mücevher, Alt\u0131n, Gümü\u015f, De\u011ferli Ta\u015f Ve Teknolojileri Fuar\u0131 — www.istanbuljewelryshow.com
+05:56:24  INFO  Generic scrape: https://www.istanbuljewelryshow.com
+05:56:24  INFO  Seçilen strateji: blocks div.container \u2192 16 firma (sayfa 1)
+05:56:28  INFO  (82/234) 14.Malatya Tar\u0131m Teknolojileri Makine Hayvanc\u0131l\u0131k Ve Ekipmanlar\u0131 Fuar\u0131 — www.malatyakultur.com
+05:56:28  INFO  Generic scrape: https://www.malatyakultur.com
+05:56:28  INFO  \u0130çerik az (1725 byte), Playwright deneniyor
+05:56:42  INFO  Seçilen strateji: blocks div.proje-gorsel-konteyner \u2192 12 firma (sayfa 1)
+05:56:45  INFO  (83/234) Sigorta Sektörü \u0130\u015f Birli\u011fi Fuar\u0131 Ve Kongresi — sigortacilikfuar.com
+05:56:45  INFO  Generic scrape: https://sigortacilikfuar.com
+05:56:46  INFO  Seçilen strateji: blocks div.elementor-widget-container \u2192 70 firma (sayfa 1)
+05:56:51  INFO  (84/234) Craftistanbul 7.Uluslararas\u0131 Yöresel Ve Geleneksel El Sanatlar\u0131 Fuar\u0131 — www.craftfairistanbul.com
+05:56:51  INFO  Generic scrape: https://www.craftfairistanbul.com
+05:56:52  INFO  Seçilen strateji: blocks li.menu-item.menu-item-object-pag \u2192 20 firma (sayfa 1)
+05:57:00  INFO  (85/234) Komtrans Ticari Araçlar Fuar\u0131 — www.kfa.com.tr
+05:57:00  INFO  Generic scrape: https://www.kfa.com.tr
+05:57:01  INFO  Seçilen strateji: blocks div.row \u2192 15 firma (sayfa 1)
+05:57:04  INFO  (86/234) Bursa Food Po\u0131nt G\u0131da Ürünleri Ve Teknolojileri Fuar\u0131 — www.kfa.com.tr
+05:57:04  INFO  Generic scrape: https://www.kfa.com.tr
+05:57:05  INFO  Seçilen strateji: blocks div.row \u2192 15 firma (sayfa 1)
+05:57:08  INFO  (87/234) Turfood/ 7.Bursa G\u0131da Fuar\u0131 — www.networkfuar.com
+05:57:08  INFO  Generic scrape: https://www.networkfuar.com
+05:57:09  INFO  Statik HTML'de aday bulunamad\u0131, Playwright ile tekrar deneniyor
+05:57:22  WARNING  Hiçbir strateji 10+ geçerli kay\u0131t bulamad\u0131: https://www.networkfuar.com
+05:57:24  INFO  (88/234) Türk Di\u015fhekimleri Birli\u011fi Expodental 2026 — www.tdb.org.tr
+05:57:24  INFO  Generic scrape: https://www.tdb.org.tr
+05:57:24  INFO  Statik HTML'de aday bulunamad\u0131, Playwright ile tekrar deneniyor
+05:57:38  INFO  Seçilen strateji: ul[17 li] \u2192 14 firma (sayfa 1)
+05:57:40  INFO  (89/234) 16. Biga Tar\u0131m, Hayvanc\u0131l\u0131k Sanayi Ve G\u0131da Fuar\u0131 — www.renklyfuar.com
+05:57:40  INFO  Generic scrape: https://www.renklyfuar.com
+05:57:41  INFO  Statik HTML'de aday bulunamad\u0131, Playwright ile tekrar deneniyor
+05:58:42  ERROR  Playwright hatas\u0131: Page.goto: Timeout 60000ms exceeded.
+Call log:
+  - navigating to "https://www.renklyfuar.com/", waiting until "networkidle"
+
+05:58:42  WARNING  Hiçbir strateji 10+ geçerli kay\u0131t bulamad\u0131: https://www.renklyfuar.com
+05:58:45  INFO  (90/234) 16.Antalya Kitap Fuar\u0131 — www.napgroup.com.tr
+05:58:45  INFO  Generic scrape: https://www.napgroup.com.tr
+05:58:45  INFO  Statik HTML'de aday bulunamad\u0131, Playwright ile tekrar deneniyor
+05:59:00  WARNING  Hiçbir strateji 10+ geçerli kay\u0131t bulamad\u0131: https://www.napgroup.com.tr
+05:59:01  INFO  (91/234) Van Yöresel Ürünler, G\u0131da Ve El Sanatlar\u0131 Fuar\u0131 — www.ipekyoluexpo.com
+05:59:01  INFO  Generic scrape: https://www.ipekyoluexpo.com
+05:59:06  WARNING  \u0130stek ba\u015far\u0131s\u0131z (3 deneme): https://www.ipekyoluexpo.com — HTTPSConnectionPool(host='www.ipekyoluexpo.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000020A40CE1430>: Failed to resolve 'www.ipekyoluexpo.com' ([Errno 11002] getaddrinfo failed)"))
+05:59:06  INFO  \u0130çerik az (0 byte), Playwright deneniyor
+05:59:07  ERROR  Playwright hatas\u0131: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.ipekyoluexpo.com/
+Call log:
+  - navigating to "https://www.ipekyoluexpo.com/", waiting until "networkidle"
+
+05:59:07  ERROR  Sayfa hiç yüklenemedi: https://www.ipekyoluexpo.com
+05:59:12  WARNING  \u0130stek ba\u015far\u0131s\u0131z (3 deneme): https://www.ipekyoluexpo.com — HTTPSConnectionPool(host='www.ipekyoluexpo.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000020A40CE3260>: Failed to resolve 'www.ipekyoluexpo.com' ([Errno 11002] getaddrinfo failed)"))
+05:59:13  INFO  (92/234) Studyexpo Yurtd\u0131\u015f\u0131 E\u011fitim Fuar\u0131 — www.studyexpo.com
+05:59:13  INFO  Generic scrape: https://www.studyexpo.com
+05:59:14  INFO  Statik HTML'de aday bulunamad\u0131, Playwright ile tekrar deneniyor
+05:59:27  WARNING  Hiçbir strateji 10+ geçerli kay\u0131t bulamad\u0131: https://www.studyexpo.com
+05:59:28  INFO  Generic scrape: https://www.studyexpo.com/exhibitors
+05:59:28  INFO  Seçilen strateji: ul[29 li] \u2192 29 firma (sayfa 1)
+05:59:30  INFO  (93/234) \u0130ngiltere E\u011fitim Günleri Fuar\u0131 — www.educationukdays.com
+05:59:30  INFO  Generic scrape: https://www.educationukdays.com
+05:59:31  INFO  Seçilen strateji: blocks div.elementor-widget-container \u2192 29 firma (sayfa 1)
+05:59:36  INFO  (94/234) \u0130stanbul Çocuk Kitaplar\u0131 Fuar\u0131 — www.kipatfuar.com
+05:59:36  INFO  Generic scrape: https://www.kipatfuar.com
+05:59:37  INFO  Seçilen strateji: ul[14 li] \u2192 13 firma (sayfa 1)
+05:59:41  INFO  (95/234) Studyexpo Yurtd\u0131\u015f\u0131 E\u011fitim Fuar\u0131 — www.studyexpo.com
+05:59:41  INFO  Generic scrape: https://www.studyexpo.com
+05:59:42  INFO  Statik HTML'de aday bulunamad\u0131, Playwright ile tekrar deneniyor
+05:59:55  WARNING  Hiçbir strateji 10+ geçerli kay\u0131t bulamad\u0131: https://www.studyexpo.com
+05:59:55  INFO  Generic scrape: https://www.studyexpo.com/exhibitors
+05:59:56  INFO  Seçilen strateji: ul[29 li] \u2192 29 firma (sayfa 1)
+05:59:58  INFO  (96/234) \u0130ngiltere E\u011fitim Günleri Fuar\u0131 — www.educationukdays.com
+05:59:58  INFO  Generic scrape: https://www.educationukdays.com
+05:59:58  INFO  Seçilen strateji: blocks div.elementor-widget-container \u2192 29 firma (sayfa 1)
+06:00:00  INFO  (97/234) Studyexpo Yurtd\u0131\u015f\u0131 E\u011fitim Fuar\u0131 — www.studyexpo.com
+06:00:00  INFO  Generic scrape: https://www.studyexpo.com
+06:00:01  INFO  Statik HTML'de aday bulunamad\u0131, Playwright ile tekrar deneniyor
+06:00:14  WARNING  Hiçbir strateji 10+ geçerli kay\u0131t bulamad\u0131: https://www.studyexpo.com
+06:00:14  INFO  Generic scrape: https://www.studyexpo.com/exhibitors
+06:00:14  INFO  Seçilen strateji: ul[29 li] \u2192 29 firma (sayfa 1)
+06:00:17  INFO  (98/234) Logistech "5. Lojistik, Depolama Ve Teknolojileri Fuar\u0131" — www.izfas.com.tr
+06:00:17  INFO  Generic scrape: https://www.izfas.com.tr
+06:00:18  INFO  Seçilen strateji: blocks div.d-flex \u2192 114 firma (sayfa 1)
+06:00:22  INFO  (99/234) Data Center Eurasia — www.datacentereurasia.com
+06:00:22  INFO  Generic scrape: https://www.datacentereurasia.com
+06:00:22  INFO  Seçilen strateji: blocks div.elementor-widget-container \u2192 39 firma (sayfa 1)
+06:00:30  INFO  (100/234) 6. Uluslararas\u0131 Mob\u0131sad Imex Fuar\u0131 — www.marmarafuar.com.tr
+06:00:30  INFO  Generic scrape: https://www.marmarafuar.com.tr
+06:00:32  INFO  Statik HTML'de aday bulunamad\u0131, Playwright ile tekrar deneniyor
+06:00:52  WARNING  Hiçbir strateji 10+ geçerli kay\u0131t bulamad\u0131: https://www.marmarafuar.com.tr
+06:00:56  INFO  (101/234) Isaf Smartex Fuar\u0131 - 15.Uluslararas\u0131 Ak\u0131ll\u0131 \u015eehirler, Binalar, Ula\u015f\u0131m, Yönetim Ve Ya\u015fam Fuar\u0131 — www.marmarafuar.com.tr
+06:00:56  INFO  Generic scrape: https://www.marmarafuar.com.tr
+06:00:59  INFO  Statik HTML'de aday bulunamad\u0131, Playwright ile tekrar deneniyor
+06:01:17  WARNING  Hiçbir strateji 10+ geçerli kay\u0131t bulamad\u0131: https://www.marmarafuar.com.tr
+06:01:20  INFO  (102/234) Isaf International Fuar\u0131 - 30.Uluslararas\u0131 Güvenlik, Ülke Güvenli\u011fi, Siber Güvenlik, Yang\u0131n, \u0130sg Fuar\u0131 — www.marmarafuar.com.tr
+06:01:20  INFO  Generic scrape: https://www.marmarafuar.com.tr
+06:01:23  INFO  Statik HTML'de aday bulunamad\u0131, Playwright ile tekrar deneniyor
+06:01:41  WARNING  Hiçbir strateji 10+ geçerli kay\u0131t bulamad\u0131: https://www.marmarafuar.com.tr
+06:01:45  INFO  (103/234) Petzoo Eurasia 12. Uluslararas\u0131 Evcil Hayvan Ürün Malzeme Ve Aksesuar Tedarikçileri Fuar\u0131 — www.ulusalfair.com
+06:01:45  INFO  Generic scrape: https://www.ulusalfair.com
+06:01:48  INFO  Seçilen strateji: blocks div.elementor-widget-container \u2192 67 firma (sayfa 1)
+06:01:54  INFO  (104/234) 3. Motta Ege Motorlu Ta\u015f\u0131tlar Fuar\u0131 — www.mottashow.com
+06:01:54  INFO  Generic scrape: https://www.mottashow.com
+06:01:55  INFO  Statik HTML'de aday bulunamad\u0131, Playwright ile tekrar deneniyor
+06:02:10  WARNING  Hiçbir strateji 10+ geçerli kay\u0131t bulamad\u0131: https://www.mottashow.com
+06:02:12  INFO  (105/234) Anamob Anadolu Mobilya — www.nobelanamob.com
+06:02:12  INFO  Generic scrape: https://www.nobelanamob.com
+06:02:13  INFO  Seçilen strateji: blocks div.elementor-widget-container \u2192 10 firma (sayfa 1)
+06:02:18  INFO  (106/234) Mobidictum Conference 2026 — www.mobidictum.com
+06:02:18  INFO  Generic scrape: https://www.mobidictum.com
+06:02:20  INFO  Seçilen strateji: blocks div.elementor-widget-container \u2192 54 firma (sayfa 1)
+06:02:27  INFO  (107/234) 5. Peyzaj \u0130stanbul Fuar\u0131 2026 — www.PeyzajistanbulFuari.com.tr
+06:02:27  INFO  Generic scrape: https://www.PeyzajistanbulFuari.com.tr
+06:02:28  INFO  \u0130çerik az (113 byte), Playwright deneniyor
+06:02:49  INFO  Seçilen strateji: blocks li.menu-item.menu-item-object-pag \u2192 20 firma (sayfa 1)
+06:02:52  INFO  (108/234) 3.Jojo Caravanport  - Hobbyport Antalya Karavan, Karavan Ekipmanlar\u0131 Kamp Tiny House Outdoor - Modüler Evler Otomotiv Ve Otomotiv Yan Ürünieri Fuar\u0131 — www.jojoexpo.com
+06:02:52  INFO  Generic scrape: https://www.jojoexpo.com
+06:02:53  WARNING  UYARI: sayfa login/üyelik duvar\u0131 arkas\u0131nda görünüyor, gerçek liste görülemiyor: https://www.jojoexpo.com
+06:02:55  INFO  (109/234) Kahramanmara\u015f Tar\u0131m,G\u0131da, Serac\u0131l\u0131k, Hayvanc\u0131l\u0131k Ve Teknolojileri — www.ktftr.com
+06:02:55  INFO  Generic scrape: https://www.ktftr.com
+06:02:56  INFO  Seçilen strateji: blocks li.nav-item \u2192 42 firma (sayfa 1)
+06:03:00  INFO  (110/234) Avrasya Teknoloji Haftas\u0131 — www.etwistanbul.com
+06:03:00  INFO  Generic scrape: https://www.etwistanbul.com
+06:03:01  INFO  Statik HTML'de aday bulunamad\u0131, Playwright ile tekrar deneniyor
+06:04:10  WARNING  Hiçbir strateji 10+ geçerli kay\u0131t bulamad\u0131: https://www.etwistanbul.com
+06:04:10  INFO  Generic scrape: https://www.etwistanbul.com/en/exhibitors/
+06:04:11  INFO  Seçilen strateji: blocks div.h-full \u2192 132 firma (sayfa 1)
+06:04:14  INFO  (111/234) "Ayfidex " Ayd\u0131n Fidanc\u0131l\u0131k, Peyzaj Ve Süs Bitkileri Fuar\u0131 — www.kobifuarcilik.com
+06:04:14  INFO  Generic scrape: https://www.kobifuarcilik.com
+06:04:15  INFO  Statik HTML'de aday bulunamad\u0131, Playwright ile tekrar deneniyor
+06:04:32  WARNING  Hiçbir strateji 10+ geçerli kay\u0131t bulamad\u0131: https://www.kobifuarcilik.com
+06:04:34  INFO  (112/234) S\u0131hex 2026 - Samsun \u0130kiztepe Sa\u011fl\u0131k Zirvesi Ve Fuar\u0131 — www.sihex.com.tr
+06:04:34  INFO  Generic scrape: https://www.sihex.com.tr
+06:04:38  INFO  Seçilen strateji: blocks div.wpb_wrapper \u2192 62 firma (sayfa 1)
+06:04:48  INFO  (113/234) \u015eanl\u0131urfa G\u0131da Yöresel Ürünler Hediyelik E\u015fya Ve El Sanatlar\u0131 Fuar\u0131 — www.medyatrend.com.tr
+06:04:48  INFO  Generic scrape: https://www.medyatrend.com.tr
+06:04:51  INFO  Seçilen strateji: blocks div.title \u2192 32 firma (sayfa 1)
+06:04:55  INFO  (114/234) Nobel Çukurova Mobilya Fuar\u0131 — www.nobelexpo.com
+06:04:55  INFO  Generic scrape: https://www.nobelexpo.com
+06:04:58  INFO  Seçilen strateji: blocks div.wpb_wrapper \u2192 35 firma (sayfa 1)
+06:05:04  INFO  (115/234) Vef Yurt D\u0131\u015f\u0131 E\u011fitim Fuar\u0131 — www.endlessg.com
+06:05:04  INFO  Generic scrape: https://www.endlessg.com
+06:05:05  INFO  Seçilen strateji: blocks div.modal--information \u2192 10 firma (sayfa 1)
+06:05:09  INFO  (116/234) Avrasya Ambalaj 2026- \u0130stanbul 31.Uluslararas\u0131 Ambalaj Endüstrisi Fuar\u0131 (Printpack&Converting-Ambalaj Bask\u0131 Teknolojileri, Oluklu Mukavva-Ka\u011f\u0131t-Karton Ambalaj Üretim Teknolojileri Özel Bölümü) /Foodtech Eurasia G\u0131da \u0130çecek Üretim Ve \u0130\u015fleme Teknolojileri Özel Bölümü — www.tuyap.com.tr
+06:05:09  INFO  Generic scrape: https://www.tuyap.com.tr
+06:05:10  INFO  Seçilen strateji: ul[13 li] \u2192 12 firma (sayfa 1)
+06:05:14  INFO  (117/234) (Modef Expo 2026) 55.Uluslararas\u0131 Mobilya Ve Dekorasyon Fuar\u0131 — www.modef.com.tr
+06:05:14  INFO  Generic scrape: https://www.modef.com.tr
+06:05:14  WARNING  UYARI: sayfa login/üyelik duvar\u0131 arkas\u0131nda görünüyor, gerçek liste görülemiyor: https://www.modef.com.tr
+06:05:14  INFO  Generic scrape: https://www.modef.com.tr/katilimcilar
+06:05:15  INFO  Seçilen strateji: blocks div.col-md-2.mb-3 \u2192 141 firma (sayfa 1)
+06:05:18  INFO  (118/234) S\u0131v\u0131la\u015ft\u0131r\u0131lm\u0131\u015f Gaz Haftas\u0131 2026 — www.liquidgasweek.com
+06:05:18  INFO  Generic scrape: https://www.liquidgasweek.com
+06:05:20  INFO  Seçilen strateji: blocks div.title \u2192 33 firma (sayfa 1)
+06:05:23  INFO  (119/234) Ibaktech 15. Uluslararas\u0131 Ekmek, Pasta Makinalari, Dondurma, Çikolata Ve Teknolojileri Fuar\u0131 — www.messe-stuttgart.com.tr
+06:05:23  INFO  Generic scrape: https://www.messe-stuttgart.com.tr
+06:05:24  INFO  Seçilen strateji: blocks div.mainNavigation__border \u2192 15 firma (sayfa 1)
+06:05:26  INFO  (120/234) Agrogreen Bursa 2. Tar\u0131m, Hayvanc\u0131l\u0131k, Su\u0308t, Sera Teknolojileri, Tohum Fide Fidan Ve Canl\u0131 Hayvan Fuar\u0131 — www.agrogreenfairbursa.com
+06:05:26  INFO  Generic scrape: https://www.agrogreenfairbursa.com
+06:05:31  WARNING  \u0130stek ba\u015far\u0131s\u0131z (3 deneme): https://www.agrogreenfairbursa.com — HTTPSConnectionPool(host='www.agrogreenfairbursa.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000020A43407260>: Failed to resolve 'www.agrogreenfairbursa.com' ([Errno 11001] getaddrinfo failed)"))
+06:05:31  INFO  \u0130çerik az (0 byte), Playwright deneniyor
+06:05:32  ERROR  Playwright hatas\u0131: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.agrogreenfairbursa.com/
+Call log:
+  - navigating to "https://www.agrogreenfairbursa.com/", waiting until "networkidle"
+
+06:05:32  ERROR  Sayfa hiç yüklenemedi: https://www.agrogreenfairbursa.com
+06:05:37  WARNING  \u0130stek ba\u015far\u0131s\u0131z (3 deneme): https://www.agrogreenfairbursa.com — HTTPSConnectionPool(host='www.agrogreenfairbursa.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000020A43405A00>: Failed to resolve 'www.agrogreenfairbursa.com' ([Errno 11001] getaddrinfo failed)"))
+06:05:38  INFO  (121/234) 10. B\u0131otecn\u0131ca Uluslararas\u0131 Biyoteknoloji, Ya\u015fam Bilimleri Ve Endüstrileri Fuar\u0131 — www.bioexpo.com.tr
+06:05:38  INFO  Generic scrape: https://www.bioexpo.com.tr
+06:05:39  INFO  Seçilen strateji: blocks li.list-group-item \u2192 25 firma (sayfa 1)
+06:05:42  INFO  (122/234) 9. Analytech Uluslararas\u0131 Analiz Ve Labaratuvar Teknolojileri, Ekipmanlar\u0131 Fuar\u0131 — www.bioexpo.com.tr
+06:05:42  INFO  Generic scrape: https://www.bioexpo.com.tr
+06:05:42  INFO  Seçilen strateji: blocks li.list-group-item \u2192 25 firma (sayfa 1)
+06:05:45  INFO  (123/234) 9. Cleanroom Uluslararas\u0131 Temizoda Teknolojisi, Bak\u0131m Ve Donan\u0131mlar\u0131 Fuar\u0131 — www.bioexpo.com.tr
+06:05:45  INFO  Generic scrape: https://www.bioexpo.com.tr
+06:05:46  INFO  Seçilen strateji: blocks li.list-group-item \u2192 25 firma (sayfa 1)
+06:05:49  INFO  (124/234) 7. Pharmanext Uluslararas\u0131 \u0130laç Endüstrisi, Teknolojileri Ve Bile\u015fenleri Fuar\u0131 — www.bioexpo.com.tr
+06:05:49  INFO  Generic scrape: https://www.bioexpo.com.tr
+06:05:50  INFO  Seçilen strateji: blocks li.list-group-item \u2192 25 firma (sayfa 1)
+06:05:53  INFO  (125/234) \u0130meak Deniz Ticaret Odas\u0131 Bodrum Boat Show — www.bodrumboatshow.com.tr
+06:05:53  INFO  Generic scrape: https://www.bodrumboatshow.com.tr
+06:05:58  INFO  Seçilen strateji: blocks div.elementor-widget-container \u2192 18 firma (sayfa 1)
+06:06:08  INFO  (126/234) Ida Türkiye - Savunma Ve Havac\u0131l\u0131kta Endüstriyel \u0130\u015fbirli\u011fi Günleri Ve Fuar\u0131 — www.icdda.com.tr
+06:06:08  INFO  Generic scrape: https://www.icdda.com.tr
+06:06:09  INFO  \u0130çerik az (180 byte), Playwright deneniyor
+06:07:10  ERROR  Playwright hatas\u0131: Page.goto: Timeout 60000ms exceeded.
+Call log:
+  - navigating to "https://www.icdda.com.tr/", waiting until "networkidle"
+
+06:07:10  INFO  Statik HTML'de aday bulunamad\u0131, Playwright ile tekrar deneniyor
+06:08:21  INFO  Seçilen strateji: blocks div.item \u2192 58 firma (sayfa 1)
+06:08:23  INFO  (127/234) Bayim Olur Musun? 24. Franchising Ve Markal\u0131 Bayilik Fuar\u0131 — www.medyafors.com
+06:08:23  INFO  Generic scrape: https://www.medyafors.com
+06:08:26  INFO  Seçilen strateji: blocks div.swiper-slide \u2192 17 firma (sayfa 1)
+06:08:30  INFO  (128/234) 12. Magrotex'26 Uluslararas\u0131 Mardin Tar\u0131m Ekipmanlar\u0131 G\u0131da Ve Hayvanc\u0131l\u0131k Fuar\u0131 — www.zumrutfuarcilik.com.tr
+06:08:30  INFO  Generic scrape: https://www.zumrutfuarcilik.com.tr
+06:08:31  WARNING  UYARI: sayfa login/üyelik duvar\u0131 arkas\u0131nda görünüyor, gerçek liste görülemiyor: https://www.zumrutfuarcilik.com.tr
+06:08:33  INFO  (129/234) Poultry Show Avrasya Tavukculuk Teknoloj\u0131ler\u0131 Ekipmanlar\u0131 Fuar\u0131 Ve Kongres\u0131 — www.atlasfuarcilik.com.tr
+06:08:33  INFO  Generic scrape: https://www.atlasfuarcilik.com.tr
+06:08:33  INFO  \u0130çerik az (73 byte), Playwright deneniyor
+06:08:52  WARNING  Hiçbir strateji 10+ geçerli kay\u0131t bulamad\u0131: https://www.atlasfuarcilik.com.tr
+06:08:53  INFO  (130/234) Vef Yurt D\u0131\u015f\u0131 E\u011fitim Fuar\u0131 — www.endlessg.com
+06:08:53  INFO  Generic scrape: https://www.endlessg.com
+06:08:54  INFO  Seçilen strateji: blocks div.modal--information \u2192 10 firma (sayfa 1)
+06:08:57  INFO  (131/234) Akare Yurtd\u0131\u015f\u0131 E\u011fitim Fuarlar\u0131 — www.akare.com.tr
+06:08:57  INFO  Generic scrape: https://www.akare.com.tr
+06:08:58  INFO  Seçilen strateji: blocks div.col-lg-3.col-md-6.mb-30 \u2192 18 firma (sayfa 1)
+06:09:03  INFO  (132/234) Bosphorus Boat Show — bosphorusboatshow.com
+06:09:03  INFO  Generic scrape: https://bosphorusboatshow.com
+06:09:08  INFO  Statik HTML'de aday bulunamad\u0131, Playwright ile tekrar deneniyor
+06:09:27  WARNING  Hiçbir strateji 10+ geçerli kay\u0131t bulamad\u0131: https://bosphorusboatshow.com
+06:09:32  INFO  (133/234) 4. Çivril Tar\u0131m, Hayvanc\u0131l\u0131k Makinalar\u0131 Teknolojileri Ve Yem Fuar\u0131 — www.basakfuar.com
+06:09:32  INFO  Generic scrape: https://www.basakfuar.com
+06:09:33  WARNING  UYARI: sayfa login/üyelik duvar\u0131 arkas\u0131nda görünüyor, gerçek liste görülemiyor: https://www.basakfuar.com
+06:09:34  INFO  (134/234) Denizli Kitap Fuar\u0131 — www.tuyap.com.tr
+06:09:34  INFO  Generic scrape: https://www.tuyap.com.tr
+06:09:36  INFO  Seçilen strateji: ul[13 li] \u2192 12 firma (sayfa 1)
+06:09:40  INFO  (135/234) Akare Yurtd\u0131\u015f\u0131 E\u011fitim Fuarlar\u0131 — www.akare.com.tr
+06:09:40  INFO  Generic scrape: https://www.akare.com.tr
+06:09:41  INFO  Seçilen strateji: blocks div.col-lg-3.col-md-6.mb-30 \u2192 18 firma (sayfa 1)
+06:09:44  INFO  (136/234) Ieft Yurt D\u0131\u015f\u0131 E\u011fitim Fuar Ve Seminerleri — www.ieft.net
+06:09:44  INFO  Generic scrape: https://www.ieft.net
+06:09:45  INFO  Seçilen strateji: blocks li.menu-item-has-children \u2192 10 firma (sayfa 1)
+06:09:50  INFO  (137/234) Akare Yurtd\u0131\u015f\u0131 E\u011fitim Fuarlar\u0131 — www.akare.com.tr
+06:09:50  INFO  Generic scrape: https://www.akare.com.tr
+06:09:51  INFO  Seçilen strateji: blocks div.col-lg-3.col-md-6.mb-30 \u2192 18 firma (sayfa 1)
+06:09:54  INFO  (138/234) Artnouva  3.Sanat Fuar\u0131 — www.artnovafair.com
+06:09:54  INFO  Generic scrape: https://www.artnovafair.com
+06:09:55  INFO  Seçilen strateji: blocks div.elementor-widget-container \u2192 45 firma (sayfa 1)
+06:10:00  INFO  (139/234) Turkcompos\u0131te  2026 Kompozit Sanayi Fuar\u0131 — turkcomposite.com
+06:10:00  INFO  Generic scrape: https://turkcomposite.com
+06:10:01  INFO  Seçilen strateji: blocks div.elementor-widget-container \u2192 33 firma (sayfa 1)
+06:10:06  INFO  (140/234) Nobel Master Shoes - Ayakkab\u0131 & Çanta Moda Fuar\u0131 — www.nobelexpo.com
+06:10:06  INFO  Generic scrape: https://www.nobelexpo.com
+06:10:08  INFO  Seçilen strateji: blocks div.wpb_wrapper \u2192 35 firma (sayfa 1)
+06:10:15  INFO  (141/234) Fashion Prime 9. Tekstil, Haz\u0131r Giyim Tedarikçileri Ve Teknolojileri Fuar\u0131 — www.izfas.com.tr
+06:10:15  INFO  Generic scrape: https://www.izfas.com.tr
+06:10:16  INFO  Seçilen strateji: blocks div.d-flex \u2192 114 firma (sayfa 1)
+06:10:20  INFO  (142/234) Maden-Tek 2026, Maden Endüstrisi Teknoloji Günleri — www.maden-tek.com
+06:10:20  INFO  Generic scrape: https://www.maden-tek.com
+06:10:22  WARNING  UYARI: sayfa login/üyelik duvar\u0131 arkas\u0131nda görünüyor, gerçek liste görülemiyor: https://www.maden-tek.com
+06:10:24  INFO  Generic scrape: https://www.maden-tek.com/sponsorlar-katilimcilar-destekciler/
+06:10:26  WARNING  UYARI: sayfa login/üyelik duvar\u0131 arkas\u0131nda görünüyor, gerçek liste görülemiyor: https://www.maden-tek.com/sponsorlar-katilimcilar-destekciler/
+06:10:27  INFO  (143/234) Ankiros 17. Uluslararas\u0131 Demir-Çelik, Döküm, Demird\u0131\u015f\u0131 Metalürji Teknolojileri, Makine Ve Ürünleri \u0130htisas Fuar\u0131 — www.hmankiros.com
+06:10:27  INFO  Generic scrape: https://www.hmankiros.com
+06:10:28  INFO  Seçilen strateji: p>strong lead [14] \u2192 14 firma (sayfa 1)
+06:10:30  INFO  (144/234) Woodtech 2026 - 39.Uluslararas\u0131 A\u011faç \u0130\u015fleme Makineleri, Kesici Tak\u0131mlar, El Aletleri Fuar\u0131 — www.tuyap.com.tr
+06:10:30  INFO  Generic scrape: https://www.tuyap.com.tr
+06:10:31  INFO  Seçilen strateji: ul[13 li] \u2192 12 firma (sayfa 1)
+06:10:36  INFO  (145/234) Ieft Yurt D\u0131\u015f\u0131 E\u011fitim Fuar Ve Seminerleri — www.ieft.net
+06:10:36  INFO  Generic scrape: https://www.ieft.net
+06:10:38  INFO  Seçilen strateji: blocks li.menu-item-has-children \u2192 10 firma (sayfa 1)
+06:10:42  INFO  (146/234) 1.Düzce Tar\u0131m, Hayvanc\u0131l\u0131k Ve Sanayi Fuar\u0131 — www.linafair.com
+06:10:42  INFO  Generic scrape: https://www.linafair.com
+06:10:43  INFO  Seçilen strateji: blocks div.elementor-widget-container \u2192 27 firma (sayfa 1)
+06:10:47  INFO  (147/234) Adana Otomotiv Ve Mobilite Fuar\u0131 — www.anatoliagrup.com.tr
+06:10:47  INFO  Generic scrape: https://www.anatoliagrup.com.tr
+06:10:48  INFO  Statik HTML'de aday bulunamad\u0131, Playwright ile tekrar deneniyor
+06:11:04  INFO  Seçilen strateji: blocks div.container \u2192 13 firma (sayfa 1)
+06:11:07  INFO  (148/234) Ceviz Türkiye Fuar\u0131-3.Çorum Ceviz Yeti\u015ftiricili\u011fi Teknolojileri Tar\u0131m Alet Ekipmanlar\u0131 Ve Pazarlamas\u0131 Fuar\u0131 — www.elkafuar.com
+06:11:07  INFO  Generic scrape: https://www.elkafuar.com
+06:11:09  INFO  Statik HTML'de aday bulunamad\u0131, Playwright ile tekrar deneniyor
+06:11:25  WARNING  Hiçbir strateji 10+ geçerli kay\u0131t bulamad\u0131: https://www.elkafuar.com
+06:11:28  INFO  (149/234) Broadcastex-Radyo & Televizyon, Dijital Yay\u0131nc\u0131l\u0131k Ekipmanlar\u0131 Ve Film Prodüksiyon, Ses & I\u015f\u0131k Teknolojileri Fuar\u0131 — www.expolive.com
+06:11:28  INFO  Generic scrape: https://www.expolive.com
+06:11:29  INFO  Statik HTML'de aday bulunamad\u0131, Playwright ile tekrar deneniyor
+06:11:44  WARNING  Hiçbir strateji 10+ geçerli kay\u0131t bulamad\u0131: https://www.expolive.com
+06:11:46  INFO  (150/234) 6. Batman G\u0131da Tar\u0131m Ve Hayvanc\u0131l\u0131k Fuar\u0131 — www.startfuar.com
+06:11:46  INFO  Generic scrape: https://www.startfuar.com
+06:11:51  INFO  Seçilen strateji: blocks div.elementor-widget-container \u2192 22 firma (sayfa 1)
+06:11:57  INFO  (151/234) Akare Yurtd\u0131\u015f\u0131 E\u011fitim Fuarlar\u0131 — www.akare.com.tr
+06:11:57  INFO  Generic scrape: https://www.akare.com.tr
+06:11:57  INFO  Seçilen strateji: blocks div.col-lg-3.col-md-6.mb-30 \u2192 18 firma (sayfa 1)
+06:12:01  INFO  (152/234) 12. Malatya Kitap Ve Kültür Fuar\u0131 — www.malatyakitapfuari.com
+06:12:01  INFO  Generic scrape: https://www.malatyakitapfuari.com
+06:12:01  INFO  Statik HTML'de aday bulunamad\u0131, Playwright ile tekrar deneniyor
+06:12:15  WARNING  Hiçbir strateji 10+ geçerli kay\u0131t bulamad\u0131: https://www.malatyakitapfuari.com
+06:12:17  INFO  (153/234) Ieft Yurt D\u0131\u015f\u0131 E\u011fitim Fuar Ve Seminerleri — www.ieft.net
+06:12:17  INFO  Generic scrape: https://www.ieft.net
+06:12:19  INFO  Seçilen strateji: blocks li.menu-item-has-children \u2192 10 firma (sayfa 1)
+06:12:24  INFO  (154/234) Ieft Yurt D\u0131\u015f\u0131 E\u011fitim Fuar Ve Seminerleri — www.ieft.net
+06:12:24  INFO  Generic scrape: https://www.ieft.net
+06:12:25  INFO  Seçilen strateji: blocks li.menu-item-has-children \u2192 10 firma (sayfa 1)
+06:12:30  INFO  (155/234) Uluslararas\u0131 Antalya Turizm Fuar\u0131 — antalyaturizmfuari.com
+06:12:30  INFO  Generic scrape: https://antalyaturizmfuari.com
+06:12:31  INFO  Seçilen strateji: blocks div.atf-hi-list-item \u2192 20 firma (sayfa 1)
+06:12:38  INFO  (156/234) Ib\u0131a Expo - 6. Uluslararas\u0131 Yatak Yan Sanayi Ve Teknolojileri Fuar\u0131 — www.bifasfuar.com
+06:12:38  INFO  Generic scrape: https://www.bifasfuar.com
+06:12:39  INFO  Seçilen strateji: selector [class*='firm'] \u2192 27 firma (sayfa 1)
+06:12:46  INFO  (157/234) Denizli Tar\u0131m Fuar\u0131 — bizimfuarcilik.com
+06:12:46  INFO  Generic scrape: https://bizimfuarcilik.com
+06:12:47  WARNING  UYARI: sayfa login/üyelik duvar\u0131 arkas\u0131nda görünüyor, gerçek liste görülemiyor: https://bizimfuarcilik.com
+06:12:48  INFO  Generic scrape: https://bizimfuarcilik.com/#katilimcilar
+06:12:50  WARNING  UYARI: sayfa login/üyelik duvar\u0131 arkas\u0131nda görünüyor, gerçek liste görülemiyor: https://bizimfuarcilik.com/#katilimcilar
+06:12:51  INFO  (158/234) \u0130stanbul Maraton Ve Spor Fuar\u0131 — www.thorajans.com
+06:12:51  INFO  Generic scrape: https://www.thorajans.com
+06:12:53  INFO  Seçilen strateji: blocks div.fusion-column-has-shadow.fusio \u2192 15 firma (sayfa 1)
+06:12:57  INFO  (159/234) 5.Ankara Beautyl\u0131fe Expo Estetik Güzellik Kozmetik Fuar\u0131 — www.usfuar.com
+06:12:57  INFO  Generic scrape: https://www.usfuar.com
+06:12:57  INFO  Seçilen strateji: blocks div.footer-center-item \u2192 11 firma (sayfa 1)
+06:13:00  INFO  (160/234) Promog\u0131ft Istanbul 2026, Kurumsal Tan\u0131t\u0131m Ve Reklam Ürünleri Fuar\u0131 — www.promogiftistanbul.com
+06:13:00  INFO  Generic scrape: https://www.promogiftistanbul.com
+06:13:01  INFO  Seçilen strateji: blocks div.container \u2192 24 firma (sayfa 1)
+06:13:04  INFO  (161/234) Un\u0131cera - \u0130stanbul Seramik, Banyo, Mutfak Fuar\u0131 — www.unicera.com.tr
+06:13:04  INFO  Generic scrape: https://www.unicera.com.tr
+06:13:10  INFO  Seçilen strateji: blocks div.elementor-widget-container \u2192 22 firma (sayfa 1)
+06:13:20  INFO  (162/234) Evlilik Fuar\u0131 — bizimfuarcilik.com
+06:13:20  INFO  Generic scrape: https://bizimfuarcilik.com
+06:13:21  WARNING  UYARI: sayfa login/üyelik duvar\u0131 arkas\u0131nda görünüyor, gerçek liste görülemiyor: https://bizimfuarcilik.com
+06:13:22  INFO  Generic scrape: https://bizimfuarcilik.com/#katilimcilar
+06:13:24  WARNING  UYARI: sayfa login/üyelik duvar\u0131 arkas\u0131nda görünüyor, gerçek liste görülemiyor: https://bizimfuarcilik.com/#katilimcilar
+06:13:25  INFO  (163/234) Kalite Ankara 2026 — www.kalitefuarcilik.com
+06:13:25  INFO  Generic scrape: https://www.kalitefuarcilik.com
+06:13:25  INFO  Statik HTML'de aday bulunamad\u0131, Playwright ile tekrar deneniyor
+06:13:38  WARNING  Hiçbir strateji 10+ geçerli kay\u0131t bulamad\u0131: https://www.kalitefuarcilik.com
+06:13:40  INFO  (164/234) 2. Motta \u0130zmir Motorlu Ta\u015f\u0131tlar Fuar\u0131 — www.mottashow.com
+06:13:40  INFO  Generic scrape: https://www.mottashow.com
+06:13:41  INFO  Statik HTML'de aday bulunamad\u0131, Playwright ile tekrar deneniyor
+06:14:42  ERROR  Playwright hatas\u0131: Page.goto: Timeout 60000ms exceeded.
+Call log:
+  - navigating to "https://www.mottashow.com/", waiting until "networkidle"
+
+06:14:42  WARNING  Hiçbir strateji 10+ geçerli kay\u0131t bulamad\u0131: https://www.mottashow.com
+06:14:44  INFO  (165/234) Europort \u0130stanbul — www.europort.com.tr
+06:14:44  INFO  Generic scrape: https://www.europort.com.tr
+06:14:45  INFO  Seçilen strateji: blocks div.elementor-widget-container \u2192 125 firma (sayfa 1)
+06:14:50  INFO  (166/234) Adana Tar\u0131m – Sera&Bahçe Fuar\u0131   19. Tar\u0131m, Sera-Bahçe, Hayvanc\u0131l\u0131k, Tavukçuluk Ve Süt Endüstrisi Fuar\u0131 — www.tuyapadana@tuyap.com.tr
+06:14:50  INFO  Generic scrape: https://www.tuyapadana@tuyap.com.tr
+06:14:51  INFO  Seçilen strateji: ul[13 li] \u2192 12 firma (sayfa 1)
+06:14:55  INFO  (167/234) Sakarya 8. Tar\u0131m Hayvanc\u0131l\u0131k Makineleri Teknolojileri Ve Yem Fuar\u0131 — www.glplatformfuar.com
+06:14:55  INFO  Generic scrape: https://www.glplatformfuar.com
+06:14:58  INFO  Seçilen strateji: blocks div.elementor-widget-container \u2192 45 firma (sayfa 1)
+06:15:06  INFO  (168/234) Manisa 20.Uluslararas\u0131 Tar\u0131m G\u0131da Ve Hayvanc\u0131l\u0131k Fuar\u0131 — www.tactfair.com
+06:15:06  INFO  Generic scrape: https://www.tactfair.com
+06:15:07  INFO  Seçilen strateji: selector [class*='brand'] \u2192 15 firma (sayfa 1)
+06:15:10  INFO  (169/234) Gönen 14.Tar\u0131m Hayvanc\u0131l\u0131k G\u0131da Sanayi Ve Otomotiv Fuar\u0131 — www.renklyfuar.com
+06:15:10  INFO  Generic scrape: https://www.renklyfuar.com
+06:15:11  INFO  Statik HTML'de aday bulunamad\u0131, Playwright ile tekrar deneniyor
+06:16:12  ERROR  Playwright hatas\u0131: Page.goto: Timeout 60000ms exceeded.
+Call log:
+  - navigating to "https://www.renklyfuar.com/", waiting until "networkidle"
+
+06:16:12  WARNING  Hiçbir strateji 10+ geçerli kay\u0131t bulamad\u0131: https://www.renklyfuar.com
+06:16:15  INFO  (170/234) E\u0131f 2026 15. Enerji Dönü\u015fümü Fuar\u0131 — www.eif2050.com
+06:16:15  INFO  Generic scrape: https://www.eif2050.com
+06:16:16  INFO  Seçilen strateji: blocks div.container \u2192 11 firma (sayfa 1)
+06:16:19  INFO  (171/234) Orta Do\u011fu G\u0131da Ve G\u0131da Teknolojileri Fuar\u0131 — www.nobelexpo.com
+06:16:19  INFO  Generic scrape: https://www.nobelexpo.com
+06:16:22  INFO  Seçilen strateji: blocks div.wpb_wrapper \u2192 35 firma (sayfa 1)
+06:16:28  INFO  (172/234) Hostech By Tus\u0131d  \u0130stanbul Uluslararas\u0131  Otel, Restoran, Kafe Gastronomi, Unlu Mamuller Ve Teknolojileri Fuar\u0131 — www.tuyap.com.tr
+06:16:28  INFO  Generic scrape: https://www.tuyap.com.tr
+06:16:29  INFO  Seçilen strateji: ul[13 li] \u2192 12 firma (sayfa 1)
+06:16:33  INFO  (173/234) Uluslararas\u0131 Logitrans Transport Lojistik Fuar\u0131 — www.logitrans.istanbul.com
+06:16:33  INFO  Generic scrape: https://www.logitrans.istanbul.com
+06:16:37  WARNING  \u0130stek ba\u015far\u0131s\u0131z (3 deneme): https://www.logitrans.istanbul.com — HTTPSConnectionPool(host='www.logitrans.istanbul.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000020A40E707A0>: Failed to resolve 'www.logitrans.istanbul.com' ([Errno 11001] getaddrinfo failed)"))
+06:16:37  INFO  \u0130çerik az (0 byte), Playwright deneniyor
+06:16:39  ERROR  Playwright hatas\u0131: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.logitrans.istanbul.com/
+Call log:
+  - navigating to "https://www.logitrans.istanbul.com/", waiting until "networkidle"
+
+06:16:39  ERROR  Sayfa hiç yüklenemedi: https://www.logitrans.istanbul.com
+06:16:43  WARNING  \u0130stek ba\u015far\u0131s\u0131z (3 deneme): https://www.logitrans.istanbul.com — HTTPSConnectionPool(host='www.logitrans.istanbul.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000020A44294320>: Failed to resolve 'www.logitrans.istanbul.com' ([Errno 11001] getaddrinfo failed)"))
+06:16:45  INFO  (174/234) Foam Eurasia 2026 — foameurasia.events
+06:16:45  INFO  Generic scrape: https://foameurasia.events
+06:16:46  INFO  Seçilen strateji: blocks div.e-con-inner \u2192 14 firma (sayfa 1)
+06:16:50  INFO  (175/234) Pu Expo \u0130stanbul 2026 — puexpoistanbul.com
+06:16:50  INFO  Generic scrape: https://puexpoistanbul.com
+06:16:51  INFO  Seçilen strateji: blocks div.e-con-inner \u2192 11 firma (sayfa 1)
+06:16:56  INFO  (176/234) Aysaf 2026 Ayakkab\u0131 Yan Sanayi Fuar\u0131 — aysafexpo.com
+06:16:56  INFO  Generic scrape: https://aysafexpo.com
+06:16:56  INFO  Statik HTML'de aday bulunamad\u0131, Playwright ile tekrar deneniyor
+06:17:11  WARNING  Hiçbir strateji 10+ geçerli kay\u0131t bulamad\u0131: https://aysafexpo.com
+06:17:11  INFO  Generic scrape: https://aysafexpo.com/katilimci-listesi
+06:17:12  INFO  Statik HTML'de aday bulunamad\u0131, Playwright ile tekrar deneniyor
+06:17:26  WARNING  Hiçbir strateji 10+ geçerli kay\u0131t bulamad\u0131: https://aysafexpo.com/katilimci-listesi
+06:17:27  INFO  (177/234) 21. Göller Bölgesi Tar\u0131m Ve Hayvanc\u0131l\u0131k Fuar\u0131 — www.detayfuarcilik.com
+06:17:27  INFO  Generic scrape: https://www.detayfuarcilik.com
+06:17:28  INFO  Seçilen strateji: blocks div.wpb_wrapper \u2192 36 firma (sayfa 1)
+06:17:32  INFO  (178/234) \u0130gef'26 - 3.Uluslararas\u0131 \u0130ç Güvenlik Ekipmanlar\u0131 Fuar\u0131 — www.igef.com.tr
+06:17:32  INFO  Generic scrape: https://www.igef.com.tr
+06:17:37  INFO  Seçilen strateji: blocks div.vc_column_container.wpb_column \u2192 12 firma (sayfa 1)
+06:17:42  INFO  (179/234) Trend Ev Fuar\u0131 — www.partnerfuar.com
+06:17:42  INFO  Generic scrape: https://www.partnerfuar.com
+06:17:43  INFO  Seçilen strateji: blocks div.features_items \u2192 10 firma (sayfa 1)
+06:17:45  INFO  (180/234) Mezopotamya Gurme Ve Yöresel Lezzetler Fuar\u0131 — www.mezopotamyafuarcilik.com
+06:17:45  INFO  Generic scrape: https://www.mezopotamyafuarcilik.com
+06:17:46  INFO  \u0130çerik az (118 byte), Playwright deneniyor
+06:17:59  WARNING  Hiçbir strateji 10+ geçerli kay\u0131t bulamad\u0131: https://www.mezopotamyafuarcilik.com
+06:18:01  INFO  (181/234) 10. Uluslararas\u0131 \u0130stanbul H\u0131rdavat Fuar\u0131 — www.voli.com.tr
+06:18:01  INFO  Generic scrape: https://www.voli.com.tr
+06:18:04  INFO  Seçilen strateji: blocks div.wpb_wrapper \u2192 10 firma (sayfa 1)
+06:18:08  INFO  (182/234) Uluslararas\u0131 S\u0131lmo Istanbul Opt\u0131k Fuar\u0131 — www.24saatfuarcilik.com
+06:18:08  INFO  Generic scrape: https://www.24saatfuarcilik.com
+06:18:08  INFO  \u0130çerik az (163 byte), Playwright deneniyor
+06:18:20  WARNING  Hiçbir strateji 10+ geçerli kay\u0131t bulamad\u0131: https://www.24saatfuarcilik.com
+06:18:22  INFO  (183/234) Travel Expo Ankara 9. Uluslararas\u0131 Turizm Ve Seyahat Fuar\u0131 — www.atisfuar.com
+06:18:22  INFO  Generic scrape: https://www.atisfuar.com
+06:18:24  INFO  Statik HTML'de aday bulunamad\u0131, Playwright ile tekrar deneniyor
+06:18:38  WARNING  Hiçbir strateji 10+ geçerli kay\u0131t bulamad\u0131: https://www.atisfuar.com
+06:18:40  INFO  (184/234) Yanexpo Ah\u015fap, Metal, Plastik Üretim Yan Sanayileri Teknolojileri Ve Aksesuarlar\u0131 Fuar\u0131 — www.nobelyanexpo.com
+06:18:40  INFO  Generic scrape: https://www.nobelyanexpo.com
+06:18:44  INFO  Seçilen strateji: blocks div.wpb_wrapper \u2192 71 firma (sayfa 1)
+06:18:51  INFO  (185/234) Anatex Anadolu Dö\u015femelik Kuma\u015f, Deri Ve Üretim Teknolojileri — www.nobelanatex.com
+06:18:51  INFO  Generic scrape: https://www.nobelanatex.com
+06:18:54  INFO  Seçilen strateji: blocks div.wpb_wrapper \u2192 67 firma (sayfa 1)
+06:19:02  INFO  (186/234) Souven\u0131r Expo Türkiye Turistik Hediyelik Ve Hat\u0131ra E\u015fya Fuar\u0131 — www.rotaexhibitions.com.tr
+06:19:02  INFO  Generic scrape: https://www.rotaexhibitions.com.tr
+06:19:06  INFO  Seçilen strateji: blocks div.txtNew \u2192 20 firma (sayfa 1)
+06:19:15  INFO  (187/234) Anamak  Anadolu A\u011faç \u0130\u015fleme Makineleri, Kesici Tak\u0131mlar, El Aletleri — www.nobelanamak.com
+06:19:15  INFO  Generic scrape: https://www.nobelanamak.com
+06:19:17  INFO  Seçilen strateji: blocks div.wpb_wrapper \u2192 91 firma (sayfa 1)
+06:19:22  INFO  (188/234) Expo Toybir 4. Oyuncak Ve Çocuk Gereçleri Fuar\u0131 — www.planbmice.com
+06:19:22  INFO  Generic scrape: https://www.planbmice.com
+06:19:22  INFO  \u0130çerik az (163 byte), Playwright deneniyor
+06:19:34  WARNING  Hiçbir strateji 10+ geçerli kay\u0131t bulamad\u0131: https://www.planbmice.com
+06:19:36  INFO  (189/234) \u0130slam Sanatlar\u0131 Fuar\u0131 — islamsanatlarifuari.com
+06:19:36  INFO  Generic scrape: https://islamsanatlarifuari.com
+06:19:36  INFO  Seçilen strateji: blocks div.content \u2192 32 firma (sayfa 1)
+06:19:39  INFO  (190/234) Towel Expo Denizli Havlu Bornoz Otel Tekstili Ve Teknolojileri Fuar\u0131 — www.trendfuarcilik.com
+06:19:39  INFO  Generic scrape: https://www.trendfuarcilik.com
+06:19:39  WARNING  UYARI: sayfa login/üyelik duvar\u0131 arkas\u0131nda görünüyor, gerçek liste görülemiyor: https://www.trendfuarcilik.com
+06:19:39  INFO  Generic scrape: https://www.trendfuarcilik.com/sayfa/kat\u0131l\u0131mc\u0131-listesi
+06:19:40  WARNING  UYARI: sayfa login/üyelik duvar\u0131 arkas\u0131nda görünüyor, gerçek liste görülemiyor: https://www.trendfuarcilik.com/sayfa/kat\u0131l\u0131mc\u0131-listesi
+06:19:41  INFO  (191/234) 6.Piktech Denizli Tekstil Fuar\u0131 (Pamuk, \u0130plik, Kuma\u015f, Tekstil Aksesuarlar\u0131 Ve Tekstil Teknolojileri) — terminfuarcilik.com
+06:19:41  INFO  Generic scrape: https://terminfuarcilik.com
+06:19:43  INFO  Statik HTML'de aday bulunamad\u0131, Playwright ile tekrar deneniyor
+06:19:58  INFO  Seçilen strateji: blocks li.has-dropdown \u2192 10 firma (sayfa 1)
+06:20:02  INFO  (192/234) 15.Van Do\u011fu Anadolu Turizm  Ve Seyahat  Fuar\u0131 — www.ipekyoluexpo.com
+06:20:02  INFO  Generic scrape: https://www.ipekyoluexpo.com
+06:20:06  WARNING  \u0130stek ba\u015far\u0131s\u0131z (3 deneme): https://www.ipekyoluexpo.com — HTTPSConnectionPool(host='www.ipekyoluexpo.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000020A40F0E8D0>: Failed to resolve 'www.ipekyoluexpo.com' ([Errno 11002] getaddrinfo failed)"))
+06:20:06  INFO  \u0130çerik az (0 byte), Playwright deneniyor
+06:20:07  ERROR  Playwright hatas\u0131: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.ipekyoluexpo.com/
+Call log:
+  - navigating to "https://www.ipekyoluexpo.com/", waiting until "networkidle"
+
+06:20:07  ERROR  Sayfa hiç yüklenemedi: https://www.ipekyoluexpo.com
+06:20:12  WARNING  \u0130stek ba\u015far\u0131s\u0131z (3 deneme): https://www.ipekyoluexpo.com — HTTPSConnectionPool(host='www.ipekyoluexpo.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000020A40643320>: Failed to resolve 'www.ipekyoluexpo.com' ([Errno 11002] getaddrinfo failed)"))
+06:20:13  INFO  (193/234) Start Beauty Çukurova Expo-Adana Estetik Kozmetik Ve Güzellik Fuar\u0131 — www.startfuar.com
+06:20:13  INFO  Generic scrape: https://www.startfuar.com
+06:20:18  INFO  Seçilen strateji: blocks div.elementor-widget-container \u2192 22 firma (sayfa 1)
+06:20:23  INFO  (194/234) Avrasya Cam 2026 - 16. Uluslararas\u0131 Cam Ürünleri Ve Uygulamalar\u0131, Üretim-\u0130\u015fleme Teknolojileri Ve Makineleri, Tamamlay\u0131c\u0131 Ürün Ve Kimyasallar\u0131 Fuar\u0131 — www.tuyap.com.tr
+06:20:23  INFO  Generic scrape: https://www.tuyap.com.tr
+06:20:24  INFO  Seçilen strateji: ul[13 li] \u2192 12 firma (sayfa 1)
+06:20:29  INFO  (195/234) Growtech. Antalya 2026, 25.Uluslararas\u0131 Sera, Tar\u0131m Teknolojileri Ve Hayvanc\u0131l\u0131k Ekipmanlar\u0131 Fuar\u0131 — www.growtech.com.tr
+06:20:29  INFO  Generic scrape: https://www.growtech.com.tr
+06:20:30  INFO  Statik HTML'de aday bulunamad\u0131, Playwright ile tekrar deneniyor
+06:20:45  WARNING  Hiçbir strateji 10+ geçerli kay\u0131t bulamad\u0131: https://www.growtech.com.tr
+06:20:47  INFO  (196/234) \u0130zmir Br\u0131dal Week — www.izmirbridalweek.com.tr
+06:20:47  INFO  Generic scrape: https://www.izmirbridalweek.com.tr
+06:20:47  INFO  Seçilen strateji: blocks li.nav-item \u2192 14 firma (sayfa 1)
+06:20:50  INFO  (197/234) Nov Naturel Organ\u0131c Vegan Ürünler Ve Hizmetler Fuar\u0131 — aselexpo.com
+06:20:50  INFO  Generic scrape: https://aselexpo.com
+06:20:52  INFO  Seçilen strateji: blocks div.wpb_wrapper \u2192 29 firma (sayfa 1)
+06:20:57  INFO  (198/234) Pr\u0131vate Label Expo — discoverevents.com.tr
+06:20:57  INFO  Generic scrape: https://discoverevents.com.tr
+06:20:59  INFO  Seçilen strateji: blocks div.elementor-widget-container \u2192 26 firma (sayfa 1)
+06:21:06  INFO  (199/234) Sefpex-Seafood And Processing Expo — discoverevents.com.tr
+06:21:06  INFO  Generic scrape: https://discoverevents.com.tr
+06:21:08  INFO  Seçilen strateji: blocks div.elementor-widget-container \u2192 26 firma (sayfa 1)
+06:21:15  INFO  (200/234) Egpex Eurasia Emlak Fuar\u0131 — www.aselexpo.com
+06:21:15  INFO  Generic scrape: https://www.aselexpo.com
+06:21:17  INFO  Seçilen strateji: blocks div.wpb_wrapper \u2192 29 firma (sayfa 1)
+06:21:22  INFO  (201/234) 11 .Turkchem Euras\u0131a Uluslararas\u0131 Kimya Sanayi Fuar\u0131 — www.artkim.com.tr
+06:21:22  INFO  Generic scrape: https://www.artkim.com.tr
+06:21:23  INFO  Seçilen strateji: blocks article.fair-card \u2192 15 firma (sayfa 1)
+06:21:26  INFO  (202/234) 7.Interdye & Text\u0131le Pr\u0131nt\u0131ng Euras\u0131a — www.artkim.com.tr
+06:21:26  INFO  Generic scrape: https://www.artkim.com.tr
+06:21:26  INFO  Seçilen strateji: blocks article.fair-card \u2192 15 firma (sayfa 1)
+06:21:29  INFO  (203/234) Meexx Makine Ve Teknolojileri Fuar\u0131 — www.kfa.com.tr
+06:21:29  INFO  Generic scrape: https://www.kfa.com.tr
+06:21:32  INFO  Seçilen strateji: blocks div.row \u2192 15 firma (sayfa 1)
+06:21:36  INFO  (204/234) Ethexpo Eurasia Turizm Ve Sa\u011fl\u0131k Fuar\u0131 — www.aselexpo.com
+06:21:36  INFO  Generic scrape: https://www.aselexpo.com
+06:21:38  INFO  Seçilen strateji: blocks div.wpb_wrapper \u2192 29 firma (sayfa 1)
+06:21:44  INFO  (205/234) Uluslararas\u0131 Helal Ekspo / Dünya Helal Zirvesi — www.discoverevents.com
+06:21:44  INFO  Generic scrape: https://www.discoverevents.com
+06:21:44  INFO  \u0130çerik az (114 byte), Playwright deneniyor
+06:22:45  ERROR  Playwright hatas\u0131: Page.goto: Timeout 60000ms exceeded.
+Call log:
+  - navigating to "https://www.discoverevents.com/", waiting until "networkidle"
+
+06:22:45  INFO  Statik HTML'de aday bulunamad\u0131, Playwright ile tekrar deneniyor
+06:23:47  ERROR  Playwright hatas\u0131: Page.goto: Timeout 60000ms exceeded.
+Call log:
+  - navigating to "https://www.discoverevents.com/", waiting until "networkidle"
+
+06:23:47  WARNING  Hiçbir strateji 10+ geçerli kay\u0131t bulamad\u0131: https://www.discoverevents.com
+06:23:49  INFO  (206/234) \u0130stanbul Filtre Endüstrisi, Teknolojileri Ve Yan Sanayi Fuar\u0131 — www.iftexhibition.com
+06:23:49  INFO  Generic scrape: https://www.iftexhibition.com
+06:23:50  INFO  Seçilen strateji: blocks div.mt-1.sponsor-title-1 \u2192 18 firma (sayfa 1)
+06:23:53  INFO  (207/234) L\u0131ght+Intell\u0131gent Bu\u0131ld\u0131ng Istanbul — tr.messefrankfurt.com
+06:23:53  INFO  Generic scrape: https://tr.messefrankfurt.com
+06:23:54  INFO  Seçilen strateji: blocks li.o-off-canvas__item \u2192 37 firma (sayfa 1)
+06:23:57  INFO  (208/234) Elf Teknoloji Fuar\u0131 — www.elffuar.com
+06:23:57  INFO  Generic scrape: https://www.elffuar.com
+06:23:58  INFO  Seçilen strateji: blocks div.program-item \u2192 13 firma (sayfa 1)
+06:24:00  INFO  (209/234) 5. Ev Charge Show - Elektrikli Araç \u015earj Teknolojileri Ve Ekipmanlar\u0131 Fuar\u0131 — www.voli.com.tr
+06:24:00  INFO  Generic scrape: https://www.voli.com.tr
+06:24:03  INFO  Seçilen strateji: blocks div.wpb_wrapper \u2192 10 firma (sayfa 1)
+06:24:07  INFO  (210/234) Gafshoes 38. Uluslararas\u0131 Ayakkab\u0131, Terlik Ve Yan Sanayi Yaz Fuar\u0131 — www.akort.com
+06:24:07  INFO  Generic scrape: https://www.akort.com
+06:24:08  INFO  Seçilen strateji: blocks div.Info \u2192 43 firma (sayfa 1)
+06:24:11  INFO  (211/234) 5.Yöresel Ürünler Ve Hediyelik E\u015fya Fuar\u0131 2025 — aksoyaytul@hotmail.com
+06:24:11  INFO  Generic scrape: https://aksoyaytul@hotmail.com
+06:24:12  INFO  Statik HTML'de aday bulunamad\u0131, Playwright ile tekrar deneniyor
+06:24:39  INFO  Seçilen strateji: blocks div.align-items-start.block-featur \u2192 42 firma (sayfa 1)
+06:24:42  INFO  (212/234) Plast  Eurasia  \u0130stanbul    35.Uluslararas\u0131  Plastik Endüstrisi Fuar\u0131 — www.tuyap.com.tr
+06:24:42  INFO  Generic scrape: https://www.tuyap.com.tr
+06:24:43  INFO  Seçilen strateji: ul[13 li] \u2192 12 firma (sayfa 1)
+06:24:47  INFO  (213/234) Cbme Türkiye, 44.Uluslararas\u0131 \u0130stanbul Anne Bebek Çocuk Ürünleri Fuar\u0131 — www.cbmeturkiye.com
+06:24:47  INFO  Generic scrape: https://www.cbmeturkiye.com
+06:25:55  WARNING  \u0130stek ba\u015far\u0131s\u0131z (3 deneme): https://www.cbmeturkiye.com — HTTPSConnectionPool(host='www.cbmeturkiye.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000020A43069A90>, 'Connection to www.cbmeturkiye.com timed out. (connect timeout=30)'))
+06:25:55  INFO  \u0130çerik az (0 byte), Playwright deneniyor
+06:26:18  ERROR  Playwright hatas\u0131: Page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.cbmeturkiye.com/
+Call log:
+  - navigating to "https://www.cbmeturkiye.com/", waiting until "networkidle"
+
+06:26:18  ERROR  Sayfa hiç yüklenemedi: https://www.cbmeturkiye.com
+06:27:25  WARNING  \u0130stek ba\u015far\u0131s\u0131z (3 deneme): https://www.cbmeturkiye.com — HTTPSConnectionPool(host='www.cbmeturkiye.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000020A4306A2D0>, 'Connection to www.cbmeturkiye.com timed out. (connect timeout=30)'))
+06:27:27  INFO  (214/234) Pack&Plast Fair Türkiye 4.Uluslararas\u0131 Ambalajlama, Paketleme Plastik Endüstri Teknolojileri Fuar\u0131 — www.glplatformfuar.com
+06:27:27  INFO  Generic scrape: https://www.glplatformfuar.com
+06:27:30  INFO  Seçilen strateji: blocks div.elementor-widget-container \u2192 45 firma (sayfa 1)
+06:27:39  INFO  (215/234) Horeca Fair 7. Uluslararas\u0131 Otel, Restoran, Kafe, F\u0131r\u0131n Ekipmanlar\u0131, Unlu Mamuller, Dondurma, Pastac\u0131l\u0131k Teknolojileri Ve Ev D\u0131\u015f\u0131 Tüketim Fuar\u0131 — www.glplatformfuar.com
+06:27:39  INFO  Generic scrape: https://www.glplatformfuar.com
+06:27:42  INFO  Seçilen strateji: blocks div.elementor-widget-container \u2192 45 firma (sayfa 1)
+06:27:51  INFO  (216/234) Tt\u0131 \u0130zmir  "20. Uluslararas\u0131 Turizm Ticaret  Fuar Ve Kongresi" — www.izmirfair.com.tr
+06:27:51  INFO  Generic scrape: https://www.izmirfair.com.tr
+06:27:53  INFO  Statik HTML'de aday bulunamad\u0131, Playwright ile tekrar deneniyor
+06:28:08  WARNING  Hiçbir strateji 10+ geçerli kay\u0131t bulamad\u0131: https://www.izmirfair.com.tr
+06:28:11  INFO  (217/234) Nadmex - Afet Yönetimi Fuar\u0131 Ve Zirvesi — www.nadmex.com
+06:28:11  INFO  Generic scrape: https://www.nadmex.com
+06:28:15  INFO  Seçilen strateji: blocks div.elementor-widget-container \u2192 85 firma (sayfa 1)
+06:28:21  INFO  (218/234) K\u0131rklareli 6. Tar\u0131m Hayvanc\u0131l\u0131k G\u0131da Sanayi Ve Otomotiv Fuar\u0131 — www.renklyfuar.com
+06:28:21  INFO  Generic scrape: https://www.renklyfuar.com
+06:28:22  INFO  Statik HTML'de aday bulunamad\u0131, Playwright ile tekrar deneniyor
+06:29:23  ERROR  Playwright hatas\u0131: Page.goto: Timeout 60000ms exceeded.
+Call log:
+  - navigating to "https://www.renklyfuar.com/", waiting until "networkidle"
+
+06:29:23  WARNING  Hiçbir strateji 10+ geçerli kay\u0131t bulamad\u0131: https://www.renklyfuar.com
+06:29:26  INFO  (219/234) Denyap\u0131 2026 — www.4mfuar.com
+06:29:26  INFO  Generic scrape: https://www.4mfuar.com
+06:29:27  INFO  Seçilen strateji: blocks div.modal-content \u2192 12 firma (sayfa 1)
+06:29:30  INFO  (220/234) \u0130meef-\u0130stanbul Müzik Endüstrileri Ve Ekipmanlar\u0131 Fuar\u0131 — www.imeef.com
+06:29:30  INFO  Generic scrape: https://www.imeef.com
+06:29:32  INFO  Seçilen strateji: blocks li.rkit-submenu-item \u2192 12 firma (sayfa 1)
+06:29:39  INFO  (221/234) 24.Ankara Kitap Fuar\u0131 — www.remfuar.com.tr
+06:29:39  INFO  Generic scrape: https://www.remfuar.com.tr
+06:29:41  INFO  \u0130çerik az (4767 byte), Playwright deneniyor
+06:30:10  WARNING  Hiçbir strateji 10+ geçerli kay\u0131t bulamad\u0131: https://www.remfuar.com.tr
+06:30:42  INFO  (222/234) Afr\u0131ka Pr\u0131me G\u0131da Fuar\u0131 — www.partnerfuar.com
+06:30:42  INFO  Generic scrape: https://www.partnerfuar.com
+06:30:42  INFO  Seçilen strateji: blocks div.features_items \u2192 10 firma (sayfa 1)
+06:30:45  INFO  (223/234) \u0130stanbul Yerel Marketler Bulu\u015fmas\u0131 Ve Fuar\u0131 — www.focusfairs.com
+06:30:45  INFO  Generic scrape: https://www.focusfairs.com
+06:30:48  INFO  Seçilen strateji: blocks div.wpb_wrapper \u2192 28 firma (sayfa 1)
+06:30:55  INFO  (224/234) 12.\u015eanl\u0131urfa G\u0131da Tar\u0131m Ve Hayvanc\u0131l\u0131k Fuar\u0131 — www.startfuar.com.tr
+06:30:55  INFO  Generic scrape: https://www.startfuar.com.tr
+06:30:59  WARNING  \u0130stek ba\u015far\u0131s\u0131z (3 deneme): https://www.startfuar.com.tr — HTTPSConnectionPool(host='www.startfuar.com.tr', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000020A446145F0>: Failed to resolve 'www.startfuar.com.tr' ([Errno 11001] getaddrinfo failed)"))
+06:30:59  INFO  \u0130çerik az (0 byte), Playwright deneniyor
+06:31:01  ERROR  Playwright hatas\u0131: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.startfuar.com.tr/
+Call log:
+  - navigating to "https://www.startfuar.com.tr/", waiting until "networkidle"
+
+06:31:01  ERROR  Sayfa hiç yüklenemedi: https://www.startfuar.com.tr
+06:31:05  WARNING  \u0130stek ba\u015far\u0131s\u0131z (3 deneme): https://www.startfuar.com.tr — HTTPSConnectionPool(host='www.startfuar.com.tr', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000020A44617560>: Failed to resolve 'www.startfuar.com.tr' ([Errno 11001] getaddrinfo failed)"))
+06:31:07  INFO  (225/234) Tdk Deri Ve Kürk Moda \u015eov — www.tdkfuarcilik.com
+06:31:07  INFO  Generic scrape: https://www.tdkfuarcilik.com
+06:31:09  INFO  Statik HTML'de aday bulunamad\u0131, Playwright ile tekrar deneniyor
+06:31:24  WARNING  Hiçbir strateji 10+ geçerli kay\u0131t bulamad\u0131: https://www.tdkfuarcilik.com
+06:31:27  INFO  (226/234) Hoteltech Antalya - Otel Teknik Ekipman Ve Malzemeleri \u0130htisas Fuar\u0131 — www.hoteltechantalya.com
+06:31:27  INFO  Generic scrape: https://www.hoteltechantalya.com
+06:31:28  INFO  Statik HTML'de aday bulunamad\u0131, Playwright ile tekrar deneniyor
+06:31:42  WARNING  Hiçbir strateji 10+ geçerli kay\u0131t bulamad\u0131: https://www.hoteltechantalya.com
+06:31:43  INFO  (227/234) \u0130stanbul 43. Uluslararas\u0131  Kitap Fuar\u0131 — www.tuyap.com.tr
+06:31:43  INFO  Generic scrape: https://www.tuyap.com.tr
+06:31:45  INFO  Seçilen strateji: ul[13 li] \u2192 12 firma (sayfa 1)
+06:31:49  INFO  (228/234) Outdoorist  Karavan Ve Ekipmanlar\u0131, Tiny House, Outdoor Ve Kamp Malzemeleri, Su Sporlar\u0131, Amatör Bal\u0131kç\u0131l\u0131k, 10 Metre Alt\u0131 Deniz Araçlar\u0131, 4X4 -  Off Road Araçlar, Alternatif Turizm Fuar\u0131 — www.tuyap.com.tr
+06:31:49  INFO  Generic scrape: https://www.tuyap.com.tr
+06:31:50  INFO  Seçilen strateji: ul[13 li] \u2192 12 firma (sayfa 1)
+06:31:53  INFO  (229/234) Worldfood \u0130stanbul 2026 - 34. Uluslararas\u0131 G\u0131da Ürünleri Teknolojileri Fuar\u0131 — www.icaevents.com.tr
+06:31:53  INFO  Generic scrape: https://www.icaevents.com.tr
+06:32:00  WARNING  \u0130stek ba\u015far\u0131s\u0131z (3 deneme): https://www.icaevents.com.tr — HTTP 404
+06:32:00  INFO  \u0130çerik az (0 byte), Playwright deneniyor
+06:32:12  WARNING  Hiçbir strateji 10+ geçerli kay\u0131t bulamad\u0131: https://www.icaevents.com.tr
+06:32:18  WARNING  \u0130stek ba\u015far\u0131s\u0131z (3 deneme): https://www.icaevents.com.tr — HTTP 404
+06:32:19  INFO  (230/234) Candy Expo — bizimfuarcilik.com
+06:32:19  INFO  Generic scrape: https://bizimfuarcilik.com
+06:32:21  WARNING  UYARI: sayfa login/üyelik duvar\u0131 arkas\u0131nda görünüyor, gerçek liste görülemiyor: https://bizimfuarcilik.com
+06:32:22  INFO  Generic scrape: https://bizimfuarcilik.com/#katilimcilar
+06:32:23  WARNING  UYARI: sayfa login/üyelik duvar\u0131 arkas\u0131nda görünüyor, gerçek liste görülemiyor: https://bizimfuarcilik.com/#katilimcilar
+06:32:25  INFO  (231/234) Franch\u0131se \u0130zmir Expo — www.franchiseizmirexpo.com
+06:32:25  INFO  Generic scrape: https://www.franchiseizmirexpo.com
+06:32:31  INFO  Seçilen strateji: blocks div.elementor-widget-container \u2192 106 firma (sayfa 1)
+06:32:36  INFO  (232/234) Ehatech Expo,Yenilenebilir Enerji,Elektrikli Ve Hibrit Araçlar,\u015earj \u0130stasyonlar\u0131 Ve Batarya Teknolojileri Fuar\u0131 — EHATECH.COM.TR
+06:32:36  INFO  Generic scrape: https://EHATECH.COM.TR
+06:32:36  INFO  Seçilen strateji: blocks div.fusion-column-has-shadow.fusio \u2192 18 firma (sayfa 1)
+06:32:41  INFO  (233/234) Denizli 2026 — www.4mfuar.com
+06:32:41  INFO  Generic scrape: https://www.4mfuar.com
+06:32:42  INFO  Seçilen strateji: blocks div.modal-content \u2192 12 firma (sayfa 1)
+06:32:45  INFO  (234/234) Denizli Tar\u0131m G\u0131da Sera Ve Hayvanc\u0131l\u0131k Fuar\u0131 — bizimfuarcilik.com
+06:32:45  INFO  Generic scrape: https://bizimfuarcilik.com
+06:32:46  WARNING  UYARI: sayfa login/üyelik duvar\u0131 arkas\u0131nda görünüyor, gerçek liste görülemiyor: https://bizimfuarcilik.com
+06:32:48  INFO  Generic scrape: https://bizimfuarcilik.com/#katilimcilar
+06:32:49  WARNING  UYARI: sayfa login/üyelik duvar\u0131 arkas\u0131nda görünüyor, gerçek liste görülemiyor: https://bizimfuarcilik.com/#katilimcilar
+06:32:50  INFO  B\u0130TT\u0130: 234 fuar denendi, 165 liste bulundu, 3836 firma eklendi

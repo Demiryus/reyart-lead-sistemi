@@ -24,10 +24,14 @@ olduğun için (bu betik senin bilgisayarında çalışıyor) görüp onaylayabi
 """
 
 import json
+import os
 import random
 import re
+import smtplib
 import time
 from datetime import date, datetime
+from email.mime.text import MIMEText
+from email.mime.multipart import MIMEMultipart
 from pathlib import Path
 
 try:
@@ -41,6 +45,16 @@ BASE_DIR = Path(__file__).parent
 TEMPLATES_FILE = BASE_DIR / "mail_templates.json"
 CONFIG_FILE = BASE_DIR / "mail_config.json"
 LOG_FILE = BASE_DIR / "output" / "mail_log.jsonl"
+
+# .env dosyasından SMTP ayarları (Render'da kullanılır)
+def _load_env_smtp():
+    """Render'da .env veya ortam değişkenlerinden SMTP ayarlarını okur."""
+    return {
+        "smtp_server": os.environ.get("SMTP_SERVER", "smtp.office365.com"),
+        "smtp_port": int(os.environ.get("SMTP_PORT", "587")),
+        "smtp_username": os.environ.get("SMTP_USERNAME", ""),
+        "smtp_password": os.environ.get("SMTP_PASSWORD", ""),
+    }
 
 DEFAULT_OUTLOOK_ACCOUNT = "demir@reyartfuar.com"
 SEND_DELAY_SECONDS = 2  # ard arda gönderimde Outlook'u/alıcı sunucuları boğmamak için
@@ -118,12 +132,16 @@ def _connect_outlook(account_email: str):
 def config_status() -> dict:
     cfg = load_config()
     if pythoncom is None:
-        return {"configured": False, "email": cfg["outlook_account"], "hint": "pywin32 kurulu değil (Linux/Render)."}
+        # Linux/Render: SMTP durumunu kontrol et
+        smtp = _load_env_smtp()
+        if smtp["smtp_username"] and smtp["smtp_password"]:
+            return {"configured": True, "email": smtp["smtp_username"], "hint": "SMTP (Render/Linux)", "method": "smtp"}
+        return {"configured": False, "email": cfg["outlook_account"], "hint": "pywin32 kurulu değil (Linux/Render). SMTP ayarları .env'de yok.", "method": "smtp"}
     try:
         _outlook, account = _connect_outlook(cfg["outlook_account"])
-        return {"configured": True, "email": account.SmtpAddress, "hint": ""}
+        return {"configured": True, "email": account.SmtpAddress, "hint": "", "method": "outlook"}
     except RuntimeError as e:
-        return {"configured": False, "email": cfg["outlook_account"], "hint": str(e)}
+        return {"configured": False, "email": cfg["outlook_account"], "hint": str(e), "method": "outlook"}
     finally:
         pythoncom.CoUninitialize()
 
@@ -192,11 +210,10 @@ EMAIL_RE = re.compile(r"^[^@\s]+@[^@\s]+\.[a-zA-Z]{2,}$")
 
 
 def compose_draft(company: dict, template_id: str) -> dict:
-    """Tek firma için classic Outlook'ta HAZIR bir taslak açar (Display),
-    GÖNDERMEZ. mailto: linkinin Windows'un varsayılan mail uygulamasına (ör.
-    yanlış hesaplı yeni Outlook) gitmesi sorununu bypass eder — COM ile
-    doğrudan classic Outlook'u açar, hesap zaten doğru (SendUsingAccount)
-    seçili gelir; kullanıcı gözden geçirip kendi eliyle gönderir."""
+    """Tek firma için mail hazırlar.
+    - Windows'da: classic Outlook'ta HAZIR taslak açar (Display), GÖNDERMEZ.
+    - Linux/Render'da: SMTP ile doğrudan gönderir.
+    """
     templates = load_templates()
     if template_id not in templates:
         raise ValueError(f"Şablon yok: {template_id}")
@@ -207,8 +224,27 @@ def compose_draft(company: dict, template_id: str) -> dict:
     cfg = load_config()
     msg_data = render(templates[template_id], company)
 
+    smtp_cfg = _load_env_smtp()
+    use_smtp = pythoncom is None and smtp_cfg["smtp_username"] and smtp_cfg["smtp_password"]
+
+    if use_smtp:
+        # SMTP ile gönder (Render/Linux)
+        smtp_server = smtplib.SMTP(smtp_cfg["smtp_server"], smtp_cfg["smtp_port"])
+        smtp_server.starttls()
+        smtp_server.login(smtp_cfg["smtp_username"], smtp_cfg["smtp_password"])
+        try:
+            msg = MIMEMultipart()
+            msg["From"] = smtp_cfg["smtp_username"]
+            msg["To"] = email
+            msg["Subject"] = msg_data["subject"]
+            msg.attach(MIMEText(msg_data["body"], "plain", "utf-8"))
+            smtp_server.send_message(msg)
+            return {"sent": True, "account": smtp_cfg["smtp_username"], "to": email, "method": "smtp"}
+        finally:
+            smtp_server.quit()
+
     if pythoncom is None:
-        raise RuntimeError("pywin32 (pythoncom) kurulu değil — bu fonksiyon yalnızca Windows'ta çalışır.")
+        raise RuntimeError("pywin32 (pythoncom) kurulu değil ve SMTP ayarları yok. Mail gönderilemez.")
     pythoncom.CoInitialize()
     try:
         outlook, account = _connect_outlook(cfg["outlook_account"])
@@ -220,7 +256,7 @@ def compose_draft(company: dict, template_id: str) -> dict:
         for path in _existing_attachments():
             mail.Attachments.Add(str(path))
         mail.Display(False)  # modal olmayan pencere — Flask isteğini kilitlemez
-        return {"opened": True, "account": account.SmtpAddress, "to": email}
+        return {"opened": True, "account": account.SmtpAddress, "to": email, "method": "outlook"}
     finally:
         pythoncom.CoUninitialize()
 
@@ -251,8 +287,15 @@ def send_bulk(companies: list[dict], template_id: str, dry_run: bool = True,
     # ek klasik spam sinyali (Demir'in kararı, Tem 2026). Katalog, cevap veren
     # firmaya compose_draft (tekli taslak) akışıyla gönderilir.
     outlook = account = None
+    smtp_cfg = _load_env_smtp()
+    use_smtp = pythoncom is None and smtp_cfg["smtp_username"] and smtp_cfg["smtp_password"]
     if not dry_run:
-        outlook, account = _connect_outlook(cfg["outlook_account"])  # hata varsa burada patlar
+        if use_smtp:
+            smtp_server = smtplib.SMTP(smtp_cfg["smtp_server"], smtp_cfg["smtp_port"])
+            smtp_server.starttls()
+            smtp_server.login(smtp_cfg["smtp_username"], smtp_cfg["smtp_password"])
+        else:
+            outlook, account = _connect_outlook(cfg["outlook_account"])  # hata varsa burada patlar
 
     try:
         for c in companies:
@@ -276,12 +319,22 @@ def send_bulk(companies: list[dict], template_id: str, dry_run: bool = True,
                 continue
 
             try:
-                mail = outlook.CreateItem(0)  # olMailItem
-                mail.To = email
-                mail.Subject = msg_data["subject"]
-                mail.Body = msg_data["body"]
-                mail.SendUsingAccount = account
-                mail.Send()
+                if use_smtp:
+                    # SMTP ile doğrudan gönder (Render/Linux)
+                    msg = MIMEMultipart()
+                    msg["From"] = smtp_cfg["smtp_username"]
+                    msg["To"] = email
+                    msg["Subject"] = msg_data["subject"]
+                    msg.attach(MIMEText(msg_data["body"], "plain", "utf-8"))
+                    smtp_server.send_message(msg)
+                else:
+                    # Outlook COM ile gönder (Windows)
+                    mail = outlook.CreateItem(0)  # olMailItem
+                    mail.To = email
+                    mail.Subject = msg_data["subject"]
+                    mail.Body = msg_data["body"]
+                    mail.SendUsingAccount = account
+                    mail.Send()
 
                 _log({"ok": True, "company_id": cid, "name": name, "to": email,
                       "template": template_id})
@@ -298,5 +351,7 @@ def send_bulk(companies: list[dict], template_id: str, dry_run: bool = True,
     finally:
         if not dry_run and pythoncom is not None:
             pythoncom.CoUninitialize()
+        if not dry_run and use_smtp:
+            smtp_server.quit()
 
     return results
